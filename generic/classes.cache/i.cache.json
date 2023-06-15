@@ -1,0 +1,7 @@
+{
+  "items-baseline": ".a-items-baseline {    align-items: baseline;  }",
+  "items-start": ".a-items-start {    align-items: flex-start;  }",
+  "inline-block": ".inline-block {    display: inline-block;  }",
+  "inline": ".inline {    display: inline;  }",
+  "inline-flex": ".inline-flex {    display: inline-flex;  }"
+}

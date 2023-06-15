@@ -1,0 +1,5 @@
+{
+  "center": ".j-content-center {    justify-content: center;  }",
+  "content-end": ".content-end {    justify-content: flex-end;    align-content: flex-end;  }",
+  "capitalize": ".capitalize {    text-transform: capitalize;  }"
+}

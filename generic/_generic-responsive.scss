@@ -1,0 +1,1391 @@
+@use 'variables' as *;
+@use '../mixins/util' as *;
+@use '../mixins/respond' as *;
+
+$l-end: 200;
+$l-start: 0;
+
+@for $i from $l-end through $l-start {
+
+  @include respond(mobile) {
+
+    /**
+    * Margin
+    */
+    [class~='sm:mt-#{$i}'] {
+      margin-top: #{$i}px;
+    }
+
+
+    [class~='sm:mb-#{$i}'] {
+      margin-bottom: #{$i}px;
+    }
+
+
+    [class~='sm:ml-#{$i}'] {
+      margin-left: #{$i}px;
+    }
+
+    [class~='sm:mr-#{$i}'] {
+      margin-right: #{$i}px;
+    }
+
+    [class~='sm:mx-#{$i}'] {
+      margin-left: #{$i}px;
+      margin-right: #{$i}px;
+    }
+
+    [class~='sm:my-#{$i}'] {
+      margin-top: #{$i}px;
+      margin-bottom: #{$i}px;
+    }
+
+    [class~='sm:m-#{$i}'] {
+      margin: #{$i}px;
+    }
+
+    /**
+      * Padding
+      */
+
+    [class~='sm:p-#{$i}'] {
+      padding: #{$i}px;
+    }
+
+    [class~='sm:pt-#{$i}'] {
+      padding-top: #{$i}px;
+    }
+
+    [class~='sm:pb-#{$i}'] {
+      padding-bottom: #{$i}px;
+    }
+
+
+    [class~='sm:pl-#{$i}'] {
+      padding-left: #{$i}px;
+    }
+
+    [class~='sm:pr-#{$i}'] {
+      padding-right: #{$i}px;
+    }
+
+    [class~='sm:px-#{$i}'] {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }
+
+    [class~='sm:py-#{$i}'] {
+      padding-top: #{$i}px;
+      padding-bottom: #{$i}px;
+    }
+
+
+    /**
+      * Width
+      */
+
+    [class~='sm:w-#{$i}'] {
+      width: #{$i}px;
+    }
+
+    // .w-#{($i + $loop_end[class~='sm:}'] {
+    //   width: #{($i + $loop_end)}px;
+    // }
+
+    // .w-#{($i + $loop_end + $loop_end[class~='sm:}'] {
+    //   width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='sm:w-#{$i}p'] {
+      width: $i+#{'%'};
+    }
+
+    [class~='sm:max-w-#{$i}p'] {
+      max-width: $i+#{'%'};
+    }
+
+
+    [class~='sm:min-w-#{$i}'] {
+      min-width: #{$i}px;
+    }
+
+    // .min-w-#{($i + $loop_end[class~='sm:}'] {
+    //   min-width: #{($i + $loop_end)}px;
+    // }
+
+    // .min-w-#{($i + $loop_end + $loop_end[class~='sm:}'] {
+    //   min-width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='sm:min-w-#{$i}p'] {
+      min-width: $i+#{'%'};
+    }
+
+    /**
+      * Height
+      */
+
+    [class~='sm:h-#{$i}'] {
+      height: #{$i}px;
+    }
+
+    [class~='sm:h-#{$i}p'] {
+      height: $i+#{'%'};
+    }
+
+    [class~='sm:t-#{$i}'] {
+      top: #{$i}px;
+    }
+
+    [class~='sm:t-#{$i}p'] {
+      top: $i+#{'%'};
+    }
+
+    [class~='sm:b-#{$i}'] {
+      bottom: #{$i}px;
+    }
+
+    [class~='sm:b-#{$i}p'] {
+      bottom: $i+#{'%'};
+    }
+
+    [class~='sm:l-#{$i}'] {
+      left: #{$i}px;
+    }
+
+    [class~='sm:l-#{$i}p'] {
+      left: $i+#{'%'};
+    }
+
+    [class~='sm:r-#{$i}'] {
+      right: #{$i}px;
+    }
+
+    [class~='sm:r-#{$i}p'] {
+      right: $i+#{'%'};
+    }
+
+    [class~='sm:z-index-#{$i}'] {
+      z-index: $i;
+    }
+
+    [class~='sm:z-index--#{$i}'] {
+      z-index: -$i;
+    }
+
+    [class~='sm:grid-#{$i}-cols-auto'] {
+      grid-template-columns: repeat(#{$i}, auto);
+    }
+
+    [class~='sm:grid-#{$i}-cols-fr'] {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+
+    [class~='sm:grid-col-span-#{$i}'] {
+      grid-column: span #{$i};
+    }
+
+    [class~='sm:gap-#{$i}'] {
+      gap: px-to-rem($i);
+    }
+
+    .border-radius-#{$i},
+    [class~='sm:bd-rad-#{$i}'] {
+      border-radius: px-to-rem($i);
+    }
+
+    [class~='sm:border-#{$i}'] {
+      border: #{$i}px solid;
+    }
+
+    [class~='sm:border-t-#{$i}'] {
+      border-top: #{$i}px solid;
+    }
+
+    [class~='sm:border-b-#{$i}'] {
+      border-bottom: #{$i}px solid;
+    }
+
+    [class~='sm:border-l-#{$i}'] {
+      border-left: #{$i}px solid;
+    }
+
+    [class~='sm:border-r-#{$i}'] {
+      border-right: #{$i}px solid;
+    }
+
+    [class~='sm:line-height-#{$i}'] {
+      line-height: #{$i}px;
+    }
+
+    [class~='sm:rotate-x-#{$i}'] {
+      transform: rotateX(#{$i}deg);
+    }
+
+    [class~='sm:rotate-x--#{$i}'] {
+      transform: rotateX(-#{$i}deg);
+    }
+
+    [class~='sm:rotate-y-#{$i}'] {
+      transform: rotateY(#{$i}deg);
+    }
+
+    [class~='sm:rotate-y--#{$i}'] {
+      transform: rotateY(-#{$i}deg);
+    }
+
+    [class~='sm:rotate-z-#{$i}'] {
+      transform: rotateZ(#{$i}deg);
+    }
+
+    [class~='sm:rotate-z--#{$i}'] {
+      transform: rotateZ(-#{$i}deg);
+    }
+
+    [class~='sm:opacity-#{$i}'] {
+      opacity: #{$i}+'%';
+    }
+  }
+
+  @include respond(desktop_small) {
+
+    /**
+    * Margin
+    */
+    [class~='md:mt-#{$i}'] {
+      margin-top: #{$i}px;
+    }
+
+
+    [class~='md:mb-#{$i}'] {
+      margin-bottom: #{$i}px;
+    }
+
+
+    [class~='md:ml-#{$i}'] {
+      margin-left: #{$i}px;
+    }
+
+    [class~='md:mr-#{$i}'] {
+      margin-right: #{$i}px;
+    }
+
+    [class~='md:mx-#{$i}'] {
+      margin-left: #{$i}px;
+      margin-right: #{$i}px;
+    }
+
+    [class~='md:my-#{$i}'] {
+      margin-top: #{$i}px;
+      margin-bottom: #{$i}px;
+    }
+
+    [class~='md:m-#{$i}'] {
+      margin: #{$i}px;
+    }
+
+    /**
+      * Padding
+      */
+
+    [class~='md:p-#{$i}'] {
+      padding: #{$i}px;
+    }
+
+    [class~='md:pt-#{$i}'] {
+      padding-top: #{$i}px;
+    }
+
+    [class~='md:pb-#{$i}'] {
+      padding-bottom: #{$i}px;
+    }
+
+
+    [class~='md:pl-#{$i}'] {
+      padding-left: #{$i}px;
+    }
+
+    [class~='md:pr-#{$i}'] {
+      padding-right: #{$i}px;
+    }
+
+    [class~='md:px-#{$i}'] {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }
+
+    [class~='md:py-#{$i}'] {
+      padding-top: #{$i}px;
+      padding-bottom: #{$i}px;
+    }
+
+
+    /**
+      * Width
+      */
+
+    [class~='md:w-#{$i}'] {
+      width: #{$i}px;
+    }
+
+    // .w-#{($i + $loop_end[class~='md:}'] {
+    //   width: #{($i + $loop_end)}px;
+    // }
+
+    // .w-#{($i + $loop_end + $loop_end[class~='md:}'] {
+    //   width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='md:w-#{$i}p'] {
+      width: $i+#{'%'};
+    }
+
+    [class~='md:max-w-#{$i}p'] {
+      max-width: $i+#{'%'};
+    }
+
+
+    [class~='md:min-w-#{$i}'] {
+      min-width: #{$i}px;
+    }
+
+    // .min-w-#{($i + $loop_end[class~='md:}'] {
+    //   min-width: #{($i + $loop_end)}px;
+    // }
+
+    // .min-w-#{($i + $loop_end + $loop_end[class~='md:}'] {
+    //   min-width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='md:min-w-#{$i}p'] {
+      min-width: $i+#{'%'};
+    }
+
+    /**
+      * Height
+      */
+
+    [class~='md:h-#{$i}'] {
+      height: #{$i}px;
+    }
+
+    [class~='md:h-#{$i}p'] {
+      height: $i+#{'%'};
+    }
+
+    [class~='md:t-#{$i}'] {
+      top: #{$i}px;
+    }
+
+    [class~='md:t-#{$i}p'] {
+      top: $i+#{'%'};
+    }
+
+    [class~='md:b-#{$i}'] {
+      bottom: #{$i}px;
+    }
+
+    [class~='md:b-#{$i}p'] {
+      bottom: $i+#{'%'};
+    }
+
+    [class~='md:l-#{$i}'] {
+      left: #{$i}px;
+    }
+
+    [class~='md:l-#{$i}p'] {
+      left: $i+#{'%'};
+    }
+
+    [class~='md:r-#{$i}'] {
+      right: #{$i}px;
+    }
+
+    [class~='md:r-#{$i}p'] {
+      right: $i+#{'%'};
+    }
+
+    [class~='md:z-index-#{$i}'] {
+      z-index: $i;
+    }
+
+    [class~='md:z-index--#{$i}'] {
+      z-index: -$i;
+    }
+
+    [class~='md:grid-#{$i}-cols-auto'] {
+      grid-template-columns: repeat(#{$i}, auto);
+    }
+
+    [class~='md:grid-#{$i}-cols-fr'] {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+
+    [class~='md:grid-col-span-#{$i}'] {
+      grid-column: span #{$i};
+    }
+
+    [class~='md:gap-#{$i}'] {
+      gap: px-to-rem($i);
+    }
+
+    .border-radius-#{$i},
+    [class~='md:bd-rad-#{$i}'] {
+      border-radius: px-to-rem($i);
+    }
+
+    [class~='md:border-#{$i}'] {
+      border: #{$i}px solid;
+    }
+
+    [class~='md:border-t-#{$i}'] {
+      border-top: #{$i}px solid;
+    }
+
+    [class~='md:border-b-#{$i}'] {
+      border-bottom: #{$i}px solid;
+    }
+
+    [class~='md:border-l-#{$i}'] {
+      border-left: #{$i}px solid;
+    }
+
+    [class~='md:border-r-#{$i}'] {
+      border-right: #{$i}px solid;
+    }
+
+    [class~='md:line-height-#{$i}'] {
+      line-height: #{$i}px;
+    }
+
+    [class~='md:rotate-x-#{$i}'] {
+      transform: rotateX(#{$i}deg);
+    }
+
+    [class~='md:rotate-x--#{$i}'] {
+      transform: rotateX(-#{$i}deg);
+    }
+
+    [class~='md:rotate-y-#{$i}'] {
+      transform: rotateY(#{$i}deg);
+    }
+
+    [class~='md:rotate-y--#{$i}'] {
+      transform: rotateY(-#{$i}deg);
+    }
+
+    [class~='md:rotate-z-#{$i}'] {
+      transform: rotateZ(#{$i}deg);
+    }
+
+    [class~='md:rotate-z--#{$i}'] {
+      transform: rotateZ(-#{$i}deg);
+    }
+
+    [class~='md:opacity-#{$i}'] {
+      opacity: #{$i}+'%';
+    }
+  }
+
+  @include respond(desktop) {
+
+    /**
+    * Margin
+    */
+    [class~='lg:mt-#{$i}'] {
+      margin-top: #{$i}px;
+    }
+
+
+    [class~='lg:mb-#{$i}'] {
+      margin-bottom: #{$i}px;
+    }
+
+
+    [class~='lg:ml-#{$i}'] {
+      margin-left: #{$i}px;
+    }
+
+    [class~='lg:mr-#{$i}'] {
+      margin-right: #{$i}px;
+    }
+
+    [class~='lg:mx-#{$i}'] {
+      margin-left: #{$i}px;
+      margin-right: #{$i}px;
+    }
+
+    [class~='lg:my-#{$i}'] {
+      margin-top: #{$i}px;
+      margin-bottom: #{$i}px;
+    }
+
+    [class~='lg:m-#{$i}'] {
+      margin: #{$i}px;
+    }
+
+    /**
+      * Padding
+      */
+
+    [class~='lg:p-#{$i}'] {
+      padding: #{$i}px;
+    }
+
+    [class~='lg:pt-#{$i}'] {
+      padding-top: #{$i}px;
+    }
+
+    [class~='lg:pb-#{$i}'] {
+      padding-bottom: #{$i}px;
+    }
+
+
+    [class~='lg:pl-#{$i}'] {
+      padding-left: #{$i}px;
+    }
+
+    [class~='lg:pr-#{$i}'] {
+      padding-right: #{$i}px;
+    }
+
+    [class~='lg:px-#{$i}'] {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }
+
+    [class~='lg:py-#{$i}'] {
+      padding-top: #{$i}px;
+      padding-bottom: #{$i}px;
+    }
+
+
+    /**
+      * Width
+      */
+
+    [class~='lg:w-#{$i}'] {
+      width: #{$i}px;
+    }
+
+    // .w-#{($i + $loop_end[class~='lg:}'] {
+    //   width: #{($i + $loop_end)}px;
+    // }
+
+    // .w-#{($i + $loop_end + $loop_end[class~='lg:}'] {
+    //   width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='lg:w-#{$i}p'] {
+      width: $i+#{'%'};
+    }
+
+    [class~='lg:max-w-#{$i}p'] {
+      max-width: $i+#{'%'};
+    }
+
+
+    [class~='lg:min-w-#{$i}'] {
+      min-width: #{$i}px;
+    }
+
+    // .min-w-#{($i + $loop_end[class~='lg:}'] {
+    //   min-width: #{($i + $loop_end)}px;
+    // }
+
+    // .min-w-#{($i + $loop_end + $loop_end[class~='lg:}'] {
+    //   min-width: #{($i + $loop_end + $loop_end)}px;
+    // }
+
+    [class~='lg:min-w-#{$i}p'] {
+      min-width: $i+#{'%'};
+    }
+
+    /**
+      * Height
+      */
+
+    [class~='lg:h-#{$i}'] {
+      height: #{$i}px;
+    }
+
+    [class~='lg:h-#{$i}p'] {
+      height: $i+#{'%'};
+    }
+
+    [class~='lg:t-#{$i}'] {
+      top: #{$i}px;
+    }
+
+    [class~='lg:t-#{$i}p'] {
+      top: $i+#{'%'};
+    }
+
+    [class~='lg:b-#{$i}'] {
+      bottom: #{$i}px;
+    }
+
+    [class~='lg:b-#{$i}p'] {
+      bottom: $i+#{'%'};
+    }
+
+    [class~='lg:l-#{$i}'] {
+      left: #{$i}px;
+    }
+
+    [class~='lg:l-#{$i}p'] {
+      left: $i+#{'%'};
+    }
+
+    [class~='lg:r-#{$i}'] {
+      right: #{$i}px;
+    }
+
+    [class~='lg:r-#{$i}p'] {
+      right: $i+#{'%'};
+    }
+
+    [class~='lg:z-index-#{$i}'] {
+      z-index: $i;
+    }
+
+    [class~='lg:z-index--#{$i}'] {
+      z-index: -$i;
+    }
+
+    [class~='lg:grid-#{$i}-cols-auto'] {
+      grid-template-columns: repeat(#{$i}, auto);
+    }
+
+    [class~='lg:grid-#{$i}-cols-fr'] {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+
+    [class~='lg:grid-col-span-#{$i}'] {
+      grid-column: span #{$i};
+    }
+
+    [class~='lg:gap-#{$i}'] {
+      gap: px-to-rem($i);
+    }
+
+    .border-radius-#{$i},
+    [class~='lg:bd-rad-#{$i}'] {
+      border-radius: px-to-rem($i);
+    }
+
+    [class~='lg:border-#{$i}'] {
+      border: #{$i}px solid;
+    }
+
+    [class~='lg:border-t-#{$i}'] {
+      border-top: #{$i}px solid;
+    }
+
+    [class~='lg:border-b-#{$i}'] {
+      border-bottom: #{$i}px solid;
+    }
+
+    [class~='lg:border-l-#{$i}'] {
+      border-left: #{$i}px solid;
+    }
+
+    [class~='lg:border-r-#{$i}'] {
+      border-right: #{$i}px solid;
+    }
+
+    [class~='lg:line-height-#{$i}'] {
+      line-height: #{$i}px;
+    }
+
+    [class~='lg:rotate-x-#{$i}'] {
+      transform: rotateX(#{$i}deg);
+    }
+
+    [class~='lg:rotate-x--#{$i}'] {
+      transform: rotateX(-#{$i}deg);
+    }
+
+    [class~='lg:rotate-y-#{$i}'] {
+      transform: rotateY(#{$i}deg);
+    }
+
+    [class~='lg:rotate-y--#{$i}'] {
+      transform: rotateY(-#{$i}deg);
+    }
+
+    [class~='lg:rotate-z-#{$i}'] {
+      transform: rotateZ(#{$i}deg);
+    }
+
+    [class~='lg:rotate-z--#{$i}'] {
+      transform: rotateZ(-#{$i}deg);
+    }
+
+    [class~='lg:opacity-#{$i}'] {
+      opacity: #{$i}+'%';
+    }
+  }
+
+}
+
+@for $i from 0 through 800 {
+  @include respond(mobile) {
+    [class~='sm:h-#{$i}vh'] {
+      height: #{$i}vh;
+    }
+
+    [class~='sm:max-h-#{$i}vh'] {
+      max-height: #{$i}vh;
+    }
+
+    [class~='sm:min-h-#{$i}vh'] {
+      min-height: #{$i}vh;
+    }
+
+    [class~='sm:max-w-#{$i}'] {
+      max-width: #{$i}px;
+    }
+  }
+
+  @include respond(desktop_small) {
+    [class~='md:h-#{$i}vh'] {
+      height: #{$i}vh;
+    }
+
+    [class~='md:max-h-#{$i}vh'] {
+      max-height: #{$i}vh;
+    }
+
+    [class~='md:min-h-#{$i}vh'] {
+      min-height: #{$i}vh;
+    }
+
+    [class~='md:max-w-#{$i}'] {
+      max-width: #{$i}px;
+    }
+  }
+
+  @include respond(desktop) {
+    [class~='lg:h-#{$i}vh'] {
+      height: #{$i}vh;
+    }
+
+    [class~='lg:max-h-#{$i}vh'] {
+      max-height: #{$i}vh;
+    }
+
+    [class~='lg:min-h-#{$i}vh'] {
+      min-height: #{$i}vh;
+    }
+
+    [class~='lg:max-w-#{$i}'] {
+      max-width: #{$i}px;
+    }
+  }
+
+}
+
+@include respond(mobile) {
+
+  [class~='sm:w-fit'] {
+    width: fit-content;
+  }
+
+  [class~='sm:h-fit'] {
+    height: fit-content;
+  }
+
+  [class~='sm:p-absolute'] {
+    position: absolute;
+  }
+
+  [class~='sm:p-relative'] {
+    position: relative;
+  }
+
+  [class~='sm:p-fixed'] {
+    position: fixed;
+  }
+
+  [class~='sm:p-static'] {
+    position: static;
+  }
+
+  [class~='sm:mx-auto'] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class~='sm:border-none'] {
+    border: none;
+  }
+
+  [class~='sm:bold'] {
+    font-weight: bold;
+  }
+
+  [class~='sm:bolder'] {
+    font-weight: bolder;
+  }
+
+  [class~='sm:text-right'] {
+    text-align: right;
+  }
+
+  [class~='sm:text-center'] {
+    text-align: center;
+  }
+
+  [class~='sm:text-left'] {
+    text-align: left;
+  }
+
+  [class~='sm:pointer'],
+  [class~='sm:is-link'] {
+    cursor: pointer;
+  }
+
+  [class~='sm:font-largest'] {
+    font-size: $largest;
+  }
+
+  [class~='sm:font-larger'] {
+    font-size: $larger;
+  }
+
+  [class~='sm:font-large'] {
+    font-size: $large;
+  }
+
+  [class~='sm:font-medium'] {
+    font-size: $medium;
+  }
+
+  [class~='sm:font-small'] {
+    font-size: $small;
+  }
+
+  [class~='sm:font-smaller'] {
+    font-size: $smaller;
+  }
+
+  [class~='sm:d-block'] {
+    display: block;
+  }
+
+  [class~='sm:d-inline-block'] {
+    display: inline-block;
+  }
+
+  [class~='sm:d-inline'] {
+    display: inline;
+  }
+
+  [class~='sm:d-none'] {
+    display: none;
+  }
+
+  [class~='sm:d-grid'] {
+    display: grid;
+  }
+
+  [class~='sm:d-flex'] {
+    display: flex;
+  }
+
+  [class~='sm:f-wrap'] {
+    flex-wrap: wrap;
+  }
+
+  [class~='sm:flex-column'] {
+    flex-direction: column;
+  }
+
+  [class~='sm:flex-row'] {
+    flex-direction: row;
+  }
+
+  [class~='sm:float-right'] {
+    float: right;
+  }
+
+  [class~='sm:float-left'] {
+    float: left;
+  }
+
+  [class~='sm:space-between'] {
+    justify-content: space-between;
+  }
+
+  [class~='sm:align-items-center'],
+  [class~='sm:items-center'] {
+    align-items: center;
+  }
+
+  [class~='sm:content-end'] {
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+
+  [class~='sm:overflow-hidden'] {
+    overflow: hidden;
+  }
+
+  [class~='sm:overflow'] {
+    overflow-y: scroll;
+  }
+
+  [class~='sm:bg-green'],
+  [class~='sm:bg-success'] {
+    background-color: $success-color;
+  }
+
+  [class~='sm:bg-red'],
+  [class~='sm:bg-danger'],
+  [class~='sm:bg-error'] {
+    background-color: $danger-color;
+  }
+
+  [class~='sm:text-red'],
+  [class~='sm:text-danger'],
+  [class~='sm:text-error'] {
+    color: $danger-color;
+  }
+
+  [class~='sm:text-wrap'] {
+    white-space: nowrap;
+  }
+
+  [class~='sm:bg-orange'],
+  [class~='sm:bg-warning'] {
+    background-color: $warning-color;
+  }
+
+  [class~='sm:bg-blue'],
+  [class~='sm:bg-info'] {
+    background-color: $info-color;
+  }
+
+  [class~='sm:uppercase'] {
+    text-transform: uppercase;
+  }
+
+  [class~='sm:lowercase'] {
+    text-transform: lowercase;
+  }
+
+  [class~='sm:capitalize'] {
+    text-transform: capitalize;
+  }
+
+  [class~='sm:sentence-case'] {
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+@include respond(desktop_small) {
+
+  [class~='md:w-fit'] {
+    width: fit-content;
+  }
+
+  [class~='md:h-fit'] {
+    height: fit-content;
+  }
+
+  [class~='md:p-absolute'] {
+    position: absolute;
+  }
+
+  [class~='md:p-relative'] {
+    position: relative;
+  }
+
+  [class~='md:p-fixed'] {
+    position: fixed;
+  }
+
+  [class~='md:p-static'] {
+    position: static;
+  }
+
+  [class~='md:mx-auto'] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class~='md:border-none'] {
+    border: none;
+  }
+
+  [class~='md:bold'] {
+    font-weight: bold;
+  }
+
+  [class~='md:bolder'] {
+    font-weight: bolder;
+  }
+
+  [class~='md:text-right'] {
+    text-align: right;
+  }
+
+  [class~='md:text-center'] {
+    text-align: center;
+  }
+
+  [class~='md:text-left'] {
+    text-align: left;
+  }
+
+  [class~='md:pointer'],
+  [class~='md:is-link'] {
+    cursor: pointer;
+  }
+
+  [class~='md:font-largest'] {
+    font-size: $largest;
+  }
+
+  [class~='md:font-larger'] {
+    font-size: $larger;
+  }
+
+  [class~='md:font-large'] {
+    font-size: $large;
+  }
+
+  [class~='md:font-medium'] {
+    font-size: $medium;
+  }
+
+  [class~='md:font-small'] {
+    font-size: $small;
+  }
+
+  [class~='md:font-smaller'] {
+    font-size: $smaller;
+  }
+
+  [class~='md:d-block'] {
+    display: block;
+  }
+
+  [class~='md:d-inline-block'] {
+    display: inline-block;
+  }
+
+  [class~='md:d-inline'] {
+    display: inline;
+  }
+
+  [class~='md:d-none'] {
+    display: none;
+  }
+
+  [class~='md:d-grid'] {
+    display: grid;
+  }
+
+  [class~='md:d-flex'] {
+    display: flex;
+  }
+
+  [class~='md:f-wrap'] {
+    flex-wrap: wrap;
+  }
+
+  [class~='md:flex-column'] {
+    flex-direction: column;
+  }
+
+  [class~='md:flex-row'] {
+    flex-direction: row;
+  }
+
+  [class~='md:float-right'] {
+    float: right;
+  }
+
+  [class~='md:float-left'] {
+    float: left;
+  }
+
+  [class~='md:space-between'] {
+    justify-content: space-between;
+  }
+
+  [class~='md:align-items-center'],
+  [class~='md:items-center'] {
+    align-items: center;
+  }
+
+  [class~='md:content-end'] {
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+
+  [class~='md:overflow-hidden'] {
+    overflow: hidden;
+  }
+
+  [class~='md:bg-green'],
+  [class~='md:bg-success'] {
+    background-color: $success-color;
+  }
+
+  [class~='md:bg-red'],
+  [class~='md:bg-danger'],
+  [class~='md:bg-error'] {
+    background-color: $danger-color;
+  }
+
+  [class~='md:text-red'],
+  [class~='md:text-danger'],
+  [class~='md:text-error'] {
+    color: $danger-color;
+  }
+
+  [class~='md:bg-orange'],
+  [class~='md:bg-warning'] {
+    background-color: $warning-color;
+  }
+
+  [class~='md:bg-blue'],
+  [class~='md:bg-info'] {
+    background-color: $info-color;
+  }
+
+  [class~='md:uppercase'] {
+    text-transform: uppercase;
+  }
+
+  [class~='md:lowercase'] {
+    text-transform: lowercase;
+  }
+
+  [class~='md:capitalize'] {
+    text-transform: capitalize;
+  }
+
+  [class~='md:sentence-case'] {
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  [class~='md:round'] {
+    border-radius: 50%;
+  }
+
+}
+
+@include respond(desktop) {
+
+  [class~='lg:w-fit'] {
+    width: fit-content;
+  }
+
+  [class~='lg:h-fit'] {
+    height: fit-content;
+  }
+
+  [class~='lg:p-absolute'] {
+    position: absolute;
+  }
+
+  [class~='lg:p-relative'] {
+    position: relative;
+  }
+
+  [class~='lg:p-fixed'] {
+    position: fixed;
+  }
+
+  [class~='lg:p-static'] {
+    position: static;
+  }
+
+  [class~='lg:mx-auto'] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class~='lg:border-none'] {
+    border: none;
+  }
+
+  [class~='lg:bold'] {
+    font-weight: bold;
+  }
+
+  [class~='lg:bolder'] {
+    font-weight: bolder;
+  }
+
+  [class~='lg:text-right'] {
+    text-align: right;
+  }
+
+  [class~='lg:text-center'] {
+    text-align: center;
+  }
+
+  [class~='lg:text-left'] {
+    text-align: left;
+  }
+
+  [class~='lg:pointer'],
+  [class~='lg:is-link'] {
+    cursor: pointer;
+  }
+
+  [class~='lg:font-largest'] {
+    font-size: $largest;
+  }
+
+  [class~='lg:font-larger'] {
+    font-size: $larger;
+  }
+
+  [class~='lg:font-large'] {
+    font-size: $large;
+  }
+
+  [class~='lg:font-medium'] {
+    font-size: $medium;
+  }
+
+  [class~='lg:font-small'] {
+    font-size: $small;
+  }
+
+  [class~='lg:font-smaller'] {
+    font-size: $smaller;
+  }
+
+  [class~='lg:d-block'] {
+    display: block;
+  }
+
+  [class~='lg:d-inline-block'] {
+    display: inline-block;
+  }
+
+  [class~='lg:d-inline'] {
+    display: inline;
+  }
+
+  [class~='lg:d-none'] {
+    display: none;
+  }
+
+  [class~='lg:d-grid'] {
+    display: grid;
+  }
+
+  [class~='lg:d-flex'] {
+    display: flex;
+  }
+
+  [class~='lg:f-wrap'] {
+    flex-wrap: wrap;
+  }
+
+  [class~='lg:flex-column'] {
+    flex-direction: column;
+  }
+
+  [class~='lg:flex-row'] {
+    flex-direction: row;
+  }
+
+  [class~='lg:float-right'] {
+    float: right;
+  }
+
+  [class~='lg:float-left'] {
+    float: left;
+  }
+
+  [class~='lg:space-between'] {
+    justify-content: space-between;
+  }
+  [class~='lg:space-around'] {
+    justify-content: space-around;
+  }
+
+  [class~='lg:align-items-center'],
+  [class~='lg:items-center'] {
+    align-items: center;
+  }
+
+  [class~='lg:content-end'] {
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+
+  [class~='lg:overflow-hidden'] {
+    overflow: hidden;
+  }
+
+  [class~='lg:bg-green'],
+  [class~='lg:bg-success'] {
+    background-color: $success-color;
+  }
+
+  [class~='lg:bg-red'],
+  [class~='lg:bg-danger'],
+  [class~='lg:bg-error'] {
+    background-color: $danger-color;
+  }
+
+  [class~='lg:text-red'],
+  [class~='lg:text-danger'],
+  [class~='lg:text-error'] {
+    color: $danger-color;
+  }
+
+  [class~='lg:bg-orange'],
+  [class~='lg:bg-warning'] {
+    background-color: $warning-color;
+  }
+
+  [class~='lg:bg-blue'],
+  [class~='lg:bg-info'] {
+    background-color: $info-color;
+  }
+
+  [class~='lg:uppercase'] {
+    text-transform: uppercase;
+  }
+
+  [class~='lg:lowercase'] {
+    text-transform: lowercase;
+  }
+
+  [class~='lg:capitalize'] {
+    text-transform: capitalize;
+  }
+
+  [class~='lg:sentence-case'] {
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  [class~='lg:round'] {
+    border-radius: 50%;
+  }
+
+}

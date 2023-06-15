@@ -1,0 +1,5 @@
+{
+  "space-between": ".j-content-space-between {    justify-content: space-between;  }",
+  "scroll-y": ".scroll-y {    overflow-y: scroll;  }",
+  "sentence-case": ".sentence-case {    text-transform: lowercase;  }  .sentence-case:first-letter {    text-transform: uppercase;  }"
+}
