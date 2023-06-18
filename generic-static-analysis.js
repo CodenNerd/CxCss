@@ -57,9 +57,11 @@ function exec() {
   }
 }
 
-module.exports = {
-  exec,
-};
+exec()
+
+// module.exports = {
+//   exec,
+// };
 
 /**
  *

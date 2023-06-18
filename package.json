@@ -1,0 +1,23 @@
+{
+  "name": "csspiston",
+  "version": "1.0.0",
+  "description": "A classname-based css framework that gives you all the power that native css gives you right from your mark-up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodenNerd/GenericCss.git"
+  },
+  "keywords": [
+    "CSS",
+    "class"
+  ],
+  "author": "AbdulAzeez Atanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodenNerd/GenericCss/issues"
+  },
+  "homepage": "https://github.com/CodenNerd/GenericCss#readme"
+}
