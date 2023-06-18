@@ -54,5 +54,4 @@ const classPatterns = {
   '^opacity-(\\d+)$': '.opacity-$1 { opacity: $1%; }',
 };
 
-  module.exports = classPatterns;
-  
+module.exports = {classPatterns};
