@@ -12,7 +12,7 @@ const {
   resetCompilationCache,
 } = require("./generic/functions/cache-manager");
 
-const projectDirectory = config.watchDirectory || "./";
+const projectDirectory = config.watchDirectory;
 let countToRecompilation = 0;
 
 function runCompilation(filePath) {
