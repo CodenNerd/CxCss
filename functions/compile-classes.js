@@ -1,7 +1,7 @@
 const fs = require('fs')
 const config = require("./config-reader");
 const { compilationCache } = require('../store');
-const { getClassDefinitionFromCache } = require('./class-transpilers');
+const { getClassDefinitionFromCache, translateClassName } = require('./class-transpilers');
 const { pseudoSelectors } = require('../store/pseudo-selectors');
 
 

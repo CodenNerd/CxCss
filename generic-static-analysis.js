@@ -1,16 +1,16 @@
-const config = require("./functions/config-reader");
-const analyzeFile = require("./functions/analyze-file");
-const { compileClasses } = require("./functions/compile-classes");
+const config = require(__dirname + "/./functions/config-reader");
+const analyzeFile = require(__dirname + "/./functions/analyze-file");
+const { compileClasses } = require(__dirname + "/./functions/compile-classes");
 const {
   traverseDirectory,
   watchDirectory,
-} = require("./functions/traverse-directory");
+} = require(__dirname + "/./functions/traverse-directory");
 const fs = require("fs");
-const { outputCSSFile } = require("./store");
+const { outputCSSFile } = require(__dirname + "/./store");
 const {
   addToCompilationCache,
   resetCompilationCache,
-} = require("./functions/cache-manager");
+} = require(__dirname + "/./functions/cache-manager");
 
 const projectDirectory = config.watchDirectory;
 let countToRecompilation = 0;
@@ -31,8 +31,8 @@ function build() {
   let globalCssContent = "";
   traverseDirectory(projectDirectory, (filePath) => {
     globalCssContent += runCompilation(filePath);
-    fs.writeFileSync(outputCSSFile, globalCssContent);
-  });
+  });    
+  fs.writeFileSync(outputCSSFile, globalCssContent);
 }
 
 function watch() {
