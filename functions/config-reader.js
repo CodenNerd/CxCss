@@ -8,8 +8,7 @@ try {
     const configData = fs.readFileSync(configFile, 'utf8');
     config = { ...config, ...JSON.parse(configData) } ;
 } catch(error) {
-    console.log('Warning: Error parsing generic.config.json', error);
+    console.error('Warning: Error parsing generic.config.json', error.message);
 }
-
 
 module.exports = config;

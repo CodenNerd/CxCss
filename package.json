@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "cxcss": "./bin/cxcss"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodenNerd/GenericCss.git"

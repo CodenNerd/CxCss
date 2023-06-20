@@ -1,16 +1,16 @@
-const config = require("./generic/functions/config-reader");
-const analyzeFile = require("./generic/functions/analyze-file");
-const { compileClasses } = require("./generic/functions/compile-classes");
+const config = require("./functions/config-reader");
+const analyzeFile = require("./functions/analyze-file");
+const { compileClasses } = require("./functions/compile-classes");
 const {
   traverseDirectory,
   watchDirectory,
-} = require("./generic/functions/traverse-directory");
+} = require("./functions/traverse-directory");
 const fs = require("fs");
-const { outputCSSFile } = require("./generic/store");
+const { outputCSSFile } = require("./store");
 const {
   addToCompilationCache,
   resetCompilationCache,
-} = require("./generic/functions/cache-manager");
+} = require("./functions/cache-manager");
 
 const projectDirectory = config.watchDirectory;
 let countToRecompilation = 0;
@@ -57,11 +57,13 @@ function exec() {
   }
 }
 
-exec()
+// exec()
 
-// module.exports = {
-//   exec,
-// };
+module.exports = {
+  exec,
+  build,
+  watch
+};
 
 /**
  *
