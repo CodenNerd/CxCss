@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "node ./scripts/classes-cache.generator.js && git commit -am cxcss-cache"
+    "prepublishOnly": "node ./scripts/classes-cache.generator.js && (git commit -am cxcss-cache || true)"
   },
   "bin": {
     "cxcss": "./bin/cxcss"
