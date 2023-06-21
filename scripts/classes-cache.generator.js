@@ -69,11 +69,6 @@ for (let i = loopEnd; i >= loopStart; i--) {
   classes[`rotate-z--${i}`] = `.rotate-z--${i} { transform: rotateZ(-${i}deg); }`;
   classes[`opacity-${i}`] = `.opacity-${i} { opacity: ${i}%; }`;
 
-  // for (let j = 1; j <= 5; j++) {
-  //   const value = i * j;
-  //   classes[`aspect-ratio-${i}-${value}`] = `.aspect-ratio-${i}-${value}, .ratio-${i}-${value} { aspect-ratio: ${i} / calc(${i} * ${value}); }`;
-  // }
-
   /** {{breakpoint_end}} **/
 }
 
@@ -104,19 +99,19 @@ classes = {
   'h-fit': `.h-fit {
     height: fit-content;
   }`,
-  'p-absolute': `.absolute {
+  'absolute': `.absolute {
     position: absolute;
   }`,
-  'p-relative': `.relative {
+  'relative': `.relative {
     position: relative;
   }`,
-  'p-fixed': `.fixed {
+  'fixed': `.fixed {
     position: fixed;
   }`,
-  'p-static': `.static {
+  'static': `.static {
     position: static;
   }`,
-  'p-sticky': `.sticky {
+  'sticky': `.sticky {
     position: sticky;
   }`,
   'mx-auto': `.mx-auto {
@@ -201,7 +196,7 @@ classes = {
   'float-left': `.float-left {
     float: left;
   }`,
-  'j-content-space-between': `.j-content-space-between {
+  'j-content-between': `.j-content-between {
     justify-content: space-between;
   }`,
   'j-content-center': `.j-content-center {
@@ -225,6 +220,9 @@ classes = {
   }`,
   'scroll-y': `.scroll-y {
     overflow-y: scroll;
+  }`,
+  'scroll-x': `.scroll-y {
+    overflow-x: scroll;
   }`,
   'no-scrollbar': `.no-scrollbar {
     &::-webkit-scrollbar {
