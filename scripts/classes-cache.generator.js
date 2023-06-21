@@ -3,7 +3,6 @@ const path = require('path');
 
 const colorsDefault = require('../colors.default');
 const sizesDefault = require('../sizes.default');
-const config = require('./scripts/config-reader');
 
 const loopEnd = 200;
 const loopStart = 0;
@@ -283,7 +282,7 @@ classes = {
 };
 
 
-const cacheFolder = '/classes.cache';
+const cacheFolder = __dirname + '/../classes.cache';
 
 // Create the cache folder if it doesn't exist
 if (!fs.existsSync(cacheFolder)) {

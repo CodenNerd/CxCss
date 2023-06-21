@@ -72,4 +72,8 @@ module.exports = {
  * - Classname Chaining
  * - Optimise compilation
  * - Use single media queries
+ * - frames:from:mt-0 frames-from:bg-red frames:to:bg-green frames-to:mt-5
+ * - from:mt-0 from:bg-red to:bg-green to:mt-5
+ * - from:mt-0|bg-red to:bg-green|mt-5
+ * 
  */

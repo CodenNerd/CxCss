@@ -1203,6 +1203,6 @@
   "h-799vh": ".h-799vh { height: 799vh; }",
   "h-800vh": ".h-800vh { height: 800vh; }",
   "h-fit": ".h-fit {    height: fit-content;  }",
-  "h-full": ".h-full {    height: 100%;  }",
-  "hidden": ".hidden {    display: none;  }"
+  "hidden": ".hidden {    display: none;  }",
+  "h-full": ".h-full {    height: 100%;  }"
 }

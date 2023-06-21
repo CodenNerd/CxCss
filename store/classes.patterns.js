@@ -58,7 +58,8 @@ const classPatterns = {
   '^max-w-(\\d+)$': '.max-w-$1 { max-width: $1px; }',
   '^text-(\\d+)$': '.text-$1 { font-size: $1px; }',
   '^aspect-(\\d+)/(\\d+)$': "[class~='aspect-$1/$2'] { aspect-ratio: $1/$2; }",
-  '^aspect-(\\d+)$': '.aspect-$1 { aspect-ratio: $1; }'
+  '^aspect-(\\d+)$': '.aspect-$1 { aspect-ratio: $1; }',
+  '^color-(\\S+)$': "[class~='.color-$1'] { color: $1; }"
 };
 
 module.exports = {classPatterns};

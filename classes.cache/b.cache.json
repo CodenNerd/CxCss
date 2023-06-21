@@ -2013,11 +2013,11 @@
   "border-none": ".border-none {    border: none;  }",
   "bold": ".bold {    font-weight: bold;  }",
   "bolder": ".bolder {    font-weight: bolder;  }",
+  "block": ".block {    display: block;  }",
   "bg-success": ".bg-success {    background-color: #2cb978;  }",
   "bg-danger": ".bg-danger {    background-color: #ff304f;  }",
   "bg-warning": ".bg-warning {    background-color: #feb062;  }",
   "bg-info": ".bg-info {    background-color: #88bef5;  }",
   "bg-none": ".bg-none {    background-color: initial;  }",
-  "box-shadow": ".box-shadow {    box-shadow: 0px 6px 12px rgba(4, 9, 33, 0.08);  }",
-  "block": ".block {    display: block;  }"
+  "box-shadow": ".box-shadow {    box-shadow: 0px 6px 12px rgba(4, 9, 33, 0.08);  }"
 }

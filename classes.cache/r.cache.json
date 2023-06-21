@@ -1808,5 +1808,6 @@
   "rotate-y--0": ".rotate-y--0 { transform: rotateY(-0deg); }",
   "rotate-z-0": ".rotate-z-0 { transform: rotateZ(0deg); }",
   "rotate-z--0": ".rotate-z--0 { transform: rotateZ(-0deg); }",
+  "relative": ".relative {    position: relative;  }",
   "round": ".round {    border-radius: 50%;  }"
 }
