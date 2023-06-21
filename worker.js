@@ -5,7 +5,7 @@ const { Worker } = require('worker_threads');
 
  let worker;
 function watchWorker() {
-  worker = new Worker('./watch.js');
+  worker = new Worker(__dirname + '/./watch.js');
 
   worker.on('message', (message) => {
     console.log('CxCss worker:', message);

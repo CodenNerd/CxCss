@@ -9,6 +9,12 @@ let config = {
         warning: '#feb062',
         danger: '#ff304f',
         success: '#2cb978'
+    },
+    breakpoints: {
+        "sm": "576px",
+        "md": "768px",
+        "lg": "992px",
+        "xl": "1200px" 
     }
 }
 try {
