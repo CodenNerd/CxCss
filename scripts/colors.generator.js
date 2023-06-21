@@ -4,7 +4,7 @@ const config = require('./config-reader')
 
 // Function to generate the mixin content and write it to the output file
 function generate() {
-  // Read the generic.config.json file
+  // Read the cx.config.json file
 
   const outputLocation = config.location || 'src/styles/generic';
   const outputFile = `${outputLocation}/_colors.scss`;
@@ -55,11 +55,14 @@ function generate() {
   }
 }
 
-try {
-  generate();  
-} catch (error) {
-    console.log('Error generating colors: ', error)
+module.exports = {
+  generate
 }
+// try {
+//   generate();  
+// } catch (error) {
+//     console.log('Error generating colors: ', error)
+// }
 
 
 

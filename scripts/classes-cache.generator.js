@@ -69,10 +69,10 @@ for (let i = loopEnd; i >= loopStart; i--) {
   classes[`rotate-z--${i}`] = `.rotate-z--${i} { transform: rotateZ(-${i}deg); }`;
   classes[`opacity-${i}`] = `.opacity-${i} { opacity: ${i}%; }`;
 
-  for (let j = 1; j <= 5; j++) {
-    const value = i * j;
-    classes[`aspect-ratio-${i}-${value}`] = `.aspect-ratio-${i}-${value}, .ratio-${i}-${value} { aspect-ratio: ${i} / calc(${i} * ${value}); }`;
-  }
+  // for (let j = 1; j <= 5; j++) {
+  //   const value = i * j;
+  //   classes[`aspect-ratio-${i}-${value}`] = `.aspect-ratio-${i}-${value}, .ratio-${i}-${value} { aspect-ratio: ${i} / calc(${i} * ${value}); }`;
+  // }
 
   /** {{breakpoint_end}} **/
 }
@@ -295,8 +295,7 @@ if (!fs.existsSync(cacheFolder)) {
 for (const key in classes) {
   const cleanedKey = key.replaceAll(/\n/g, '');
   const cleanedValue = classes[key].replaceAll(/\n/g, '');
-   console.log({ cleanedKey, cleanedValue });
- const firstLetter = cleanedKey.charAt(0).toLowerCase();
+  const firstLetter = cleanedKey.charAt(0).toLowerCase();
   const fileName = `${firstLetter}.cache.json`;
   const filePath = path.join(cacheFolder, fileName);
 

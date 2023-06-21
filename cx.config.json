@@ -1,0 +1,22 @@
+{
+  "watchDirectory": "./",
+  "output": "./",
+  "breakpoints": {
+    "sm": "576px",
+    "md": "768px",
+    "lg": "992px",
+    "xl": "1200px" 
+  },
+  "colors": {
+    "white": "#FFFFFF",
+    "black": "#000000",
+    "dimgrey": "#333333",
+    "grey": "#676767",
+    "light-grey": "#A8A6A6",
+    "lighter-grey": "#D9D9D9B2",
+    "lightest-grey": "#D9D9D9B2",
+    "faint-grey": "#DADADA",
+    "green": "#0B9378",
+    "red": "red"
+  }
+}

@@ -1,18 +1,15 @@
 #!/usr/bin/env node
 
-// Perform any necessary setup or configuration
+const { build } = require("..");
+const { terminate, watchWorker, worker } = require("../worker");
 
-const { watch, build } = require("../generic-static-analysis");
-
-// Parse command-line arguments
 const args = process.argv.slice(2);
 const command = args[0];
 
 if (command === "--watch" || !command) {
-  build();
-  watch();
+   watchWorker()
 } else if (command === "--build") {
   build();
-} else {
-  watch();
+} else if (command === "--stop") {
+
 }
