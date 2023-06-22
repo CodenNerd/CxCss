@@ -9,6 +9,8 @@ function generateColorStyles() {
       colorStyles[`text-${color}`] = `.text-${color} { color: ${value}; }`;
   
       colorStyles[`border-${color}`] = `.border-${color} { border-color: ${value}; }`;
+
+      colorStyles[`outline-${color}`] = `.outline-${color} { outline-color: ${value}; }`;
     });
   
     return colorStyles;

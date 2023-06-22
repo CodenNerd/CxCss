@@ -195,11 +195,17 @@ classes = {
   'float-left': `.float-left {
     float: left;
   }`,
+  'space-between': `.space-between {
+    justify-content: space-between;
+  }`,
   'j-content-between': `.j-content-between {
     justify-content: space-between;
   }`,
   'j-content-center': `.j-content-center {
     justify-content: center;
+  }`,
+  'items-center': `.items-center {
+    align-items: center;
   }`,
   'a-items-center': `.a-items-center {
     align-items: center;
