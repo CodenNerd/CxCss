@@ -201,5 +201,15 @@
   "opacity-1": ".opacity-1 { opacity: 1%; }",
   "opacity-0": ".opacity-0 { opacity: 0%; }",
   "overflow-hidden": ".overflow-hidden {    overflow: hidden;  }",
-  "object-fit": ".object-fit {    object-fit: cover;  }"
+  "object-fit": ".object-fit {    object-fit: cover;  }",
+  "outline-none": ".outline-none {    outline: none;  }",
+  "outline": ".outline { outline: 1px solid; }",
+  "outline-dotted": ".outline-dotted { outline-style: dotted; }",
+  "outline-dashed": ".outline-dashed { outline-style: dashed; }",
+  "outline-double": ".outline-double { outline-style: double; }",
+  "outline-solid": ".outline-solid { outline-style: solid; }",
+  "outline-inset": ".outline-inset { outline-style: inset; }",
+  "outline-outset": ".outline-outset { outline-style: outset; }",
+  "outline-ridge": ".outline-ridge { outline-style: ridge; }",
+  "outline-groove": ".outline-groove { outline-style: groove; }"
 }

@@ -1,6 +1,4 @@
 .h-10 { height: 10px; } 
-.font-20 { font-size: 20px; } 
-.font-15 { font-size: 15px; } 
 .w-10 { width: 10px; } 
 .t-0 { top: 0px; } 
 .l-0 { left: 0px; } 
@@ -11,9 +9,13 @@
 .border-green { border-color: #0B9378; } 
 .border-red { border-color: red; } 
 .bg-info { background-color: #88bef5; } 
-[class~='aspect-1/5'] { aspect-ratio: 1/5; } 
-.aspect-3 { aspect-ratio: 3; } 
 .pt-10 { padding-top: 10px; } 
 .a-items-start {    align-items: flex-start;  } 
 .a-items-center {    align-items: center;  } 
 .h-11 { height: 11px; } 
+[class~='placeholder:color-red']::placeholder { color: red; } 
+[class~='placeholder::color-red']::placeholder { color: red; } 
+[class~='placeholder:::color-red']::placeholder { color: red; } 
+[class~='hover:placeholder:color-red']:hover::placeholder { color: red; } 
+[class~='placeholder:hover:color-red']::placeholder:hover { color: red; } 
+[class~='placeholder:hover:color-#fff']::placeholder:hover { color: #fff; } 

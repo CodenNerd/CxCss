@@ -12,6 +12,7 @@ function watchWorker() {
   });
 
   worker.postMessage({ command: 'CxCss start' });
+
   return worker;
 }
 
