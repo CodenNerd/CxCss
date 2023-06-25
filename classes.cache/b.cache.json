@@ -2029,5 +2029,18 @@
   "border-outset": ".border-outset { border-style: outset; }",
   "border-hidden": ".border-hidden { border-style: hidden; }",
   "border-ridge": ".border-ridge { border-style: ridge; }",
-  "border-groove": ".border-groove { border-style: groove; }"
+  "border-groove": ".border-groove { border-style: groove; }",
+  "backface-visible": ".backface-visible { backface-visibility: visible; }",
+  "backface-hidden": ".backface-hidden { backface-visibility: hidden; }",
+  "backface-initial": ".backface-initial { backface-visibility: initial; }",
+  "backface-inherit": ".backface-inherit { backface-visibility: inherit; }",
+  "border-block-none": ".border-block-none { border-block-style: none; }",
+  "border-block-solid": ".border-block-solid { border-block-style: solid; }",
+  "border-block-double": ".border-block-double { border-block-style: double; }",
+  "border-block-dotted": ".border-block-dotted { border-block-style: dotted; }",
+  "border-block-dashed": ".border-block-dashed { border-block-style: dashed; }",
+  "border-collapse-separate": ".border-collapse-separate { border-collapse: separate; }",
+  "border-collapse-collapse": ".border-collapse-collapse { border-collapse: collapse; }",
+  "border-collapse-initial": ".border-collapse-initial { border-collapse: initial; }",
+  "border-collapse-inherit": ".border-collapse-inherit { border-collapse: inherit; }"
 }

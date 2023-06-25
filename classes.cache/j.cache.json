@@ -1,4 +1,25 @@
 {
-  "j-content-between": ".j-content-between {    justify-content: space-between;  }",
-  "j-content-center": ".j-content-center {    justify-content: center;  }"
+  "j-content-between": ".j-content-between { justify-content: space-between; }",
+  "j-content-center": ".j-content-center { justify-content: center; }",
+  "j-content-initial": ".j-content-initial { justify-content: initial; }",
+  "j-content-inherit": ".j-content-inherit { justify-content: inherit; }",
+  "j-items-initial": ".j-items-initial { justify-items: initial; }",
+  "j-items-inherit": ".j-items-inherit { justify-items: inherit; }",
+  "j-self-initial": ".j-self-initial { justify-self: initial; }",
+  "j-self-inherit": ".j-self-inherit { justify-self: inherit; }",
+  "j-content-start": ".j-content-start { justify-content: flex-start; }",
+  "j-content-end": ".j-content-end { justify-content: flex-end; }",
+  "j-content-around": ".j-content-around { justify-content: space-around; }",
+  "j-content-evenly": ".j-content-evenly { justify-content: space-evenly; }",
+  "j-items-start": ".j-items-start { justify-items: flex-start; }",
+  "j-items-end": ".j-items-end { justify-items: flex-end; }",
+  "j-items-center": ".j-items-center { justify-items: center; }",
+  "j-items-baseline": ".j-items-baseline { justify-items: baseline; }",
+  "j-items-stretch": ".j-items-stretch { justify-items: stretch; }",
+  "j-self-auto": ".j-self-auto { justify-self: auto; }",
+  "j-self-start": ".j-self-start { justify-self: flex-start; }",
+  "j-self-end": ".j-self-end { justify-self: flex-end; }",
+  "j-self-center": ".j-self-center { justify-self: center; }",
+  "j-self-baseline": ".j-self-baseline { justify-self: baseline; }",
+  "j-self-stretch": ".j-self-stretch { justify-self: stretch; }"
 }

@@ -285,9 +285,7 @@ classes = {
   'h-full': `.h-full {
     height: 100%;
   }`,
-  'outline-none': `.outline-none {
-    outline: none;
-  }`,
+
   'border': `.border { 
     border: 1px solid; 
   }`,
@@ -301,6 +299,10 @@ classes = {
   'border-hidden': '.border-hidden { border-style: hidden; }',
   'border-ridge': '.border-ridge { border-style: ridge; }',
   'border-groove': '.border-groove { border-style: groove; }',
+
+  'outline-none': `.outline-none {
+    outline: none;
+  }`,  
   'outline': '.outline { outline: 1px solid; }',
   'outline-dotted': '.outline-dotted { outline-style: dotted; }',
   'outline-dashed': '.outline-dashed { outline-style: dashed; }',
@@ -312,8 +314,96 @@ classes = {
   'outline-groove': '.outline-groove { outline-style: groove; }',
 
 
+  'a-content-initial': '.a-content-initial { align-content: initial; }',
+  'a-content-inherit': '.a-content-inherit { align-content: inherit; }',
+  'a-items-initial': '.a-items-initial { align-items: initial; }',
+  'a-items-inherit': '.a-items-inherit { align-items: inherit; }',
+  'a-self-initial': '.a-self-initial { align-self: initial; }',
+  'a-self-inherit': '.a-self-inherit { align-self: inherit; }',
+  'a-content-center': '.a-content-center { align-content: center; }',
+  'a-content-flex-start': '.a-content-flex-start { align-content: flex-start; }',
+  'a-content-flex-end': '.a-content-flex-end { align-content: flex-end; }',
+  'a-content-stretch': '.a-content-stretch { align-content: stretch; }',
+  'a-content-between': '.a-content-between { align-content: space-between; }',
+  'a-content-around': '.a-content-around { align-content: space-around; }',
+  'a-content-evenly': '.a-content-evenly { align-content: space-evenly; }',
+  'a-items-start': '.a-items-start { align-items: flex-start; }',
+  'a-items-end': '.a-items-end { align-items: flex-end; }',
+  'a-items-center': '.a-items-center { align-items: center; }',
+  'a-items-baseline': '.a-items-baseline { align-items: baseline; }',
+  'a-items-stretch': '.a-items-stretch { align-items: stretch; }',
+  'a-self-auto': '.a-self-auto { align-self: auto; }',
+  'a-self-start': '.a-self-start { align-self: flex-start; }',
+  'a-self-end': '.a-self-end { align-self: flex-end; }',
+  'a-self-center': '.a-self-center { align-self: center; }',
+  'a-self-baseline': '.a-self-baseline { align-self: baseline; }',
+  'a-self-stretch': '.a-self-stretch { align-self: stretch; }',
+
+  'j-content-initial': '.j-content-initial { justify-content: initial; }',
+  'j-content-inherit': '.j-content-inherit { justify-content: inherit; }',
+  'j-items-initial': '.j-items-initial { justify-items: initial; }',
+  'j-items-inherit': '.j-items-inherit { justify-items: inherit; }',
+  'j-self-initial': '.j-self-initial { justify-self: initial; }',
+  'j-self-inherit': '.j-self-inherit { justify-self: inherit; }',
+  'j-content-start': '.j-content-start { justify-content: flex-start; }',
+  'j-content-end': '.j-content-end { justify-content: flex-end; }',
+  'j-content-center': '.j-content-center { justify-content: center; }',
+  'j-content-between': '.j-content-between { justify-content: space-between; }',
+  'j-content-around': '.j-content-around { justify-content: space-around; }',
+  'j-content-evenly': '.j-content-evenly { justify-content: space-evenly; }',
+  'j-items-start': '.j-items-start { justify-items: flex-start; }',
+  'j-items-end': '.j-items-end { justify-items: flex-end; }',
+  'j-items-center': '.j-items-center { justify-items: center; }',
+  'j-items-baseline': '.j-items-baseline { justify-items: baseline; }',
+  'j-items-stretch': '.j-items-stretch { justify-items: stretch; }',
+  'j-self-auto': '.j-self-auto { justify-self: auto; }',
+  'j-self-start': '.j-self-start { justify-self: flex-start; }',
+  'j-self-end': '.j-self-end { justify-self: flex-end; }',
+  'j-self-center': '.j-self-center { justify-self: center; }',
+  'j-self-baseline': '.j-self-baseline { justify-self: baseline; }',
+  'j-self-stretch': '.j-self-stretch { justify-self: stretch; }',
+
+  'all-initial': '.all-initial { all: initial; }',
+  'all-inherit': '.all-inherit { all: inherit; }',
+  'all-unset': '.all-unset { all: unset; }',
+  'all-revert': '.all-revert { all: revert; }',
+  'all-auto': '.all-auto { all: auto; }',
+  'all-unset': '.all-unset { all: unset; }',
+  'all-inherit': '.all-inherit { all: inherit; }',
+  'all-revert': '.all-revert { all: revert; }',
+  'all-none': '.all-none { all: none; }',
+
+
+  'backface-visible': '.backface-visible { backface-visibility: visible; }',
+  'backface-hidden': '.backface-hidden { backface-visibility: hidden; }',
+  'backface-initial': '.backface-initial { backface-visibility: initial; }',
+  'backface-inherit': '.backface-inherit { backface-visibility: inherit; }',
+
+
+  'border-block-none': '.border-block-none { border-block-style: none; }',
+  'border-block-solid': '.border-block-solid { border-block-style: solid; }',
+  'border-block-double': '.border-block-double { border-block-style: double; }',
+  'border-block-dotted': '.border-block-dotted { border-block-style: dotted; }',
+  'border-block-dashed': '.border-block-dashed { border-block-style: dashed; }',
+
+  'border-collapse-separate': '.border-collapse-separate { border-collapse: separate; }',
+  'border-collapse-collapse': '.border-collapse-collapse { border-collapse: collapse; }',
+  'border-collapse-initial': '.border-collapse-initial { border-collapse: initial; }',
+  'border-collapse-inherit': '.border-collapse-inherit { border-collapse: inherit; }',
+
+  // 'radius-yy-initial': '.radius-yy-initial { border-end-end-radius: initial; }',
+  // 'radius-yy-inherit': '.radius-yy-inherit { border-end-end-radius: inherit; }',
+
+
 };
 
+
+/**
+ * TODO:
+ * To revisit / Temporarily skipped
+ * - animation
+ * - keep a list of not-founds in memory to optimize compilation
+ */
 
 const cacheFolder = __dirname + '/../classes.cache';
 

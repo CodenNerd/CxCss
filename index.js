@@ -75,5 +75,6 @@ module.exports = {
  * - frames:from:mt-0 frames-from:bg-red frames:to:bg-green frames-to:mt-5
  * - from:mt-0 from:bg-red to:bg-green to:mt-5
  * - from:mt-0|bg-red to:bg-green|mt-5
+ * - inspect inspect-focus inspect-with-border inspect-with-bg
  * 
  */
