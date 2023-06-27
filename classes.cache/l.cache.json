@@ -604,5 +604,22 @@
   "line-height-0": ".line-height-0 { line-height: 0px; }",
   "light": ".light {    font-weight: light;  }",
   "lighter": ".lighter {    font-weight: lighter;  }",
-  "lowercase": ".lowercase {    text-transform: lowercase;  }"
+  "lowercase": ".lowercase {    text-transform: lowercase;  }",
+  "list-type-none": ".list-type-none { list-style-type: none; }",
+  "list-type-disc": ".list-type-disc { list-style-type: disc; }",
+  "list-type-circle": ".list-type-circle { list-style-type: circle; }",
+  "list-type-square": ".list-type-square { list-style-type: square; }",
+  "list-type-decimal": ".list-type-decimal { list-style-type: decimal; }",
+  "list-type-decimal-leading-zero": ".list-type-decimal-leading-zero { list-style-type: decimal-leading-zero; }",
+  "list-type-lower-roman": ".list-type-lower-roman { list-style-type: lower-roman; }",
+  "list-type-upper-roman": ".list-type-upper-roman { list-style-type: upper-roman; }",
+  "list-type-lower-alpha": ".list-type-lower-alpha { list-style-type: lower-alpha; }",
+  "list-type-upper-alpha": ".list-type-upper-alpha { list-style-type: upper-alpha; }",
+  "list-type-lower-greek": ".list-type-lower-greek { list-style-type: lower-greek; }",
+  "list-type-lower-latin": ".list-type-lower-latin { list-style-type: lower-latin; }",
+  "list-type-upper-latin": ".list-type-upper-latin { list-style-type: upper-latin; }",
+  "list-type-disclosure-closed": ".list-type-disclosure-closed { list-style-type: disclosure-closed; }",
+  "list-type-disclosure-open": ".list-type-disclosure-open { list-style-type: disclosure-open; }",
+  "list-position-inside": "list-position-inside { list-style-position: inside; }",
+  "list-position-outside": "list-position-outside { list-style-position: outside; }"
 }
