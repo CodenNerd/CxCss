@@ -1,0 +1,13 @@
+{
+  "visibility-visible": ".visibility-visible { visibility: visible; }",
+  "visibility-hidden": ".visibility-hidden { visibility: hidden; }",
+  "visibility-collapse": ".visibility-collapse { visibility: collapse; }",
+  "vertical-align-baseline": ".vertical-align-baseline { vertical-align: baseline; }",
+  "vertical-align-sub": ".vertical-align-sub { vertical-align: sub; }",
+  "vertical-align-super": ".vertical-align-super { vertical-align: super; }",
+  "vertical-align-text-top": ".vertical-align-text-top { vertical-align: text-top; }",
+  "vertical-align-text-bottom": ".vertical-align-text-bottom { vertical-align: text-bottom; }",
+  "vertical-align-middle": ".vertical-align-middle { vertical-align: middle; }",
+  "vertical-align-top": ".vertical-align-top { vertical-align: top; }",
+  "vertical-align-bottom": ".vertical-align-bottom { vertical-align: bottom; }"
+}

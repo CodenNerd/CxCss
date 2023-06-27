@@ -1,0 +1,4 @@
+{
+  "direction-ltr": ".direction-ltr { direction: ltr; }",
+  "direction-rtl": ".direction-rtl { direction: rtl; }"
+}
