@@ -80,7 +80,7 @@ const classPatterns = {
   '^grayscale-(\\d+%?)$': '.grayscale-$1 { backdrop-filter: grayscale($1); }',
   '^hue-rotate-(\\d+deg)$': '.hue-rotate-$1 { backdrop-filter: hue-rotate($1); }',
   '^invert-(\\d+%?)$': '.invert-$1 { backdrop-filter: invert($1); }',
-  '^opacity-(\\d+%?)$': '.opacity-$1 { backdrop-filter: opacity($1); }',
+  '^backdrop-opacity-(\\d+%?)$': '.backdrop-opacity-$1 { backdrop-filter: opacity($1); }',
   '^sepia-(\\d+%?)$': '.sepia-$1 { backdrop-filter: sepia($1); }',
   '^saturate-(\\d+%?)$': '.saturate-$1 { backdrop-filter: saturate($1); }',
 
@@ -88,6 +88,11 @@ const classPatterns = {
   [`^border-block-${digitPattern}$`]: '.border-block-$1 { border-block-width: $1px; }',
   [`^border-block-${colorPattern}$`]: '.border-block-$1 { border-block-color: $1; }',
 
+
+  [`^clip-circle-${digitPattern}$`]: ".clip-circle-$1 { clip-path: circle($1px); }",
+  [`^clip-circle-${digitPattern}p$`]: ".clip-circle-$1p { clip-path: circle($1%); }",
+
+  [`^shadow-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}-${colorPattern}$`]: ".shadow-$1-$2-$3-$4-$5 { box-shadow: $1px $2px $3px $4px $5; }",
 
 
 
