@@ -5,7 +5,7 @@
   "flex-row": ".flex-row {    flex-direction: row;  }",
   "float-right": ".float-right {    float: right;  }",
   "float-left": ".float-left {    float: left;  }",
-  "font-style-i": ".font-style-i {font-style: italic; }",
-  "font-style-n": ".font-style-n {font-style: normal; }",
-  "font-style-o": ".font-style-o {font-style: oblique; }"
+  "font-italic": ".font-italic {font-style: italic; }",
+  "font-normal": ".font-normal {font-style: normal; }",
+  "font-oblique": ".font-oblique {font-style: oblique; }"
 }
