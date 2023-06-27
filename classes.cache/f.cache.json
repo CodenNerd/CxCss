@@ -4,5 +4,8 @@
   "flex-col": ".flex-col {    flex-direction: column;  }",
   "flex-row": ".flex-row {    flex-direction: row;  }",
   "float-right": ".float-right {    float: right;  }",
-  "float-left": ".float-left {    float: left;  }"
+  "float-left": ".float-left {    float: left;  }",
+  "font-italic": ".font-italic {font-style: italic; }",
+  "font-normal": ".font-normal {font-style: normal; }",
+  "font-oblique": ".font-oblique {font-style: oblique; }"
 }

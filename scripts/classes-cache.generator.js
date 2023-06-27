@@ -431,7 +431,157 @@ classes = {
   'cursor-zoom-in': '.cursor-zoom-in { cursor: zoom-in; }',
   'cursor-zoom-out': '.cursor-zoom-out { cursor: zoom-out; }',
 
-  
+  'font-italic': '.font-italic {font-style: italic; }',
+  'font-normal': '.font-normal {font-style: normal; }',
+  'font-oblique': '.font-oblique {font-style: oblique; }',
+
+  'break-inside-auto': '.break-inside-auto { break-inside: auto; }',
+  'break-inside-avoid': '.break-inside-avoid { break-inside: avoid; }',
+  'break-inside-avoid-page': '.break-inside-avoid-page { break-inside: avoid-page; }',
+  'break-inside-avoid-column': '.break-inside-avoid-column { break-inside: avoid-column; }',
+
+
+  'caption-side-top': '.caption-side-top { caption-side: top; }',
+  'caption-side-bottom': '.caption-side-bottom { caption-side: bottom; }',
+
+  'clear-none': '.clear-none { clear: none; }',
+  'clear-left': '.clear-left { clear: left; }',
+  'clear-right': '.clear-right { clear: right; }',
+  'clear-both': '.clear-both { clear: both; }',
+  'clear-inline-start': '.clear-inline-start { clear: inline-start; }',
+  'clear-inline-end': '.clear-inline-end { clear: inline-end; }',
+
+  'column-fill-auto': '.column-fill-auto { column-fill: auto; }',
+  'column-fill-balance': '.column-fill-balance { column-fill: balance; }',
+
+  'column-rule-none': '.column-rule-none { column-rule-style: none; }',
+  'column-rule-hidden': '.column-rule-hidden { column-rule-style: hidden; }',
+  'column-rule-dotted': '.column-rule-dotted { column-rule-style: dotted; }',
+  'column-rule-dashed': '.column-rule-dashed { column-rule-style: dashed; }',
+  'column-rule-solid': '.column-rule-solid { column-rule-style: solid; }',
+  'column-rule-double': '.column-rule-double { column-rule-style: double; }',
+  'column-rule-groove': '.column-rule-groove { column-rule-style: groove; }',
+  'column-rule-ridge': '.column-rule-ridge { column-rule-style: ridge; }',
+  'column-rule-inset': '.column-rule-inset { column-rule-style: inset; }',
+  'column-rule-outset': '.column-rule-outset { column-rule-style: outset; }',
+
+  'column-span-none': '.column-span-none { column-span: none; }',
+  'column-span-all': '.column-span-all { column-span: all; }',
+
+  'direction-ltr': '.direction-ltr { direction: ltr; }',
+  'direction-rtl': '.direction-rtl { direction: rtl; }',
+
+  'empty-cells-show': '.empty-cells-show { empty-cells: show; }',
+  'empty-cells-hide': '.empty-cells-hide { empty-cells: hide; }',
+
+
+
+
+
+  'list-none': '.list-none { list-style-type: none; }',
+  'list-disc': '.list-disc { list-style-type: disc; }',
+  'list-circle': '.list-circle { list-style-type: circle; }',
+  'list-square': '.list-square { list-style-type: square; }',
+  'list-decimal': '.list-decimal { list-style-type: decimal; }',
+  'list-decimal-leading-zero': '.list-type-decimal-leading-zero { list-style-type: decimal-leading-zero; }',
+  'list-lower-roman': '.list-lower-roman { list-style-type: lower-roman; }',
+  'list-upper-roman': '.list-upper-roman { list-style-type: upper-roman; }',
+  'list-lower-alpha': '.list-lower-alpha { list-style-type: lower-alpha; }',
+  'list-upper-alpha': '.list-upper-alpha { list-style-type: upper-alpha; }',
+  'list-lower-greek': '.list-lower-greek { list-style-type: lower-greek; }',
+  'list-lower-latin': '.list-lower-latin { list-style-type: lower-latin; }',
+  'list-upper-latin': '.list-upper-latin { list-style-type: upper-latin; }',
+  'list-disclosure-closed': '.list-disclosure-closed { list-style-type: disclosure-closed; }',
+  'list-disclosure-open': '.list-disclosure-open { list-style-type: disclosure-open; }',
+
+  'list-inside': 'list-inside { list-style-position: inside; }',
+  'list-outside': 'list-outside { list-style-position: outside; }',
+
+  'object-fit-fill': '.object-fit-fill { object-fit: fill; }',
+  'object-fit-contain': '.object-fit-contain { object-fit: contain; }',
+  'object-fit-cover': '.object-fit-cover { object-fit: cover; }',
+  'object-fit-none': '.object-fit-none { object-fit: none; }',
+  'object-fit-scale-down': '.object-fit-scale-down { object-fit: scale-down; }',
+
+  'outline-style-none': '.outline-style-none { outline-style: none; }',
+  'outline-style-dotted': '.outline-style-dotted { outline-style: dotted; }',
+  'outline-style-dashed': '.outline-style-dashed { outline-style: dashed; }',
+  'outline-style-solid': '.outline-style-solid { outline-style: solid; }',
+  'outline-style-double': '.outline-style-double { outline-style: double; }',
+  'outline-style-groove': '.outline-style-groove { outline-style: groove; }',
+  'outline-style-ridge': '.outline-style-ridge { outline-style: ridge; }',
+  'outline-style-inset': '.outline-style-inset { outline-style: inset; }',
+  'outline-style-outset': '.outline-style-outset { outline-style: outset; }',
+  'outline-style-initial': '.outline-style-initial { outline-style: initial; }',
+  'outline-style-inherit': '.outline-style-inherit { outline-style: inherit; }',
+
+  'overflow-x-clip': 'overflow-x-clip { overflow-x: clip; }',
+  'overflow-y-clip': 'overflow-y-clip { overflow-y: clip; }',
+  'overflow-clip': 'overflow-clip { overflow: clip; }',
+  'overflow-visible': '.overflow-visible { overflow: visible; }',
+  'overflow-auto': '.overflow-auto { overflow: auto; }',
+  'overflow-x-visible': '.overflow-x-visible { overflow-x: visible; }',
+  'overflow-x-auto': '.overflow-x-auto { overflow-x: auto; }',
+  'overflow-y-visible': '.overflow-y-visible { overflow-y: visible; }',
+  'overflow-y-auto': '.overflow-y-auto { overflow-y: auto; }',
+  'overflow-wrap-normal': '.overflow-wrap-normal { overflow-wrap: normal; }',
+  'overflow-wrap-break': '.overflow-wrap-break { overflow-wrap: break-word; }',
+
+  'scroll-behavior-auto': '.scroll-behavior-auto { scroll-behavior: auto; }',
+  'scroll-behavior-smooth': '.scroll-behavior-smooth { scroll-behavior: smooth; }',
+
+  'text-none': '.text-none { text-decoration: none; }',
+  'text-underline': '.text-underline { text-decoration: underline; }',
+  'text-overline': '.text-overline { text-decoration: overline; }',
+  'text-line-through': '.text-line-through { text-decoration: line-through; }',
+
+  'text-style-solid': '.text-style-solid { text-decoration-style: solid; }',
+  'text-style-double': '.text-style-double { text-decoration-style: double; }',
+  'text-style-dotted': '.text-dotted { text-decoration-style: dotted; }',
+  'text-style-dashed': '.text-style-dashed { text-decoration-style: dashed; }',
+  'text-style-wavy': '.text-style-wavy { text-decoration-style: wavy; }',
+
+  'text-justify-auto': '.text-justify-auto { text-align: justify; }',
+  'text-justify-inter-word': '.text-justify-inter-word { text-align: justify; text-justify: inter-word; }',
+  'text-justify-inter-ideograph': '.text-justify-inter-ideograph { text-align: justify; text-justify: inter-ideograph; }',
+  'text-justify-inter-cluster': '.text-justify-inter-cluster { text-align: justify; text-justify: inter-cluster; }',
+  'text-justify-distribute': '.text-justify-distribute { text-align: justify; text-justify: distribute; }',
+  'text-justify-kashida': '.text-justify-kashida { text-align: justify; text-justify: kashida; }',
+  'text-justify-tibetan': '.text-justify-tibetan { text-align: justify; text-justify: auto; text-align-last: justify; }',
+
+  'text-orientation-mixed': '.text-orientation-mixed { text-orientation: mixed; }',
+  'text-orientation-upright': '.text-orientation-upright { text-orientation: upright; }',
+  'text-orientation-sideways': '.text-orientation-sideways { text-orientation: sideways; }',
+  'text-orientation-sideways-right': '.text-orientation-sideways-right { text-orientation: sideways-right; }',
+
+  'text-clip': '.text-clip { text-overflow: clip; }',
+  'text-ellipsis': '.text-ellipsis { text-overflow: ellipsis; }',
+
+  'white-space-normal': '.white-space-normal { white-space: normal; }',
+  'white-space-nowrap': '.white-space-nowrap { white-space: nowrap; }',
+  'white-space-pre': '.white-space-pre { white-space: pre; }',
+  'white-space-pre-line': '.white-space-pre-line { white-space: pre-line; }',
+  'white-space-pre-wrap': '.white-space-pre-wrap { white-space: pre-wrap; }',
+
+  'visibility-visible': '.visibility-visible { visibility: visible; }',
+  'visibility-hidden': '.visibility-hidden { visibility: hidden; }',
+  'visibility-collapse': '.visibility-collapse { visibility: collapse; }',
+
+  'vertical-align-baseline': '.vertical-align-baseline { vertical-align: baseline; }',
+  'vertical-align-sub': '.vertical-align-sub { vertical-align: sub; }',
+  'vertical-align-super': '.vertical-align-super { vertical-align: super; }',
+  'vertical-align-text-top': '.vertical-align-text-top { vertical-align: text-top; }',
+  'vertical-align-text-bottom': '.vertical-align-text-bottom { vertical-align: text-bottom; }',
+  'vertical-align-middle': '.vertical-align-middle { vertical-align: middle; }',
+  'vertical-align-top': '.vertical-align-top { vertical-align: top; }',
+  'vertical-align-bottom': '.vertical-align-bottom { vertical-align: bottom; }',
+
+  'word-break-normal': '.word-break-normal { word-break: normal; }',
+  'word-break-keep-all': '.word-break-keep-all { word-break: keep-all; }',
+  'word-break-break-all': '.word-break-break-all { word-break: break-all; }',
+  'word-wrap-normal': '.word-wrap-normal { word-wrap: normal; }',
+  'word-wrap-break-word': '.word-wrap-break-word { word-wrap: break-word; }',
+
 
 
 };
