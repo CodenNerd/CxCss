@@ -7,5 +7,8 @@
   "float-left": ".float-left {    float: left;  }",
   "font-italic": ".font-italic {font-style: italic; }",
   "font-normal": ".font-normal {font-style: normal; }",
-  "font-oblique": ".font-oblique {font-style: oblique; }"
+  "font-oblique": ".font-oblique {font-style: oblique; }",
+  "flex-nowrap": ".flex-nowrap { flex-wrap: nowrap; }",
+  "flex-wrap": ".flex-wrap { flex-wrap: wrap; }",
+  "flex-reverse": ".flex-reverse { flex-wrap: wrap-reverse; }"
 }

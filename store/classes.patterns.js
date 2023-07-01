@@ -1,5 +1,6 @@
 const digitPattern = '(\\d+)' 
 const colorPattern = '(\\#?[\\d\\w]+|\\w+\\(.+\\))'
+const lineStylePattern = '(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset)'
 
 const classPatterns = {
   [`^mt-${digitPattern}$`]: '.mt-$1 { margin-top: $1px; }',
@@ -94,12 +95,98 @@ const classPatterns = {
 
   [`^shadow-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}-${colorPattern}$`]: ".shadow-$1-$2-$3-$4-$5 { box-shadow: $1px $2px $3px $4px $5; }",
 
+  [`^caret-${colorPattern}}`]: "caret-$1 { caret-color: $1; }",
+  [`^clip-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".clip-$1-$2-$3-$4 { clip: rect($1px, $2px, $3px, $4px); }",
+  [`^column-count-${digitPattern}$`]: ".column-count-$1 { column-count: $1; }",
+  [`^column-gap-${digitPattern}$`]: ".column-gap-$1 { column-gap: $1px; }",
+  [`^column-rule-${digitPattern}-${lineStylePattern}-${colorPattern}$`]: ".column-rule-$1-$2-$3 { column-rule: $1px $2 $3; }",
+  [`^column-color-${colorPattern}$`]: ".column-color-$1 { column-rule-color: $1; }",
+  [`^column-style-${lineStylePattern}$`]: ".column-style-$1 { column-rule-style: $1; }",
+  [`^column-rule-width-${digitPattern}$`]: ".column-rule-width-$1 { column-rule-width: $1px; }",
+  [`^column-width-${digitPattern}$`]: ".column-width-$1 { column-width: $1px; }",
+  [`^columns-${digitPattern}-${digitPattern}$`]: ".columns-$1-$2 { columns: $1px $2; }",
+  [`^flex-basis-${digitPattern}$`]: ".flex-basis-$1 { flex-basis: $1px; }",
+  [`^flex-grow-${digitPattern}$`]: ".flex-grow-$1 { flex-grow: $1; }",
+  [`^flex-shrink-${digitPattern}$`]: ".flex-shrink-$1 { flex-shrink: $1; }",
+  [`^grid-area-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".grid-area-$1-$2-$3-$4 { grid-area: $1 / $2 / span $3 / span $; }",
+  [`^grid-auto-cols-${digitPattern}$`]: ".grid-auto-columns-$1 { grid-auto-columns: $1px; }",
+  [`^grid-auto-rows-${digitPattern}$`]: ".grid-auto-rows-$1 { grid-auto-rows: $1px; }",
+  [`^grid-cols-gap-${digitPattern}$`]: ".grid-cols-gap-$1 { grid-column-gap: $1px; }",
+  [`^grid-gap-${digitPattern}$`]: ".grid-gap-$1 { grid-gap: $1px; }",
+  [`^grid-row-gap-${digitPattern}$`]: ".grid-row-gap-$1 { grid-row-gap: $1px; }",
+  [`^inline-size-${digitPattern}$`]: ".inline-size-$1 { inline-size: $1px; }",
+  [`^inset-${digitPattern}$`]: ".inset-$1 { inset: $1px; }",
+  [`^inset-block-${digitPattern}$`]: ".inset-block-$1 { inset-block: $1px; }",
+  [`^inset-block-${digitPattern}$`]: ".inset-block-$1-$2 { inset-block: $1px $2px; }",
+  [`^inset-block-end${digitPattern}$`]: ".inset-block-end-$1 { inset-block-end: $1px; }",
+  [`^inset-block-start${digitPattern}$`]: ".inset-block-start-$1 { inset-block-start: $1px; }",
+  [`^inset-inline-${digitPattern}$`]: ".inset-inline-$1 { inset-inline: $1px; }",
+  [`^inset-inline-${digitPattern}$`]: ".inset-inline-$1-$2 { inset-inline: $1px $2px; }",
+  [`^inset-inline-end${digitPattern}$`]: ".inset-inline-end-$1 { inset-inline-end: $1px; }",
+  [`^inset-inline-start${digitPattern}$`]: ".inset-inline-start-$1 { inset-inline-start: $1px; }",
 
+  [`^letter-spacing-${digitPattern}$`]: ".letter-spacing-$1 { letter-spacing: $1px; }",
+  [`^max-block-size-${digitPattern}$`]: ".max-block-size-$1 { max-block-size: $1px; }",
+  [`^max-inline-size-${digitPattern}$`]: ".max-inline-size-$1 { max-inline-size: $1px; }",
+  [`^min-block-size-${digitPattern}$`]: ".min-block-size-$1 { min-block-size: $1px; }",
+  [`^min-inline-size-${digitPattern}$`]: ".min-inline-size-$1 { min-inline-size: $1px; }",
 
+  [`^object-position-${digitPattern}-${digitPattern}$`]: ".object-position-$1-$2 { object-position: $1px $2px; }",
+  [`^object-position-${digitPattern}-${digitPattern}(p)$`]: ".object-position-$1-$2p { object-position: $1px $2%; }",
+  [`^object-position-${digitPattern}(p)-${digitPattern}$`]: ".object-position-$1p-$2 { object-position: $1% $2px; }",
+  [`^object-position-${digitPattern}(p)-${digitPattern}(p)$`]: ".object-position-$1p-$2p { object-position: $1% $2%; }",
+  [`^offset-${digitPattern}$`]: ".offset-$1 { offset-distance: $1px; }",
+  [`^offset-${digitPattern}(p)$`]: ".offset-$1p { offset-distance: $1%; }",
 
+  [`^order-${digitPattern}$`]: ".order-$1 { order: $1; }",
 
+  [`^orphans-${digitPattern}$`]: ".orphans-$1 { orphans: $1; }",
 
+  [`^perspective-${digitPattern}$`]: ".perspective-$1 { perspective: $1px; }",
+  [`^perspective-${digitPattern}(p)$`]: ".perspective-$1p { perspective: $1%; }",
 
+  [`^row-gap-${digitPattern}$`]: ".row-gap-$1 { row-gap: $1px; }",
+
+  [`^scale-${digitPattern}$`]: ".scale-$1 { scale: $1; }",
+  [`^scale-${digitPattern}-${digitPattern}$`]: ".scale-$1-$2 { scale: $1 $2; }",
+  [`^scale-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".scale-$1-$2-$3 { scale: $1 $2 $3; }",
+
+  [`^scroll-m-${digitPattern}$`]: ".scroll-m-$1 { scroll-margin: $1px; }",
+  [`^scroll-m-${digitPattern}-${digitPattern}$`]: ".scroll-m-$1-$2 { scroll-margin: $1px $2px; }",
+  [`^scroll-m-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".scroll-m-$1-$2-$3 { scroll-margin: $1px $2px $3px; }",
+  [`^scroll-m-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".scroll-m-$1-$2-$3-$4 { scroll-margin: $1px $2px $3px $4px; }",
+  [`^scroll-mt-${digitPattern}$`]: ".scroll-mt-$1 { scroll-margin: $1px; }",
+  [`^scroll-mb-${digitPattern}$`]: ".scroll-mb-$1 { scroll-margin: $1px; }",
+  [`^scroll-ml-${digitPattern}$`]: ".scroll-ml-$1 { scroll-margin: $1px; }",
+  [`^scroll-mr-${digitPattern}$`]: ".scroll-mr-$1 { scroll-margin: $1px; }",
+
+  [`^scroll-p-${digitPattern}$`]: ".scroll-p-$1 { scroll-margin: $1px; }",
+  [`^scroll-p-${digitPattern}-${digitPattern}$`]: ".scroll-p-$1-$2 { scroll-margin: $1px $2px; }",
+  [`^scroll-p-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".scroll-p-$1-$2-$3 { scroll-margin: $1px $2px $3px; }",
+  [`^scroll-p-${digitPattern}-${digitPattern}-${digitPattern}-${digitPattern}$`]: ".scroll-p-$1-$2-$3-$4 { scroll-margin: $1px $2px $3px $4px; }",
+  [`^scroll-pt-${digitPattern}$`]: ".scroll-pt-$1 { scroll-margin: $1px; }",
+  [`^scroll-pb-${digitPattern}$`]: ".scroll-pb-$1 { scroll-margin: $1px; }",
+  [`^scroll-pl-${digitPattern}$`]: ".scroll-pl-$1 { scroll-margin: $1px; }",
+  [`^scroll-pr-${digitPattern}$`]: ".scroll-pr-$1 { scroll-margin: $1px; }",
+
+  [`^scrollbar-color-${colorPattern}$`]: ".scrollbar-color-$1 { scrollbar-color: $1; }",
+  [`^scrollbar-color-${colorPattern}-${colorPattern}$`]: ".scrollbar-color-$1-$2 { scrollbar-color: $1 $2; }",
+
+  [`^tab-size-${digitPattern}$`]: ".tab-size-$1 { tab-size: $1; }",
+
+  [`^text-dec-color-${colorPattern}$`]: ".text-dec-color-$1 { text-decoration-color: $1; }",
+  [`^text-dec-thickness-${digitPattern}$`]: ".text-dec-thickness-$1 { text-decoration-thickness: $1px; }",
+  [`^text-dec-thickness-${digitPattern}(p)$`]: ".text-dec-thickness-$1p { text-decoration-thickness: $1%; }",
+  [`^text-indent-${digitPattern}$`]: ".text-indent-$1 { text-indent: $1px; }",
+  [`^text-indent-${digitPattern}(p)$`]: ".text-indent-$1p { text-indent: $1%; }",
+
+  [`^text-shadow-${digitPattern}-${digitPattern}-${digitPattern}-${colorPattern}$`]: ".text-shadow-$1-$2-$3-$4 { text-shadow: $1px $2px $3px $4; }",
+  [`^text-shadow-${digitPattern}-${digitPattern}-${colorPattern}$`]: ".text-shadow-$1-$2-$3 { text-shadow: $1px $2px $3; }",
+  [`^text-shadow-${digitPattern}-${digitPattern}$`]: ".text-shadow-$1-$2 { text-shadow: $1px $2px; }",
+
+  [`^widows-${digitPattern}$`]: ".widows-$1 { widows: $1; }",
+
+  [`^word-spacing-${digitPattern}$`]: ".word-spacing-$1 { word-spacing: $1px; }"
 
 };
 

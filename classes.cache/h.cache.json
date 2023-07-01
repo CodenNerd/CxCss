@@ -1204,5 +1204,9 @@
   "h-800vh": ".h-800vh { height: 800vh; }",
   "h-fit": ".h-fit {    height: fit-content;  }",
   "hidden": ".hidden {    display: none;  }",
-  "h-full": ".h-full {    height: 100%;  }"
+  "h-full": ".h-full {    height: 100%;  }",
+  "h-auto": ".h-auto { height: auto; }",
+  "hyphens-none": ".hyphens-none { hyphens: none; }",
+  "hyphens-manual": ".hyphens-manual { hyphens: manual; }",
+  "hyphens-auto": ".hyphens-auto { hyphens: auto; }"
 }

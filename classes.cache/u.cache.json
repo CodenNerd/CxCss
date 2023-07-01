@@ -1,3 +1,16 @@
 {
-  "uppercase": ".uppercase {    text-transform: uppercase;  }"
+  "uppercase": ".uppercase {    text-transform: uppercase;  }",
+  "unicode-normal": ".unicode-normal { unicode-bidi: normal; }",
+  "unicode-embed": ".unicode-embed { unicode-bidi: embed; }",
+  "unicode-override": ".unicode-override { unicode-bidi: bidi-override; }",
+  "unicode-isolate": ".unicode-isolate { unicode-bidi: isolate; }",
+  "unicode-isolate-override": ".unicode-isolate-override { unicode-bidi: isolate-override; }",
+  "unicode-plaintext": ".unicode-plaintext { unicode-bidi: plaintext; }",
+  "user-select-auto": ".user-select-auto { user-select: auto; }",
+  "user-select-none": ".user-select-none { user-select: none; }",
+  "user-select-text": ".user-select-text { user-select: text; }",
+  "user-select-all": ".user-select-all { user-select: all; }",
+  "user-select-element": ".user-select-element { user-select: element; }",
+  "user-select-contain": ".user-select-contain { user-select: contain; }",
+  "user-select-contents": ".user-select-contents { user-select: contents; }"
 }

@@ -1233,5 +1233,20 @@
   "text-orientation-sideways": ".text-orientation-sideways { text-orientation: sideways; }",
   "text-orientation-sideways-right": ".text-orientation-sideways-right { text-orientation: sideways-right; }",
   "text-clip": ".text-clip { text-overflow: clip; }",
-  "text-ellipsis": ".text-ellipsis { text-overflow: ellipsis; }"
+  "text-ellipsis": ".text-ellipsis { text-overflow: ellipsis; }",
+  "table-layout-auto": ".table-layout-auto { table-layout: auto; }",
+  "table-layout-fixed": ".table-layout-fixed { table-layout: fixed; }",
+  "text-justify": ".text-justify { text-align: justify; }",
+  "text-align-last-auto": ".text-align-last-auto { text-align-last: auto; }",
+  "text-align-last-start": ".text-align-last-start { text-align-last: start; }",
+  "text-align-last-end": ".text-align-last-end { text-align-last: end; }",
+  "text-align-last-left": ".text-align-last-left { text-align-last: left; }",
+  "text-align-last-right": ".text-align-last-right { text-align-last: right; }",
+  "text-align-last-center": ".text-align-last-center { text-align-last: center; }",
+  "text-align-last-justify": ".text-align-last-justify { text-align-last: justify; }",
+  "text-align-last-match-parent": ".text-align-last-match-parent { text-align-last: match-parent; }",
+  "text-align-last-initial": ".text-align-last-initial { text-align-last: initial; }",
+  "text-align-last-inherit": ".text-align-last-inherit { text-align-last: inherit; }",
+  "text-align-last-unset": ".text-align-last-unset { text-align-last: unset; }",
+  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }"
 }
