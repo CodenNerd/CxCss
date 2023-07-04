@@ -822,5 +822,10 @@
   "word-break-keep-all": ".word-break-keep-all { word-break: keep-all; }",
   "word-break-break-all": ".word-break-break-all { word-break: break-all; }",
   "word-wrap-normal": ".word-wrap-normal { word-wrap: normal; }",
-  "word-wrap-break-word": ".word-wrap-break-word { word-wrap: break-word; }"
+  "word-wrap-break-word": ".word-wrap-break-word { word-wrap: break-word; }",
+  "writing-horizontal-tb": ".writing-horizontal-tb { writing-mode: horizontal-tb; }",
+  "writing-vertical-rl": ".writing-vertical-rl { writing-mode: vertical-rl; }",
+  "writing-vertical-lr": ".writing-vertical-lr { writing-mode: vertical-lr; }",
+  "writing-sideways-rl": ".writing-sideways-rl { writing-mode: sideways-rl; }",
+  "writing-sideways-lr": ".writing-sideways-lr { writing-mode: sideways-lr; }"
 }
