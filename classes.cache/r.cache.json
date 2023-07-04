@@ -1809,5 +1809,14 @@
   "rotate-z-0": ".rotate-z-0 { transform: rotateZ(0deg); }",
   "rotate-z--0": ".rotate-z--0 { transform: rotateZ(-0deg); }",
   "relative": ".relative {    position: relative;  }",
-  "round": ".round {    border-radius: 50%;  }"
+  "round": ".round {    border-radius: 50%;  }",
+  "resize-none": ".resize-none { resize: none; }",
+  "resize-both": ".resize-both { resize: both; }",
+  "resize-horizontal": ".resize-horizontal { resize: horizontal; }",
+  "resize-vertical": ".resize-vertical { resize: vertical; }",
+  "resize-block": ".resize-block { resize: block; }",
+  "resize-inline": ".resize-inline { resize: inline; }",
+  "resize-initial": ".resize-initial { resize: initial; }",
+  "resize-inherit": ".resize-inherit { resize: inherit; }",
+  "resize-unset": ".resize-unset { resize: unset; }"
 }

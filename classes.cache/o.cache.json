@@ -238,5 +238,19 @@
   "overflow-y-visible": ".overflow-y-visible { overflow-y: visible; }",
   "overflow-y-auto": ".overflow-y-auto { overflow-y: auto; }",
   "overflow-wrap-normal": ".overflow-wrap-normal { overflow-wrap: normal; }",
-  "overflow-wrap-break": ".overflow-wrap-break { overflow-wrap: break-word; }"
+  "overflow-wrap-break": ".overflow-wrap-break { overflow-wrap: break-word; }",
+  "object-top-left": ".object-top-left { object-position: top left; }",
+  "object-top-center": ".object-top-center { object-position: top center; }",
+  "object-top-right": ".object-top-right { object-position: top right; }",
+  "object-center-left": ".object-center-left { object-position: center left; }",
+  "object-center-center": ".object-center-center { object-position: center center; }",
+  "object-center-right": ".object-center-right { object-position: center right; }",
+  "object-bottom-left": ".object-bottom-left { object-position: bottom left; }",
+  "object-bottom-center": ".object-bottom-center { object-position: bottom center; }",
+  "object-bottom-right": ".object-bottom-right { object-position: bottom right; }",
+  "offset-auto": ".offset-auto { offset-anchor: auto; }",
+  "offset-center": ".offset-center { offset-anchor: center; }",
+  "overscroll-auto": ".overscroll-auto { overscroll-behavior: auto; }",
+  "overscroll-contain": ".overscroll-contain { overscroll-behavior: contain; }",
+  "overscroll-none": ".overscroll-none { overscroll-behavior: none; }"
 }

@@ -803,5 +803,9 @@
   "grid-0-cols-1fr": ".grid-0-cols-1fr { grid-template-columns: repeat(0, 1fr); }",
   "grid-col-span-0": ".grid-col-span-0 { grid-column: span 0; }",
   "gap-0": ".gap-0 { gap: 0px; }",
-  "grid": ".grid {    display: grid;  }"
+  "grid": ".grid {    display: grid;  }",
+  "grid-flow-row": ".grid-flow-row { grid-auto-flow: row; }",
+  "grid-flow-cols": ".grid-flow-cols { grid-auto-flow: column; }",
+  "grid-flow-row-dense": ".grid-flow-row-dense { grid-auto-flow: row dense; }",
+  "grid-flow-cols-dense": ".grid-flow-cols-dense { grid-auto-flow: column dense; }"
 }

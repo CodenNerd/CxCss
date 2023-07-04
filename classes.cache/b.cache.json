@@ -2046,5 +2046,21 @@
   "break-inside-auto": ".break-inside-auto { break-inside: auto; }",
   "break-inside-avoid": ".break-inside-avoid { break-inside: avoid; }",
   "break-inside-avoid-page": ".break-inside-avoid-page { break-inside: avoid-page; }",
-  "break-inside-avoid-column": ".break-inside-avoid-column { break-inside: avoid-column; }"
+  "break-inside-avoid-column": ".break-inside-avoid-column { break-inside: avoid-column; }",
+  "box-slice": ".box-slice { box-decoration-break: slice; }",
+  "box-clone": ".box-clone { box-decoration-break: clone; }",
+  "box-size-content": ".box-size-content { box-sizing: content-box; }",
+  "box-size-border": ".box-size-border { box-sizing: border-box; }",
+  "break-after-auto": ".break-after-auto { break-after: auto; }",
+  "break-after-avoid": ".break-after-avoid { break-after: avoid; }",
+  "break-after-always": ".break-after-always { break-after: always; }",
+  "break-after-all": ".break-after-all { break-after: all; }",
+  "break-after-page": ".break-after-page { break-after: avoid-page; }",
+  "break-after-column": ".break-after-column { break-after: avoid-column; }",
+  "break-before-auto": ".break-before-auto { break-before: auto; }",
+  "break-before-avoid": ".break-before-avoid { break-before: avoid; }",
+  "break-before-always": ".break-before-always { break-before: always; }",
+  "break-before-all": ".break-before-all { break-before: all; }",
+  "break-before-page": ".break-before-page { break-before: avoid-page; }",
+  "break-before-column": ".break-before-column { break-before: avoid-column; }"
 }

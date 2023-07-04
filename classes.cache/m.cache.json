@@ -4812,5 +4812,21 @@
   "max-h-800vh": ".max-h-800vh { max-height: 800vh; }",
   "min-h-800vh": ".min-h-800vh { min-height: 800vh; }",
   "max-w-800": ".max-w-800 { max-width: 800px; }",
-  "mx-auto": ".mx-auto {    margin-left: auto;    margin-right: auto;  }"
+  "mx-auto": ".mx-auto {    margin-left: auto;    margin-right: auto;  }",
+  "mix-normal": ".mix-normal { mix-blend-mode: normal; }",
+  "mix-multiply": ".mix-multiply { mix-blend-mode: multiply; }",
+  "mix-screen": ".mix-screen { mix-blend-mode: screen; }",
+  "mix-overlay": ".mix-overlay { mix-blend-mode: overlay; }",
+  "mix-darken": ".mix-darken { mix-blend-mode: darken; }",
+  "mix-lighten": ".mix-lighten { mix-blend-mode: lighten; }",
+  "mix-color-dodge": ".mix-color-dodge { mix-blend-mode: color-dodge; }",
+  "mix-color-burn": ".mix-color-burn { mix-blend-mode: color-burn; }",
+  "mix-hard-light": ".mix-hard-light { mix-blend-mode: hard-light; }",
+  "mix-soft-light": ".mix-soft-light { mix-blend-mode: soft-light; }",
+  "mix-difference": ".mix-difference { mix-blend-mode: difference; }",
+  "mix-exclusion": ".mix-exclusion { mix-blend-mode: exclusion; }",
+  "mix-hue": ".mix-hue { mix-blend-mode: hue; }",
+  "mix-saturation": ".mix-saturation { mix-blend-mode: saturation; }",
+  "mix-color": ".mix-color { mix-blend-mode: color; }",
+  "mix-luminosity": ".mix-luminosity { mix-blend-mode: luminosity; }"
 }

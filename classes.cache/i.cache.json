@@ -2,5 +2,11 @@
   "inline-block": ".inline-block {    display: inline-block;  }",
   "inline": ".inline {    display: inline;  }",
   "inline-flex": ".inline-flex {    display: inline-flex;  }",
-  "items-center": ".items-center {    align-items: center;  }"
+  "items-center": ".items-center {    align-items: center;  }",
+  "img-rendering-auto": ".img-rendering-auto { image-rendering: auto; }",
+  "img-rendering-crisp": ".img-rendering-crisp { image-rendering: crisp-edges; }",
+  "img-rendering-pix": ".img-rendering-pix { image-rendering: pixelated; }",
+  "img-rendering-smooth": ".img-rendering-smooth { image-rendering: smooth; }",
+  "isolation-auto": ".isolation-auto { isolation: auto; }",
+  "isolation-isolate": ".isolation-isolate { isolation: isolate; }"
 }
