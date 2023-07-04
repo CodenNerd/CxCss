@@ -2,7 +2,7 @@
 
 * [👋 Overview](README.md)
 
-## Overview
+## 👋 Overview
 
 * [💡 What we do](overview-1/what-we-do.md)
 * [✨ Our Features](overview-1/our-features.md)

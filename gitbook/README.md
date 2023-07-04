@@ -64,15 +64,13 @@ The `cx.config.json` file allows you to customize and configure cxcss according 
 
     ```json
     {
-      "watchDirectory": "src/styles"
+      "watchDirectory": "src/styles/"
     }
     ```
 
     In the above configuration, cxcss will only watch the `"src/styles"` directory for changes.
 
 By utilizing the `cx.config.json` file, you can tailor cxcss to your specific project needs and achieve desired configurations for output, watching directories, and preprocessor integration.
-
-
 
 ## Quick links
 
