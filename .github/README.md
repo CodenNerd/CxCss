@@ -1,1 +1,1 @@
-./gitbook/README.md
+../gitbook/README.md
