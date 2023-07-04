@@ -64,7 +64,7 @@ The `cx.config.json` file allows you to customize and configure cxcss according 
 
     ```json
     {
-      "watchDirectory": ["src/styles"]
+      "watchDirectory": "src/styles"
     }
     ```
 
