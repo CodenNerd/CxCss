@@ -11,7 +11,7 @@
 
 * [📪 Spacing](product-guides/spacing.md)
 * [📪 Typography](product-guides/Typography)
-  *[📪 Font Size](product-guides/Typography/font-size.md)
+  * [📪 Font Size](product-guides/Typography/font-size.md)
 * [📪 Temporary for Mudaththir](product-guides/temporary.md)
 * [📎 Understanding Projects](product-guides/understanding-projects.md)
 
