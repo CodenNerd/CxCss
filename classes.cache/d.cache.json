@@ -1,4 +1,9 @@
 {
   "direction-ltr": ".direction-ltr { direction: ltr; }",
-  "direction-rtl": ".direction-rtl { direction: rtl; }"
+  "direction-rtl": ".direction-rtl { direction: rtl; }",
+  "decoration-solid": ".decoration-solid { text-decoration-style: solid; }",
+  "decoration-double": ".decoration-double { text-decoration-style: double; }",
+  "decoration-dotted": ".decoration-dotted { text-decoration-style: dotted; }",
+  "decoration-dashed": ".decoration-dashed { text-decoration-style: dashed; }",
+  "decoration-wavy": ".decoration-wavy { text-decoration-style: wavy; }"
 }
