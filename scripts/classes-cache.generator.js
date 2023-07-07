@@ -795,7 +795,29 @@ classes = {
   'writing-vertical-rl': '.writing-vertical-rl { writing-mode: vertical-rl; }',
   'writing-vertical-lr': '.writing-vertical-lr { writing-mode: vertical-lr; }',
   'writing-sideways-rl': '.writing-sideways-rl { writing-mode: sideways-rl; }',
-  'writing-sideways-lr': '.writing-sideways-lr { writing-mode: sideways-lr; }'
+  'writing-sideways-lr': '.writing-sideways-lr { writing-mode: sideways-lr; }',
+  'bg-fixed': '.bg-fixed { background-attachment: fixed; }',
+  'bg-local': '.bg-local { background-attachment: local; }',
+  'bg-scroll': '.bg-scroll { background-attachment: scroll; }',
+  'bg-clip-border': '.bg-clip-border { background-clip: border-box; }',
+  'bg-clip-padding': '.bg-clip-padding { background-clip: padding-box; }',
+  'bg-clip-content': '.bg-clip-content { background-clip: content-box; }',
+  'bg-clip-text': '.bg-clip-text { background-clip: text; }',
+  'bg-origin-border': '.bg-origin-border { background-origin: border-box; }',
+  'bg-origin-padding': '.bg-origin-padding { background-origin: padding-box; }',
+  'bg-origin-content': '.bg-origin-content { background-origin: content-box; }',
+  'bg-pos-top-left': '.bg-pos-top-left { background-position: top left; }',
+  'bg-pos-top-center': '.bg-pos-top-center { background-position: top center; }',
+  'bg-pos-top-right': '.bg-pos-top-right { background-position: top right; }',
+  'bg-pos-center-left': '.bg-pos-center-left { background-position: center left; }',
+  'bg-pos-center': '.bg-pos-center { background-position: center; }',
+  'bg-pos-center-right': '.bg-pos-center-right { background-position: center right; }',
+  'bg-pos-bottom-left': '.bg-pos-bottom-left { background-position: bottom left; }',
+  'bg-pos-bottom-center': '.bg-pos-bottom-center { background-position: bottom center; }',
+  'bg-pos-bottom-right': '.bg-pos-bottom-right { background-position: bottom right; }',
+  'bg-image-none': '.bg-image-none { background-image: none; }'
+
+
 
 };
 
