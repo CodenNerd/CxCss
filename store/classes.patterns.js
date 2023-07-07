@@ -17,6 +17,7 @@ const classPatterns = {
   [`^pr-${digitPattern}$`]: '.pr-$1 { padding-right: $1px; }',
   [`^px-${digitPattern}$`]: '.px-$1 { padding-left: $1px; padding-right: $1px; }',
   [`^py-${digitPattern}$`]: '.py-$1 { padding-top: $1px; padding-bottom: $1px; }',
+  
   [`^w-${digitPattern}$`]: '.w-$1 { width: $1px; }',
   [`^w-${digitPattern}(p)$`]: '.w-$1p { width: $1%; }',
   [`^max-w-${digitPattern}(p)$`]: '.max-w-$1p { max-width: $1%; }',

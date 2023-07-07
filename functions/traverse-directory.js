@@ -1,6 +1,8 @@
 const { targetExtensions, processedFiles } = require("../store");
 const fs = require("fs");
 const path = require("path");
+const chokidar = require('chokidar');
+
 
 function traverseDirectory(dirPath, callback) {
   const files = fs.readdirSync(dirPath);
@@ -22,12 +24,47 @@ function traverseDirectory(dirPath, callback) {
   }
 }
 
+function recursivelyWatch(dirPath, callback) {
+  try {
+    fs.watch(dirPath, { recursive: true }, callback())
+  } catch (error) {
+    fs.readdir(directoryPath, { withFileTypes: true }, (error, files) => {
+      if (error) {
+        console.error(`Error reading directory ${directoryPath}:`, error);
+        return;
+      }
+  
+      files.forEach((file) => {
+        const filePath = path.join(directoryPath, file.name);
+  
+        if (file.isDirectory()) {
+          recursivelyWatch(filePath); // Recursively watch subdirectories
+        } else {
+          console.log('File changed:', filePath);
+          callback()
+        }
+      });
+    });
+  }
+}
+
+
 function watchDirectory(dirPath, callback) {
-  fs.watch(dirPath, { recursive: true }, (event, filename) => {
+
+  const watcher = chokidar.watch(dirPath, {
+    ignored: /[\/\\]\./, // ignore dotfiles
+    persistent: true,
+    // ignoreInitial: true, // optional, skips the initial scan
+    // depth: 99, // maximum depth of recursive directory watching
+  });
+
+
+  watcher.on('all', (event, filename) => {
     console.log("Watching...", event);
     const fileExtension = path.extname(filename);
     if (targetExtensions.includes(fileExtension)) {
-      const filePath = path.join(dirPath, filename);
+      // const filePath = path.join(dirPath, filename);
+      const filePath = path.join(filename);
       console.log({ filePath });
       const stats = fs.statSync(filePath);
 

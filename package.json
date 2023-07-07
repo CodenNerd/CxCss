@@ -1,6 +1,6 @@
 {
   "name": "cxcss",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "A classname-based css framework that gives you all the power that native css gives you right from your mark-up",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/CodenNerd/GenericCss/issues"
   },
-  "homepage": "https://github.com/CodenNerd/GenericCss#readme"
+  "homepage": "https://github.com/CodenNerd/GenericCss#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  }
 }
