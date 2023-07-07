@@ -78,6 +78,21 @@ Example usage:
 <div class="j-content-end">This container has items aligned at the end.</div>
 ```
 
+#### `.content-end`
+
+Sets the justify-content property to flex-end and align-content property to flex-end, aligning the content at the end of the container along both the main and cross axes.
+
+CSS equivalent: 
+```css
+justify-content: flex-end;
+align-content: flex-end;
+```
+
+Example usage:
+```html
+<div class="content-end">This container has its content aligned at the end along both the main and cross axes.</div>
+```
+
 #### `.j-content-around`
 
 Sets the justify-content property to space-around, distributing items evenly along the main axis with equal space around them.
