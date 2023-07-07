@@ -9,6 +9,15 @@
 
 ## Product Guides
 
+* [📪 Backgrounds](product-guides/backgrounds)
+  * [📪 Backgrounds Attachment](product-guides/bg-attachment.md)
+  * [📪 Backgrounds Clip](product-guides/bg-clip.md)
+  * [📪 Backgrounds Color](product-guides/bg-color.md)
+  * [📪 Backgrounds Image](product-guides/bg-image.md)
+  * [📪 Backgrounds Origin](product-guides/bg-origin.md)
+  * [📪 Backgrounds Position](product-guides/bg-position.md)
+  * [📪 Backgrounds Repeat](product-guides/bg-repeat.md)
+  * [📪 Backgrounds Size](product-guides/bg-size.md)
 * [📪 FlexBox and Grid](product-guides/flexbox-grid)
   * [📪 Align](product-guides/flexbox-grid/align.md)
   * [📪 Flex](product-guides/flexbox-grid/flex.md)
