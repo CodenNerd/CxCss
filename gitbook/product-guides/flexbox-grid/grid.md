@@ -1,5 +1,4 @@
 
-Certainly! Here's the documentation for the grid utility classes related to grid columns:
 
 ### Grid Columns Auto Classes
 
@@ -182,3 +181,22 @@ Example usage:
 
 These classes allow you to control the sizing and gaps within a grid container. The `.grid-auto-columns-{number}` class sets the size of automatically generated grid columns, while the `.grid-auto-rows-{number}` class sets the size of automatically generated grid rows. The `.grid-cols-gap-{number}` class controls the gap between grid columns, and the `.grid-row-gap-{number}` class controls the gap between grid rows. The `.grid-gap-{number}` class sets a uniform gap between both rows and columns.
  
+
+### Column Gap Class
+
+#### `.column-gap-{number}`
+
+Sets the gap between columns in a multi-column layout.
+
+CSS equivalent: `column-gap: {number}px;`
+
+Example usage:
+```html
+<div class="column-gap-20">This container has a column gap of 20 pixels.</div>
+```
+
+The `.column-gap-{number}` class allows you to control the gap between columns in a multi-column layout. It sets the `column-gap` CSS property, which determines the space between columns.
+
+You can specify the desired gap size by replacing `{number}` with the desired pixel value. For example, using `.column-gap-20` sets a column gap of 20 pixels.
+
+Feel free to ask if you have any further questions!
