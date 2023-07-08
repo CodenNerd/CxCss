@@ -39,6 +39,11 @@ function generate() {
     border-color: ${value};
   }
 
+  .accent-${color} {
+    accent-color: ${value};
+  }
+
+
 `)
 
     });

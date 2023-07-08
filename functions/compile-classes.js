@@ -8,7 +8,7 @@ const { pseudoSelectors } = require('../store/pseudo-selectors');
 function compileClasses(classNames) {
   const compiledClasses = {};
 
-  classNames.forEach(className => {
+  classNames?.forEach(className => {
     // check and return from cache
     console.log({compilationCache});
     if (compilationCache[className]) return;
