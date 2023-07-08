@@ -32,6 +32,7 @@ function build() {
   let globalCssContent = "";
   traverseDirectory(projectDirectory, (filePath) => {
     globalCssContent += runCompilation(filePath);
+    globalCssContent += runCompilation(filePath);
   });    
   fs.writeFileSync(outputCSSFile, globalCssContent);
 }
