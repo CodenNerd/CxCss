@@ -11,6 +11,7 @@ const {
   addToCompilationCache,
   resetCompilationCache,
 } = require("./functions/cache-manager");
+const log = require("./utils/log");
 
 const projectDirectory = config.watchDirectory;
 let countToRecompilation = 0;
@@ -38,6 +39,7 @@ function build() {
 function watch() {
   watchDirectory(projectDirectory, (filePath) => {
     const cssContent = runCompilation(filePath);
+    log(`${cssContent} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
     fs.appendFileSync(outputCSSFile, cssContent);
     if (countToRecompilation >= 50) {
       resetCompilationCache();

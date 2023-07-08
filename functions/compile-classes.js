@@ -10,7 +10,7 @@ function compileClasses(classNames) {
 
   classNames?.forEach(className => {
     // check and return from cache
-    console.log({compilationCache});
+    // console.log({compilationCache});
     if (compilationCache[className]) return;
 
     const gPos = className.indexOf('g|');

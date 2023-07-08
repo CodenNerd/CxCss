@@ -7,9 +7,12 @@ const processedFiles = {};
 const targetExtensions = [".jsx", ".tsx", ".html"]
 const outputCSSFile = (config.output || '') + 'index.css';
 
+const targetAttributes = new Set(['className=']);
+
 module.exports = {
     compilationCache,
     processedFiles,
     targetExtensions,
-    outputCSSFile
+    outputCSSFile,
+    targetAttributes
 }
