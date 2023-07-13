@@ -50,7 +50,7 @@ function generateClassDefinitionFromPattern (className) {
 
 function translateClassName(className) {
   console.log('Translating...');
-  const cssClassName = className.replace(/^.*?(g\|)/, '').replaceAll('!', '!important').replaceAll('|', "{") + "}";
+  const cssClassName = className.replace(/^.*?(g\|)/, '').replaceAll('!', '!important').replaceAll('|', "{").replaceAll('_', ' ') + "}";
   return `[class~='${className}']${cssClassName[0] == ':' ? '' : '{'}${cssClassName}`;
 }
 
