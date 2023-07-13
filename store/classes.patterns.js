@@ -20,6 +20,7 @@ const classPatterns = {
   
   [`^w-${digitPattern}$`]: '.w-$1 { width: $1px; }',
   [`^w-${digitPattern}(p)$`]: '.w-$1p { width: $1%; }',
+  [`^max-w-${digitPattern}$`]: '.max-w-$1 { max-width: $1px; }',
   [`^max-w-${digitPattern}(p)$`]: '.max-w-$1p { max-width: $1%; }',
   [`^min-w-${digitPattern}$`]: '.min-w-$1 { min-width: $1px; }',
   [`^min-w-${digitPattern}(p)$`]: '.min-w-$1p { min-width: $1%; }',
