@@ -1,4 +1,4 @@
-const digitPattern = '(\d+(?:\.\d+)?)' 
+const digitPattern = '(\\d+(?:\\.\\d+)?)' 
 const colorPattern = '(\\#?[\\d\\w]+|\\w+\\(.+\\))'
 const lineStylePattern = '(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset)'
 
@@ -72,8 +72,8 @@ const classPatterns = {
   [`^ratio-${digitPattern}$`]: '.ratio-$1 { aspect-ratio: $1; }',
   [`^block-size-${digitPattern}$`]: '.block-size-$1 { block-size: $1px; }',
   [`^color-${colorPattern}$`]: ".color-$1 { color: $1; }",
-  [`^bg-${digitPattern}$`]: ".bg-$1 { background-size: $1px; }",
-  [`^bg-${digitPattern}p$`]: ".bg-$1p { background-size: $1%; }",  
+  [`^bg-size-${digitPattern}$`]: ".bg-size-$1 { background-size: $1px; }",
+  [`^bg-size-${digitPattern}p$`]: ".bg-size-$1p { background-size: $1%; }",  
   [`^bg-${colorPattern}$`]: ".bg-$1 { background-color: $1; }",
   [`^border-${colorPattern}$`]: ".border-$1 { border-color: $1; }",
   [`^border-t-${colorPattern}$`]: ".border-t-$1 { border-top-color: $1; }",
