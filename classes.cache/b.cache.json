@@ -2082,5 +2082,8 @@
   "bg-pos-bottom-left": ".bg-pos-bottom-left { background-position: bottom left; }",
   "bg-pos-bottom-center": ".bg-pos-bottom-center { background-position: bottom center; }",
   "bg-pos-bottom-right": ".bg-pos-bottom-right { background-position: bottom right; }",
-  "bg-image-none": ".bg-image-none { background-image: none; }"
+  "bg-image-none": ".bg-image-none { background-image: none; }",
+  "bg-auto": ".bg-auto { background-size: auto; }",
+  "bg-cover": ".bg-cover { background-size: cover; }",
+  "bg-contain": ".bg-contain { background-size: contain; }"
 }
