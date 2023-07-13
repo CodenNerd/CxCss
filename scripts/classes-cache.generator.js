@@ -796,6 +796,11 @@ classes = {
   'writing-vertical-lr': '.writing-vertical-lr { writing-mode: vertical-lr; }',
   'writing-sideways-rl': '.writing-sideways-rl { writing-mode: sideways-rl; }',
   'writing-sideways-lr': '.writing-sideways-lr { writing-mode: sideways-lr; }',
+
+  'bg-auto': '.bg-auto { background-size: auto; }',
+  'bg-cover': '.bg-cover { background-size: cover; }',
+  'bg-contain': '.bg-contain { background-size: contain; }',
+
   'bg-fixed': '.bg-fixed { background-attachment: fixed; }',
   'bg-local': '.bg-local { background-attachment: local; }',
   'bg-scroll': '.bg-scroll { background-attachment: scroll; }',
