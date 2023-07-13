@@ -527,16 +527,16 @@ classes = {
   'scroll-behavior-auto': '.scroll-behavior-auto { scroll-behavior: auto; }',
   'scroll-behavior-smooth': '.scroll-behavior-smooth { scroll-behavior: smooth; }',
 
-  'text-none': '.text-none { text-decoration: none; }',
-  'text-underline': '.text-underline { text-decoration: underline; }',
-  'text-overline': '.text-overline { text-decoration: overline; }',
-  'text-line-through': '.text-line-through { text-decoration: line-through; }',
+  'no-decoration': '.no-decoration { text-decoration: none; }',
+  'underline': '.underline { text-decoration: underline; }',
+  'overline': '.overline { text-decoration: overline; }',
+  'line-through': '.line-through { text-decoration: line-through; }',
 
-  'text-style-solid': '.text-style-solid { text-decoration-style: solid; }',
-  'text-style-double': '.text-style-double { text-decoration-style: double; }',
-  'text-style-dotted': '.text-dotted { text-decoration-style: dotted; }',
-  'text-style-dashed': '.text-style-dashed { text-decoration-style: dashed; }',
-  'text-style-wavy': '.text-style-wavy { text-decoration-style: wavy; }',
+  'decoration-solid': '.decoration-solid { text-decoration-style: solid; }',
+  'decoration-double': '.decoration-double { text-decoration-style: double; }',
+  'decoration-dotted': '.decoration-dotted { text-decoration-style: dotted; }',
+  'decoration-dashed': '.decoration-dashed { text-decoration-style: dashed; }',
+  'decoration-wavy': '.decoration-wavy { text-decoration-style: wavy; }',
 
   'text-justify-auto': '.text-justify-auto { text-align: justify; }',
   'text-justify-inter-word': '.text-justify-inter-word { text-align: justify; text-justify: inter-word; }',
@@ -795,7 +795,29 @@ classes = {
   'writing-vertical-rl': '.writing-vertical-rl { writing-mode: vertical-rl; }',
   'writing-vertical-lr': '.writing-vertical-lr { writing-mode: vertical-lr; }',
   'writing-sideways-rl': '.writing-sideways-rl { writing-mode: sideways-rl; }',
-  'writing-sideways-lr': '.writing-sideways-lr { writing-mode: sideways-lr; }'
+  'writing-sideways-lr': '.writing-sideways-lr { writing-mode: sideways-lr; }',
+  'bg-fixed': '.bg-fixed { background-attachment: fixed; }',
+  'bg-local': '.bg-local { background-attachment: local; }',
+  'bg-scroll': '.bg-scroll { background-attachment: scroll; }',
+  'bg-clip-border': '.bg-clip-border { background-clip: border-box; }',
+  'bg-clip-padding': '.bg-clip-padding { background-clip: padding-box; }',
+  'bg-clip-content': '.bg-clip-content { background-clip: content-box; }',
+  'bg-clip-text': '.bg-clip-text { background-clip: text; }',
+  'bg-origin-border': '.bg-origin-border { background-origin: border-box; }',
+  'bg-origin-padding': '.bg-origin-padding { background-origin: padding-box; }',
+  'bg-origin-content': '.bg-origin-content { background-origin: content-box; }',
+  'bg-pos-top-left': '.bg-pos-top-left { background-position: top left; }',
+  'bg-pos-top-center': '.bg-pos-top-center { background-position: top center; }',
+  'bg-pos-top-right': '.bg-pos-top-right { background-position: top right; }',
+  'bg-pos-center-left': '.bg-pos-center-left { background-position: center left; }',
+  'bg-pos-center': '.bg-pos-center { background-position: center; }',
+  'bg-pos-center-right': '.bg-pos-center-right { background-position: center right; }',
+  'bg-pos-bottom-left': '.bg-pos-bottom-left { background-position: bottom left; }',
+  'bg-pos-bottom-center': '.bg-pos-bottom-center { background-position: bottom center; }',
+  'bg-pos-bottom-right': '.bg-pos-bottom-right { background-position: bottom right; }',
+  'bg-image-none': '.bg-image-none { background-image: none; }'
+
+
 
 };
 

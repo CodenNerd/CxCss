@@ -252,5 +252,6 @@
   "offset-center": ".offset-center { offset-anchor: center; }",
   "overscroll-auto": ".overscroll-auto { overscroll-behavior: auto; }",
   "overscroll-contain": ".overscroll-contain { overscroll-behavior: contain; }",
-  "overscroll-none": ".overscroll-none { overscroll-behavior: none; }"
+  "overscroll-none": ".overscroll-none { overscroll-behavior: none; }",
+  "overline": ".overline { text-decoration: overline; }"
 }

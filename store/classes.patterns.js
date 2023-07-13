@@ -73,6 +73,11 @@ const classPatterns = {
   [`^color-${colorPattern}$`]: ".color-$1 { color: $1; }",
   [`^bg-${colorPattern}$`]: ".bg-$1 { background-color: $1; }",
   [`^border-${colorPattern}$`]: ".border-$1 { border-color: $1; }",
+  [`^border-t-${colorPattern}$`]: ".border-t-$1 { border-top-color: $1; }",
+  [`^border-b-${colorPattern}$`]: ".border-b-$1 { border-bottom-color: $1; }",
+  [`^border-l-${colorPattern}$`]: ".border-l-$1 { border-left-color: $1; }",
+  [`^border-r-${colorPattern}$`]: ".border-r-$1 { border-right-color: $1; }",
+
   [`^accent-${colorPattern}$`]: ".accent-\\$1 { accent-color: $1; }",
   // '((?:blur|brightness|contrast|drop-shadow|grayscale|hue-rotate|invert|opacity|sepia|saturate)-[^|]+)': '.$1 { backdrop-filter:  }'
 
@@ -189,7 +194,9 @@ const classPatterns = {
 
   [`^widows-${digitPattern}$`]: ".widows-$1 { widows: $1; }",
 
-  [`^word-spacing-${digitPattern}$`]: ".word-spacing-$1 { word-spacing: $1px; }"
+  [`^word-spacing-${digitPattern}$`]: ".word-spacing-$1 { word-spacing: $1px; }",
+  [`bg-image-${digitPattern}`]: '.bg-image-$1 { background-image: url("$1"); }',
+
 
 };
 
