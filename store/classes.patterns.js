@@ -1,4 +1,4 @@
-const digitPattern = '(\\d+)' 
+const digitPattern = '(\d+(?:\.\d+)?)' 
 const colorPattern = '(\\#?[\\d\\w]+|\\w+\\(.+\\))'
 const lineStylePattern = '(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset)'
 
@@ -39,7 +39,8 @@ const classPatterns = {
   [`^grid-${digitPattern}-cols-1fr$`]: '.grid-$1-cols-1fr { grid-template-columns: repeat($1, 1fr); }',
   [`^grid-col-span-${digitPattern}$`]: '.grid-col-span-$1 { grid-column: span $1; }',
   [`^gap-${digitPattern}$`]: '.gap-$1 { gap: $1; }',
-  [`^radius-${digitPattern}$`]: '.radius-$1 { border-radius: $1; }',
+  [`^radius-${digitPattern}$`]: '.radius-$1 { border-radius: $1px; }',
+  [`^radius-${digitPattern}p$`]: '.radius-$1 { border-radius: $1%; }',
   [`^radius-t-r-${digitPattern}$`]: '.radius-t-r-$1 { border-top-right-radius: $1  }',
   [`^radius-t-l-${digitPattern}$`]: '.radius-t-l-$1 { border-top-left-radius: $1  }',
   [`^radius-b-r-${digitPattern}$`]: '.radius-b-r-$1 { border-bottom-right-radius: $1  }',
