@@ -1,4 +1,4 @@
 {
-  "no-scrollbar": ".no-scrollbar {    &::-webkit-scrollbar {      width: 0px;    }  }",
+  "no-scrollbar": ".no-scrollbar::-webkit-scrollbar {     width: 0px;      height: 0px;     display: none;  }",
   "no-decoration": ".no-decoration { text-decoration: none; }"
 }

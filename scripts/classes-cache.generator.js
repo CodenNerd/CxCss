@@ -229,10 +229,10 @@ classes = {
   'scroll-x': `.scroll-x {
     overflow-x: scroll;
   }`,
-  'no-scrollbar': `.no-scrollbar {
-    &::-webkit-scrollbar {
-      width: 0px;
-    }
+  'no-scrollbar': `.no-scrollbar::-webkit-scrollbar {
+     width: 0px; 
+     height: 0px;
+     display: none;
   }`,
   'bg-success': `.bg-success {
     background-color: ${colorsDefault.success};
