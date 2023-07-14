@@ -286,8 +286,10 @@ classes = {
     height: 100%;
   }`,
 
-  'border': `.border { 
-    border: 1px solid; 
+  'border': `@layer base {
+    .border { 
+      border: 1px solid; 
+    }
   }`,
   'border-dashed': '.border-dashed { border-style: dashed; }',
   'border-dotted': '.border-dotted { border-style: dotted; }',

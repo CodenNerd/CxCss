@@ -622,6 +622,6 @@
   "list-disclosure-open": ".list-disclosure-open { list-style-type: disclosure-open; }",
   "list-inside": "list-inside { list-style-position: inside; }",
   "list-outside": "list-outside { list-style-position: outside; }",
-  "line-height-normal": ".line-height-normal { line-height: normal; }",
-  "line-through": ".line-through { text-decoration: line-through; }"
+  "line-through": ".line-through { text-decoration: line-through; }",
+  "line-height-normal": ".line-height-normal { line-height: normal; }"
 }

@@ -1,5 +1,6 @@
 {
   "uppercase": ".uppercase {    text-transform: uppercase;  }",
+  "underline": ".underline { text-decoration: underline; }",
   "unicode-normal": ".unicode-normal { unicode-bidi: normal; }",
   "unicode-embed": ".unicode-embed { unicode-bidi: embed; }",
   "unicode-override": ".unicode-override { unicode-bidi: bidi-override; }",
@@ -12,6 +13,5 @@
   "user-select-all": ".user-select-all { user-select: all; }",
   "user-select-element": ".user-select-element { user-select: element; }",
   "user-select-contain": ".user-select-contain { user-select: contain; }",
-  "user-select-contents": ".user-select-contents { user-select: contents; }",
-  "underline": ".underline { text-decoration: underline; }"
+  "user-select-contents": ".user-select-contents { user-select: contents; }"
 }

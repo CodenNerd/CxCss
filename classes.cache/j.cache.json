@@ -1,6 +1,4 @@
 {
-  "j-content-between": ".j-content-between { justify-content: space-between; }",
-  "j-content-center": ".j-content-center { justify-content: center; }",
   "j-content-initial": ".j-content-initial { justify-content: initial; }",
   "j-content-inherit": ".j-content-inherit { justify-content: inherit; }",
   "j-items-initial": ".j-items-initial { justify-items: initial; }",
@@ -9,6 +7,8 @@
   "j-self-inherit": ".j-self-inherit { justify-self: inherit; }",
   "j-content-start": ".j-content-start { justify-content: flex-start; }",
   "j-content-end": ".j-content-end { justify-content: flex-end; }",
+  "j-content-center": ".j-content-center { justify-content: center; }",
+  "j-content-between": ".j-content-between { justify-content: space-between; }",
   "j-content-around": ".j-content-around { justify-content: space-around; }",
   "j-content-evenly": ".j-content-evenly { justify-content: space-evenly; }",
   "j-items-start": ".j-items-start { justify-items: flex-start; }",

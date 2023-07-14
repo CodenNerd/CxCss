@@ -29,7 +29,7 @@ function runCompilation(filePath) {
 }
 
 function build() {
-  let globalCssContent = "";
+  let globalCssContent = "@layer base;\n";
   traverseDirectory(projectDirectory, (filePath) => {
     globalCssContent += runCompilation(filePath);
     globalCssContent += runCompilation(filePath);

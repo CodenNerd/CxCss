@@ -1228,7 +1228,6 @@
   "table-layout-auto": ".table-layout-auto { table-layout: auto; }",
   "table-layout-fixed": ".table-layout-fixed { table-layout: fixed; }",
   "text-justify": ".text-justify { text-align: justify; }",
-  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }",
   "text-last-auto": ".text-last-auto { text-align-last: auto; }",
   "text-last-start": ".text-last-start { text-align-last: start; }",
   "text-last-end": ".text-last-end { text-align-last: end; }",
@@ -1239,5 +1238,6 @@
   "text-last-match-parent": ".text-last-match-parent { text-align-last: match-parent; }",
   "text-last-initial": ".text-last-initial { text-align-last: initial; }",
   "text-last-inherit": ".text-last-inherit { text-align-last: inherit; }",
-  "text-last-unset": ".text-last-unset { text-align-last: unset; }"
+  "text-last-unset": ".text-last-unset { text-align-last: unset; }",
+  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }"
 }

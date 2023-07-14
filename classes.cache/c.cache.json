@@ -47,8 +47,6 @@
   "clear-inline-end": ".clear-inline-end { clear: inline-end; }",
   "column-fill-auto": ".column-fill-auto { column-fill: auto; }",
   "column-fill-balance": ".column-fill-balance { column-fill: balance; }",
-  "column-span-none": ".column-span-none { column-span: none; }",
-  "column-span-all": ".column-span-all { column-span: all; }",
   "column-rule-none": ".column-rule-none { column-rule-style: none; }",
   "column-rule-hidden": ".column-rule-hidden { column-rule-style: hidden; }",
   "column-rule-dotted": ".column-rule-dotted { column-rule-style: dotted; }",
@@ -58,5 +56,7 @@
   "column-rule-groove": ".column-rule-groove { column-rule-style: groove; }",
   "column-rule-ridge": ".column-rule-ridge { column-rule-style: ridge; }",
   "column-rule-inset": ".column-rule-inset { column-rule-style: inset; }",
-  "column-rule-outset": ".column-rule-outset { column-rule-style: outset; }"
+  "column-rule-outset": ".column-rule-outset { column-rule-style: outset; }",
+  "column-span-none": ".column-span-none { column-span: none; }",
+  "column-span-all": ".column-span-all { column-span: all; }"
 }

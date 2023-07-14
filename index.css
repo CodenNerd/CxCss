@@ -1,3 +1,4 @@
+@layer base;
 .h-10 { height: 10px; } 
 .w-10 { width: 10px; } 
 .t-0 { top: 0px; } 
@@ -26,5 +27,4 @@
 .h-90 { height: 90px; } 
 .text-center {    text-align: center;  } 
 .text-right {    text-align: right;  } 
-.t-5 { top: 5px; } 
-.t-55 { top: 55px; } 
+.border {     border: 1px solid;   } 

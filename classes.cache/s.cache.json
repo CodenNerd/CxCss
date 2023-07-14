@@ -1,10 +1,10 @@
 {
   "static": ".static {    position: static;  }",
   "sticky": ".sticky {    position: sticky;  }",
+  "space-between": ".space-between {    justify-content: space-between;  }",
   "scroll-y": ".scroll-y {    overflow-y: scroll;  }",
   "scroll-x": ".scroll-y {    overflow-x: scroll;  }",
   "sentence-case": ".sentence-case {    text-transform: lowercase;  }  .sentence-case:first-letter {    text-transform: uppercase;  }",
-  "space-between": ".space-between {    justify-content: space-between;  }",
   "scroll-behavior-auto": ".scroll-behavior-auto { scroll-behavior: auto; }",
   "scroll-behavior-smooth": ".scroll-behavior-smooth { scroll-behavior: smooth; }",
   "scroll-snap-none": ".scroll-snap-none { scroll-snap-align: none; }",
