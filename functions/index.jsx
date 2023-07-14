@@ -1,5 +1,5 @@
 <>
-<div className={`pt-10 a-items-start a-items-center h-1 ${index ==
+<div className={`pt-10 border a-items-start a-items-center h-1 ${index ==
      2 ? 
      'flex': 
      'grid'

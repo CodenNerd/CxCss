@@ -1,6 +1,6 @@
 {
   "name": "cxcss",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "A classname-based css framework that gives you all the power that native css gives you right from your mark-up",
   "main": "index.js",
   "scripts": {
