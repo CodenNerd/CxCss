@@ -3,7 +3,7 @@
   "sticky": ".sticky {    position: sticky;  }",
   "space-between": ".space-between {    justify-content: space-between;  }",
   "scroll-y": ".scroll-y {    overflow-y: scroll;  }",
-  "scroll-x": ".scroll-y {    overflow-x: scroll;  }",
+  "scroll-x": ".scroll-x {    overflow-x: scroll;  }",
   "sentence-case": ".sentence-case {    text-transform: lowercase;  }  .sentence-case:first-letter {    text-transform: uppercase;  }",
   "scroll-behavior-auto": ".scroll-behavior-auto { scroll-behavior: auto; }",
   "scroll-behavior-smooth": ".scroll-behavior-smooth { scroll-behavior: smooth; }",

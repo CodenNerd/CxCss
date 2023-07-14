@@ -226,7 +226,7 @@ classes = {
   'scroll-y': `.scroll-y {
     overflow-y: scroll;
   }`,
-  'scroll-x': `.scroll-y {
+  'scroll-x': `.scroll-x {
     overflow-x: scroll;
   }`,
   'no-scrollbar': `.no-scrollbar {
