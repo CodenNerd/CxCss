@@ -50,6 +50,9 @@ for (let i = loopEnd; i >= loopStart; i--) {
   classes[`grid-${i}-cols-auto`] = `.grid-${i}-cols-auto { grid-template-columns: repeat(${i}, auto); }`;
   classes[`grid-${i}-cols-1fr`] = `.grid-${i}-cols-1fr { grid-template-columns: repeat(${i}, 1fr); }`;
   classes[`grid-col-span-${i}`] = `.grid-col-span-${i} { grid-column: span ${i}; }`;
+  classes[`grid-row-span-${i}`] = `.grid-row-span-${i} { grid-row: span ${i}; }`;
+  // classes[`col-span-${i}`] = `.col-span-${i} { grid-column: span ${i}; }`;
+  // classes[`row-span-${i}`] = `.row-span-${i} { grid-row: span ${i}; }`;
   classes[`gap-${i}`] = `.gap-${i} { gap: ${i}px; }`;
   // classes[`border-radius-${i}`] = `.border-radius-${i}, .b-radius-${i}, .radius-${i} { border-radius: ${i}px; }`;
   // classes[`border-b-r-${i}`] = `.border-b-r-${i} { border-bottom-right-radius: ${i}px; }`;
