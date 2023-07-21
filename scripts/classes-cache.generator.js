@@ -49,6 +49,9 @@ for (let i = loopEnd; i >= loopStart; i--) {
   classes[`z--${i}`] = `.z-index--${i}, .z--${i} { z-index: -${i}; }`;
   classes[`grid-${i}-cols-auto`] = `.grid-${i}-cols-auto { grid-template-columns: repeat(${i}, auto); }`;
   classes[`grid-${i}-cols-1fr`] = `.grid-${i}-cols-1fr { grid-template-columns: repeat(${i}, 1fr); }`;
+  classes[`grid-${i}-rows-auto`] = `.grid-${i}-rows-auto { grid-template-rows: repeat(${i}, auto); }`;
+  classes[`grid-${i}-rows-1fr`] = `.grid-${i}-rows-1fr { grid-template-rows: repeat(${i}, 1fr); }`;
+
   classes[`grid-col-span-${i}`] = `.grid-col-span-${i} { grid-column: span ${i}; }`;
   classes[`grid-row-span-${i}`] = `.grid-row-span-${i} { grid-row: span ${i}; }`;
   // classes[`col-span-${i}`] = `.col-span-${i} { grid-column: span ${i}; }`;
