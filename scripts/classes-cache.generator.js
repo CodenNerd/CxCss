@@ -44,7 +44,9 @@ for (let i = loopEnd; i >= loopStart; i--) {
   classes[`r-${i}`] = `.r-${i} { right: ${i}px; }`;
   classes[`r-${i}p`] = `.r-${i}p { right: ${i}%; }`;
   classes[`z-index-${i}`] = `.z-index-${i}, .z-${i} { z-index: ${i}; }`;
+  classes[`z-${i}`] = `.z-index-${i}, .z-${i} { z-index: ${i}; }`;
   classes[`z-index--${i}`] = `.z-index--${i}, .z--${i} { z-index: -${i}; }`;
+  classes[`z--${i}`] = `.z-index--${i}, .z--${i} { z-index: -${i}; }`;
   classes[`grid-${i}-cols-auto`] = `.grid-${i}-cols-auto { grid-template-columns: repeat(${i}, auto); }`;
   classes[`grid-${i}-cols-1fr`] = `.grid-${i}-cols-1fr { grid-template-columns: repeat(${i}, 1fr); }`;
   classes[`grid-col-span-${i}`] = `.grid-col-span-${i} { grid-column: span ${i}; }`;
@@ -289,6 +291,38 @@ classes = {
   'border': `@layer base {
     .border { 
       border: 1px solid; 
+    }
+  }`,
+  'border-r': `@layer base {
+    .border-r { 
+      border-right: 1px solid; 
+    }
+  }`,
+  'border-l': `@layer base {
+    .border-l { 
+      border-left: 1px solid; 
+    }
+  }`,
+  'border-t': `@layer base {
+    .border-t { 
+      border-top: 1px solid; 
+    }
+  }`,
+  'border-b': `@layer base {
+    .border-b { 
+      border-bottom: 1px solid; 
+    }
+  }`,
+  'border-x': `@layer base {
+    .border-x { 
+      border-left: 1px solid; 
+      border-right: 1px solid; 
+    }
+  }`,
+  'border-y': `@layer base {
+    .border-y { 
+      border-bottom: 1px solid; 
+      border-top: 1px solid;
     }
   }`,
   'border-dashed': '.border-dashed { border-style: dashed; }',

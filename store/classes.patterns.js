@@ -1,4 +1,4 @@
-const digitPattern = '(\\d+(?:\\.\\d+)?)' 
+const digitPattern = '(-?\\d+(?:\\.\\d+)?)' 
 const colorPattern = '(\\#?[\\d\\w]+|\\w+\\(.+\\))'
 const lineStylePattern = '(none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset)'
 
