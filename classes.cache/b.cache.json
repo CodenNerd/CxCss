@@ -476,5 +476,11 @@
   "bg-pos-bottom-left": ".bg-pos-bottom-left { background-position: bottom left; }",
   "bg-pos-bottom-center": ".bg-pos-bottom-center { background-position: bottom center; }",
   "bg-pos-bottom-right": ".bg-pos-bottom-right { background-position: bottom right; }",
-  "bg-image-none": ".bg-image-none { background-image: none; }"
+  "bg-image-none": ".bg-image-none { background-image: none; }",
+  "border-r": "@layer base {    .border-r {       border-right: 1px solid;     }  }",
+  "border-l": "@layer base {    .border-l {       border-left: 1px solid;     }  }",
+  "border-t": "@layer base {    .border-t {       border-top: 1px solid;     }  }",
+  "border-b": "@layer base {    .border-b {       border-bottom: 1px solid;     }  }",
+  "border-x": "@layer base {    .border-x {       border-left: 1px solid;       border-right: 1px solid;     }  }",
+  "border-y": "@layer base {    .border-y {       border-bottom: 1px solid;       border-top: 1px solid;    }  }"
 }
