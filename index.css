@@ -6,8 +6,8 @@
 .b-0 { bottom: 0px; } 
 .h-0 { height: 0px; } 
 .r-0 { right: 0px; } 
-.bg-green { background-color: #0B9378; } 
-.border-green { border-color: #0B9378; } 
+.bg-green { background-color: green; } 
+.border-green { border-color: green; } 
 .border-red { border-color: red; } 
 .bg-info { background-color: #88bef5; } 
 .pt-10 { padding-top: 10px; } 
@@ -22,7 +22,6 @@
 .bg-red { background-color: red; } 
 .accent-\blue { accent-color: blue; } 
 .bg-indigo { background-color: indigo; } 
-.text-black { color: #000000; } 
 .flex-row {    flex-direction: row;  } 
 .pt-8000 { padding-top: 8000px; } 
 .h-90 { height: 90px; } 
