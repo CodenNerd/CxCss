@@ -4,7 +4,7 @@ const compilationCache = {}
 
 const processedFiles = {};
 
-const targetExtensions = [".jsx", ".tsx", ".html"]
+const targetExtensions = [".jsx", ".tsx", ".html", ".cx"]
 const outputCSSFile = (config.output || '') + 'index.css';
 
 const targetAttributes = new Set(['className=']);

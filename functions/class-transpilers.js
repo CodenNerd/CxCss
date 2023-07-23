@@ -18,7 +18,10 @@ function getClassDefinitionFromCache(className) {
   if (fs.existsSync(cacheFilePath)) {
     const cacheFileContent = fs.readFileSync(cacheFilePath, 'utf8');
     const cacheData = JSON.parse(cacheFileContent);
-    return cacheData[className] || generateClassDefinitionFromPattern(className);
+    if (cacheData[className]) return cacheData[className];
+    const aliasCacheFileContent = fs.readFileSync(path.join(__dirname, '/../classes.cache/aliases.cache.json' ), 'utf8');
+    const aliasCacheData = JSON.parse(aliasCacheFileContent);
+    return aliasCacheData[className] || generateClassDefinitionFromPattern(className);
   }
 
   return generateClassDefinitionFromPattern(className);;

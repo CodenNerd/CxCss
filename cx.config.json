@@ -18,5 +18,9 @@
     "faint-grey": "#DADADA",
     "green": "#0B9378",
     "red": "red"
-  }
+  },
+  "aliases" : {
+
+  },
+  "aliasesFile": "./aliases.cx"
 }

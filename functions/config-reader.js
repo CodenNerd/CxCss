@@ -15,7 +15,11 @@ let config = {
         "md": "768px",
         "lg": "992px",
         "xl": "1200px" 
-    }
+    },
+    "aliases" : {
+        "cx-example": "hidden"
+    },
+    "aliasesFile": "./aliases.cx"
 }
 try {
     const configData = fs.readFileSync(configFile, 'utf8');

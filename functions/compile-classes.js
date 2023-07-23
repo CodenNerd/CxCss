@@ -5,13 +5,19 @@ const { getClassDefinitionFromCache, translateClassName } = require('./class-tra
 const { pseudoSelectors } = require('../store/pseudo-selectors');
 
 
-function compileClasses(classNames) {
+function compileClasses(classNames, returnPreviouslyCached = false) {
   const compiledClasses = {};
 
   classNames?.forEach(className => {
     // check and return from cache
     // console.log({compilationCache});
-    if (compilationCache[className]) return;
+    if (compilationCache[className]) {
+      console.log({ [className]: compilationCache[className] })
+      if (returnPreviouslyCached) {
+        compiledClasses[className] = compilationCache[className];
+      }
+      return
+    };
 
     const gPos = className.indexOf('g|');
     if ( gPos == 0) {

@@ -11,12 +11,13 @@
 .border-red { border-color: red; } 
 .bg-info { background-color: #88bef5; } 
 .pt-10 { padding-top: 10px; } 
+@layer base {    .border {       border: 1px solid;     }  } 
 .a-items-start { align-items: flex-start; } 
 .a-items-center { align-items: center; } 
 .h-1 { height: 1px; } 
 .flex {    display: flex;  } 
 .grid {    display: grid;  } 
-[class~='placeholder:hover:color-#fff']::placeholder:hover { color: #fff; } 
+.placeholder\:hover\:color-\#fff::placeholder:hover { color: #fff; } 
 .b-900 { bottom: 900px; } 
 .bg-red { background-color: red; } 
 .accent-\blue { accent-color: blue; } 
@@ -27,4 +28,3 @@
 .h-90 { height: 90px; } 
 .text-center {    text-align: center;  } 
 .text-right {    text-align: right;  } 
-@layer base {    .border {       border: 1px solid;     }  } 

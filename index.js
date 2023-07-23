@@ -12,6 +12,7 @@ const {
   resetCompilationCache,
 } = require("./functions/cache-manager");
 const log = require("./utils/log");
+const { compileClassNameAliases } = require("./functions/compile-aliases");
 
 const projectDirectory = config.watchDirectory;
 let countToRecompilation = 0;
@@ -48,6 +49,14 @@ function watch() {
       countToRecompilation = 0;
     }
   });
+  if (config.aliasesFile) {
+    watchDirectory(config.aliasesFile, (filePath) => {
+      const cssContent = compileClassNameAliases();
+      resetCompilationCache();
+      build()
+      log(`${Object.values(cssContent || {}).join(' \n ')}`, cssContent ? 'green' : 'info')
+    });
+  }
 }
 
 function exec() {
