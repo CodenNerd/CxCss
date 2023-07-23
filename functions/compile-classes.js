@@ -4,6 +4,11 @@ const { compilationCache } = require('../store');
 const { getClassDefinitionFromCache, translateClassName } = require('./class-transpilers');
 const { pseudoSelectors } = require('../store/pseudo-selectors');
 
+function escapeClassName(classname) {
+  const unallowedRegex = /[^a-zA-Z0-9-_]/g;
+  const escapedClassname = classname.replace(unallowedRegex, match => '\\' + match);
+  return escapedClassname;
+}
 
 function compileClasses(classNames, returnPreviouslyCached = false) {
   const compiledClasses = {};
@@ -12,7 +17,6 @@ function compileClasses(classNames, returnPreviouslyCached = false) {
     // check and return from cache
     // console.log({compilationCache});
     if (compilationCache[className]) {
-      console.log({ [className]: compilationCache[className] })
       if (returnPreviouslyCached) {
         compiledClasses[className] = compilationCache[className];
       }
@@ -45,7 +49,7 @@ function compileClasses(classNames, returnPreviouslyCached = false) {
     const sanitizedClassName = classNameArray[classNameArray.length - 1];
     const classDefinition = getClassDefinitionFromCache(sanitizedClassName);
     if (classDefinition) {
-      const classNameModified = `[class~='${className}']${classNameArray.reduce((cumm, curr, i) => {
+      const classNameModified = `.${escapeClassName(className)}${classNameArray.reduce((cumm, curr, i) => {
         if (i === classNameArray.length - 1) return cumm + '';
         return cumm + (pseudoSelectors[curr] || '')
       }, '')}`
