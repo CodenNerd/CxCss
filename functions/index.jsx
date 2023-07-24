@@ -7,6 +7,6 @@
 
      </div>
 
-     <div className={variable + "bg-red accent-blue cx-example-alias-2"}></div>
+     <div className={variable + "bg-red accent-blue cx-example-alias-2 app-width"}></div>
      <div variable={variableClassName + "bg-indigo boo text-black accent-blue flex-row pt-8000 h-90 b-0 t-0 text-center text-right "}></div>
 </>

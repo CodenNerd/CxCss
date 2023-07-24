@@ -30,6 +30,9 @@ function runCompilation(filePath) {
 }
 
 function build() {
+  if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
+    compileClassNameAliases();
+  }
   let globalCssContent = "@layer base;\n";
   traverseDirectory(projectDirectory, (filePath) => {
     globalCssContent += runCompilation(filePath);
@@ -39,6 +42,15 @@ function build() {
 }
 
 function watch() {
+  if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
+    watchDirectory(config.aliasesFile, (filePath) => {
+      const cssContent = compileClassNameAliases();
+      resetCompilationCache();
+      build()
+      log(`${Object.values(cssContent || {}).join(' \n ')}`, cssContent ? 'green' : 'info')
+    });
+  }  
+  
   watchDirectory(projectDirectory, (filePath) => {
     const cssContent = runCompilation(filePath);
     log(`${cssContent} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
@@ -49,14 +61,6 @@ function watch() {
       countToRecompilation = 0;
     }
   });
-  if (config.aliasesFile) {
-    watchDirectory(config.aliasesFile, (filePath) => {
-      const cssContent = compileClassNameAliases();
-      resetCompilationCache();
-      build()
-      log(`${Object.values(cssContent || {}).join(' \n ')}`, cssContent ? 'green' : 'info')
-    });
-  }
 }
 
 function exec() {

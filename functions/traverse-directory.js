@@ -60,7 +60,7 @@ function watchDirectory(dirPath, callback) {
 
 
   watcher.on('all', (event, filename) => {
-    console.log("Watching...", event);
+    // console.log("Watching...", event);
     const fileExtension = path.extname(filename);
     if (targetExtensions.includes(fileExtension)) {
       // const filePath = path.join(dirPath, filename);

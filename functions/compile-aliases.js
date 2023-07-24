@@ -57,7 +57,7 @@ function getAliasesInput() {
     ${aliasesStringFromFile}
     `
 }
-console.log(compileClassNameAliases())
+// console.log(compileClassNameAliases())
 
 module.exports = {
     compileClassNameAliases

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const deepMerge = require('../utils/deep-merge');
+const log = require('../utils/log');
 const configFile = 'cx.config.json';
 
 let config = {
@@ -25,7 +26,7 @@ try {
     config = Object.assign({}, config)
     deepMerge(config, JSON.parse(configData));
 } catch(error) {
-    console.error('Warning: Error parsing cx.config.json', error.message);
+    log('Warning: Error parsing cx.config.json', 'warning');
 }
 
 module.exports = config;
