@@ -37,7 +37,8 @@ function compileClassNameAliases() {
         const { alias, definition } = interpretAlias(line);
         result[alias] = definition;
     }
-    fs.writeFileSync(path.join(__dirname, '../classes.cache/aliases.cache.json'),  JSON.stringify(result, null, 2))
+    console.log({__dirname, p: path.join(__dirname, '/../classes.cache/aliases.cache.json') })
+    fs.writeFileSync(path.join(__dirname, '/../classes.cache/aliases.cache.json'), JSON.stringify(result, null, 2))
     return result;
 }
 
