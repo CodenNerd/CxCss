@@ -30,9 +30,9 @@ function runCompilation(filePath) {
 }
 
 function build() {
-  if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
-    compileClassNameAliases();
-  }
+  // if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
+  //   compileClassNameAliases();
+  // }
   let globalCssContent = "@layer base;\n";
   traverseDirectory(projectDirectory, (filePath) => {
     globalCssContent += runCompilation(filePath);
