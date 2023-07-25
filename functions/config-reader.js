@@ -19,7 +19,7 @@ let config = {
     },
     "aliases" : {
     },
-    "aliasesFile": ""
+    "aliasesFile": "./aliases.cx"
 }
 try {
     const configData = fs.readFileSync(configFile, 'utf8');

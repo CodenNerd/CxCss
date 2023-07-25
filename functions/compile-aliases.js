@@ -4,6 +4,7 @@ const config = require("./config-reader");
 const { extractRules } = require("./extract-definition-rule");
 const fs = require('fs');
 const log = require("../utils/log");
+const safelyWriteFileSync = require("../utils/safely-write-file-sync");
 
 function interpretAlias(line) {
     try {
@@ -28,6 +29,8 @@ function interpretAlias(line) {
 
 }
 
+
+
 function compileClassNameAliases() {
     const input = getAliasesInput()
     const lines = input.trim().split('\n');
@@ -37,10 +40,11 @@ function compileClassNameAliases() {
         const { alias, definition } = interpretAlias(line);
         result[alias] = definition;
     }
-    console.log({__dirname, p: path.join(__dirname, '/../classes.cache/aliases.cache.json') })
-    fs.writeFileSync(path.join(__dirname, '/../classes.cache/aliases.cache.json'), JSON.stringify(result, null, 2))
+
+    safelyWriteFileSync('./.cxcss/aliases.cache.json', JSON.stringify(result, null, 2))
     return result;
 }
+
 
 function getAliasesInput() {
     const aliasesObjectAsString = JSON.stringify(config.aliases || {}).replaceAll(/[{"}]/gs, '').replaceAll(',', ' \n')
