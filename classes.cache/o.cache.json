@@ -253,5 +253,18 @@
   "offset-center": ".offset-center { offset-anchor: center; }",
   "overscroll-auto": ".overscroll-auto { overscroll-behavior: auto; }",
   "overscroll-contain": ".overscroll-contain { overscroll-behavior: contain; }",
-  "overscroll-none": ".overscroll-none { overscroll-behavior: none; }"
+  "overscroll-none": ".overscroll-none { overscroll-behavior: none; }",
+  "origin-left": ".origin-left { transform-origin: left; }",
+  "origin-right": ".origin-right { transform-origin: right; }",
+  "origin-top": ".origin-top { transform-origin: top; }",
+  "origin-bottom": ".origin-bottom { transform-origin: bottom; }",
+  "origin-center": ".origin-center { transform-origin: center; }",
+  "origin-top-center": ".origin-top-center { transform-origin: top center; }",
+  "origin-bottom-center": ".origin-bottom-center { transform-origin: bottom center; }",
+  "origin-left-top": ".origin-left-top { transform-origin: left top; }",
+  "origin-left-bottom": ".origin-left-bottom { transform-origin: left bottom; }",
+  "origin-right-top": ".origin-right-top { transform-origin: right top; }",
+  "origin-right-bottom": ".origin-right-bottom { transform-origin: right bottom; }",
+  "overflow-anchor-auto": ".overflow-anchor-auto { overflow-anchor: auto; }",
+  "overflow-anchor-none": ".overflow-anchor-none { overflow-anchor: none; }"
 }

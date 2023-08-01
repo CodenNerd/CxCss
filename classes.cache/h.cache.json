@@ -1208,5 +1208,9 @@
   "h-auto": ".h-auto { height: auto; }",
   "hyphens-none": ".hyphens-none { hyphens: none; }",
   "hyphens-manual": ".hyphens-manual { hyphens: manual; }",
-  "hyphens-auto": ".hyphens-auto { hyphens: auto; }"
+  "hyphens-auto": ".hyphens-auto { hyphens: auto; }",
+  "hanging-punctuation-none": ".hanging-punctuation-none { hanging-punctuation: none; }",
+  "hanging-punctuation-first": ".hanging-punctuation-first { hanging-punctuation: first; }",
+  "hanging-punctuation-last": ".hanging-punctuation-last { hanging-punctuation: last; }",
+  "hanging-punctuation-force-end": ".hanging-punctuation-force-end { hanging-punctuation: force-end; }"
 }
