@@ -827,5 +827,13 @@
   "writing-vertical-rl": ".writing-vertical-rl { writing-mode: vertical-rl; }",
   "writing-vertical-lr": ".writing-vertical-lr { writing-mode: vertical-lr; }",
   "writing-sideways-rl": ".writing-sideways-rl { writing-mode: sideways-rl; }",
-  "writing-sideways-lr": ".writing-sideways-lr { writing-mode: sideways-lr; }"
+  "writing-sideways-lr": ".writing-sideways-lr { writing-mode: sideways-lr; }",
+  "will-auto": ".will-auto { will-change: auto; }",
+  "will-scroll": ".will-scroll { will-change: scroll-position; }",
+  "will-content-scroll": ".will-content-scroll { will-change: contents, scroll-position; }",
+  "will-opacity": ".will-opacity { will-change: opacity; }",
+  "will-transform": ".will-transform { will-change: transform; }",
+  "will-top": ".will-top { will-change: top; }",
+  "will-left": ".will-left { will-change: left; }",
+  "will-box-shadow": ".will-box-shadow { will-change: box-shadow; }"
 }

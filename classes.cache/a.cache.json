@@ -29,5 +29,6 @@
   "all-unset": ".all-unset { all: unset; }",
   "all-inherit": ".all-inherit { all: inherit; }",
   "all-revert": ".all-revert { all: revert; }",
-  "all-none": ".all-none { all: none; }"
+  "all-none": ".all-none { all: none; }",
+  "appearance-none": ".appearance-none { appearance: none; }"
 }
