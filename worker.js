@@ -1,9 +1,6 @@
-// const { exec } = require("./generic-static-analysis");
-
-// exec()
 const { Worker } = require('worker_threads');
 
- let worker;
+let worker;
 function watchWorker() {
   worker = new Worker(__dirname + '/./watch.js');
 

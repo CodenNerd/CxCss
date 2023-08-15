@@ -10,22 +10,23 @@ function escapeClassName(classname) {
   return escapedClassname;
 }
 
-function compileClasses(classNames, returnPreviouslyCached = false) {
-  const compiledClasses = {};
+function compileClasses(classNames, returnCached = false) {
+  const compiledClasses = {}
+  const compiledDefaultClasses = {};
+  compiledClasses['default'] = compiledDefaultClasses
 
   classNames?.forEach(className => {
-    // check and return from cache
-    // console.log({compilationCache});
+    let targetStore = compiledDefaultClasses;
     if (compilationCache[className]) {
-      if (returnPreviouslyCached) {
-        compiledClasses[className] = compilationCache[className];
+      if (returnCached) {
+        compiledDefaultClasses[className] = compilationCache[className];
       }
       return
     };
 
     const gPos = className.indexOf('g|');
     if ( gPos == 0) {
-      compiledClasses[className] = translateClassName(className);
+      compiledDefaultClasses[className] = translateClassName(className);
       
       return 
     }
@@ -36,13 +37,20 @@ function compileClasses(classNames, returnPreviouslyCached = false) {
     let breakpointWrapperEnd = ''
     if (classNameArray.length !== 1) {
       if (config?.breakpoints?.[classNameArray[0]] !== undefined) {
+        console.log({brkpt: config?.breakpoints?.[classNameArray[0]] })
+
         breakpointWrapperStart += `@media only screen and (min-width: ${config?.breakpoints?.[classNameArray[0]]}) { `
         breakpointWrapperEnd += ' }'
       }
     }
+    if (breakpointWrapperStart) {
+      compiledClasses[classNameArray[0]] = compiledClasses[classNameArray[0]] ? compiledClasses[classNameArray[0]] : {};
+      targetStore = compiledClasses[classNameArray[0]]
+    }
+
 
     if (gPos !== -1) {
-      compiledClasses[className] = `${breakpointWrapperStart}${translateClassName(className)}${breakpointWrapperEnd}`;
+      targetStore[className] = `${breakpointWrapperStart}${translateClassName(className)}${breakpointWrapperEnd}`;
       return 
     }
 
@@ -55,10 +63,9 @@ function compileClasses(classNames, returnPreviouslyCached = false) {
       }, '')}`
 
       const ruleDefinition = classNameArray.length == 1 ? classDefinition : classDefinition.replace(`.${sanitizedClassName}`, classNameModified)
-      compiledClasses[className] = `${breakpointWrapperStart}${ruleDefinition}${breakpointWrapperEnd}`;
+      targetStore[className] = `${breakpointWrapperStart}${ruleDefinition}${breakpointWrapperEnd}`;
     }
   });
-
   return compiledClasses;
 }
 

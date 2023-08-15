@@ -6,66 +6,95 @@ const {
   watchDirectory,
 } = require("./functions/traverse-directory");
 const fs = require("fs");
-const { outputCSSFile } = require("./store");
+const { outputCSSFile, compilationCache } = require("./store");
 const {
   addToCompilationCache,
   resetCompilationCache,
 } = require("./functions/cache-manager");
 const log = require("./utils/log");
 const { compileClassNameAliases } = require("./functions/compile-aliases");
+const deepMerge = require("./utils/deep-merge");
 
 const projectDirectory = config.watchDirectory;
-let countToRecompilation = 0;
 
-function runCompilation(filePath) {
+function runCompilation(filePath, previousCompilationObject = {}, ignoreCache = false) {
   const classNames = analyzeFile(filePath);
-  const compiledClasses = compileClasses(classNames);
+  console.log({classNames})
+  const compiledClasses = compileClasses(classNames, ignoreCache);
+  console.log({compiledClasses})
+  const cssObject = {}
   let cssContent = "";
-  for (const className in compiledClasses) {
-    addToCompilationCache(className, compiledClasses[className]);
-    cssContent += `${compiledClasses[className]} \n`;
-    countToRecompilation++;
+  for (const breakpoint in compiledClasses) {
+    console.log({breakpoint})
+    if(!cssObject[breakpoint]) {
+      cssObject[breakpoint] = ""
+    }
+    for (const className in compiledClasses[breakpoint]) {
+      console.log({className})
+      addToCompilationCache(className, compiledClasses[breakpoint][className]);
+      const content = compilationCache[className] || compiledClasses[breakpoint][className] || ''
+      console.log({content})
+      if (content) cssObject[breakpoint] += `${content} \n`;
+    }    
   }
-  return cssContent;
+
+  console.log({cssObject});
+  return cssObject;
+}
+
+function getOutputCssString(cssContentObject) {
+  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ console.log({curr: breakpoint}); return cumm += `\n${cssContentObject[breakpoint] || ''}`}, "@layer base;\n")
 }
 
 function build() {
+  resetCompilationCache();
   if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
     compileClassNameAliases();
   }
-  let globalCssContent = "@layer base;\n";
+  let globalCssContentObject = {}
   traverseDirectory(projectDirectory, (filePath) => {
-    globalCssContent += runCompilation(filePath);
-    globalCssContent += runCompilation(filePath);
+    deepMerge(globalCssContentObject, runCompilation(filePath), true) ;
+    deepMerge(globalCssContentObject, runCompilation(filePath), true);
   });    
-  fs.writeFileSync(outputCSSFile, globalCssContent);
+  fs.writeFileSync(outputCSSFile, getOutputCssString(globalCssContentObject));
+  return globalCssContentObject;
 }
 
 function watch() {
+  let globalCssContentObject = {}
+  let currentFileCssContentObject = {}
+  let currentFile = ''
+  globalCssContentObject = build();
   if (config.aliasesFile || Object.keys(config.aliases || {}).length) {
     watchDirectory(config.aliasesFile, (filePath) => {
       const cssContent = compileClassNameAliases();
-      resetCompilationCache();
       build()
       log(`${Object.values(cssContent || {}).join(' \n ')}`, cssContent ? 'green' : 'info')
     });
-  }  
+  }
   
   watchDirectory(projectDirectory, (filePath) => {
-    const cssContent = runCompilation(filePath);
-    log(`${cssContent} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
-    fs.appendFileSync(outputCSSFile, cssContent);
-    if (countToRecompilation >= 50) {
-      resetCompilationCache();
-      build();
-      countToRecompilation = 0;
+    if (currentFile !== filePath) {
+      currentFile = filePath
+      deepMerge(globalCssContentObject, currentFileCssContentObject, true)
+      currentFileCssContentObject = {}
     }
+    const cssContentObject = runCompilation(filePath, currentFileCssContentObject);
+    deepMerge(currentFileCssContentObject, cssContentObject, true)
+    // log(`${cssContent} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
+    const globalCssContentObjectClone = JSON.parse(JSON.stringify(globalCssContentObject))
+    fs.writeFileSync(outputCSSFile, getOutputCssString(deepMerge(globalCssContentObjectClone, currentFileCssContentObject, true)))
+    // fs.appendFileSync(outputCSSFile, cssContent);
+    // if (countToRecompilation >= 50) {
+    //   resetCompilationCache();
+    //   build();
+    //   countToRecompilation = 0;
+    // }
   });
 }
 
 function exec() {
   try {
-    build();
     watch();
   } catch (error) {
     console.log({ error });
