@@ -38,9 +38,14 @@
 .b-800 { bottom: 800px; } 
 .b-6093 { bottom: 6093px; } 
 .b-011111 { bottom: 011111px; } 
-.b-09 { bottom: 09px; } 
+.b-099990 { bottom: 099990px; } 
 .bg-red { background-color: red; } 
 .accent-\blue { accent-color: blue; } 
+
+.app-width { position: fixed; margin-top: 0px; margin-bottom: 0px; margin-bottom: 909px;  } 
+@media only screen and (min-width: 768px) { .app-width { top: 998px;  } }
+@media only screen and (min-width: 992px) { .app-width { margin-top: 890px;  } }
+ 
 .bg-indigo { background-color: indigo; } 
 .flex-row {    flex-direction: row;  } 
 .pt-8000 { padding-top: 8000px; } 
@@ -49,9 +54,6 @@
 .text-right {    text-align: right;  } 
 .b-5 { bottom: 5px; } 
 .b-6 { bottom: 6px; } 
-.b-0999 { bottom: 0999px; } 
-.b-09999 { bottom: 09999px; } 
-.b-099990 { bottom: 099990px; } 
 
 
 @media only screen and (min-width: 768px) { .md\:b-9000 { bottom: 9000px; } } 

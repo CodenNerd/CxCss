@@ -19,26 +19,20 @@ const projectDirectory = config.watchDirectory;
 
 function runCompilation(filePath, previousCompilationObject = {}, ignoreCache = false) {
   const classNames = analyzeFile(filePath);
-  console.log({classNames})
   const compiledClasses = compileClasses(classNames, ignoreCache);
-  console.log({compiledClasses})
   const cssObject = {}
   let cssContent = "";
   for (const breakpoint in compiledClasses) {
-    console.log({breakpoint})
     if(!cssObject[breakpoint]) {
       cssObject[breakpoint] = ""
     }
     for (const className in compiledClasses[breakpoint]) {
-      console.log({className})
       addToCompilationCache(className, compiledClasses[breakpoint][className]);
       const content = compilationCache[className] || compiledClasses[breakpoint][className] || ''
-      console.log({content})
       if (content) cssObject[breakpoint] += `${content} \n`;
     }    
   }
 
-  console.log({cssObject});
   return cssObject;
 }
 

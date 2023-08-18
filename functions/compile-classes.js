@@ -37,7 +37,6 @@ function compileClasses(classNames, returnCached = false) {
     let breakpointWrapperEnd = ''
     if (classNameArray.length !== 1) {
       if (config?.breakpoints?.[classNameArray[0]] !== undefined) {
-        console.log({brkpt: config?.breakpoints?.[classNameArray[0]] })
 
         breakpointWrapperStart += `@media only screen and (min-width: ${config?.breakpoints?.[classNameArray[0]]}) { `
         breakpointWrapperEnd += ' }'

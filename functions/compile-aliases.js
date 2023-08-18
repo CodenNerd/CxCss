@@ -6,20 +6,34 @@ const fs = require('fs');
 const log = require("../utils/log");
 const safelyWriteFileSync = require("../utils/safely-write-file-sync");
 
+function getBreakpointWraps() {
+    return Object.keys(config.breakpoints).filter(b => b !== 'default').reduce((obj, breakpoint) => ({...obj, [breakpoint]: { append: '}', prepend: `\n@media only screen and (min-width: ${config?.breakpoints?.[breakpoint]}) {`}}), {default: {append: '', prepend: ''}})
+}
+
 function interpretAlias(line) {
     try {
-        const [alias, classnames] = line.split(':').map(part => part.trim());
-        const definitions = compileClasses(classnames.split(/\s+/), true)
-        let rules = ''
-        for (const definition in definitions)  {
-            rules += `${extractRules(definitions[definition])}`
+        const [alias, ...rest] = line.split(':').map(part => part.trim());
+        const classnames = rest.join(':');
+        const definitionsByBreakpoints = compileClasses(classnames.split(/\s+/), true)
+
+        let finalDefinition = ''
+        for (const breakpoint in definitionsByBreakpoints) {
+
+            const definitions = definitionsByBreakpoints[breakpoint]
+            let rules = ''
+            for (const definition in definitions)  {
+                rules += `${extractRules(definitions[definition])}`
+            }
+            const wraps = getBreakpointWraps()[breakpoint];
+            finalDefinition += `${wraps.prepend} .${alias} { ${rules} } ${wraps.append}`
         }
-        const definition = `.${alias} { ${rules} }` 
-        console.log({definition});
+
+        // const definition = `.${alias} { ${rules} }`
+        // console.log({definition});
         return {
             alias,
-            definition,
-        };    
+            definition: `\n${finalDefinition?.trim()}\n`,
+        };
     } catch (error) {
         return {
             alias: '',
