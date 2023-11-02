@@ -2,7 +2,7 @@
 
 .h-10 { height: 10px; } 
 .w-10 { width: 10px; } 
-.t-0 { top: 0px; } 
+.t-0\! { top: 0px !important; } 
 .l-0 { left: 0px; } 
 .b-0 { bottom: 0px; } 
 .h-0 { height: 0px; } 
@@ -10,8 +10,11 @@
 .bg-green { background-color: green; } 
 .border-green { border-color: green; } 
 .border-red { border-color: red; } 
-.bg-info { background-color: #88bef5; } 
+.bg-info\! { background-color: #88bef5 !important; } 
+.bg-greys { background-color: greys; } 
+.fixed\! {    position: fixed !important;  } 
 .fixed {    position: fixed;  } 
+.hover\:absolute\!:hover {    position: absolute !important;  } 
 .b-7 { bottom: 7px; } 
 .b-8 { bottom: 8px; } 
 .b-955 { bottom: 955px; } 
@@ -50,10 +53,13 @@
 .flex-row {    flex-direction: row;  } 
 .pt-8000 { padding-top: 8000px; } 
 .b-4 { bottom: 4px; } 
+.t-0 { top: 0px; } 
 .text-center {    text-align: center;  } 
 .text-right {    text-align: right;  } 
 .b-5 { bottom: 5px; } 
 .b-6 { bottom: 6px; } 
+.bg-greysj { background-color: greysj; } 
+.bg-greysjh { background-color: greysjh; } 
 
 
 @media only screen and (min-width: 768px) { .md\:b-9000 { bottom: 9000px; } } 

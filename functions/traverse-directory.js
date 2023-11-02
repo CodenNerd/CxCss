@@ -65,7 +65,6 @@ function watchDirectory(dirPath, callback) {
     if (targetExtensions.includes(fileExtension)) {
       // const filePath = path.join(dirPath, filename);
       const filePath = path.join(filename);
-      console.log({ filePath });
       const stats = fs.statSync(filePath);
 
       if (stats.isFile()) {

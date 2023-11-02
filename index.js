@@ -37,7 +37,7 @@ function runCompilation(filePath, previousCompilationObject = {}, ignoreCache = 
 }
 
 function getOutputCssString(cssContentObject) {
-  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ console.log({curr: breakpoint}); return cumm += `\n${cssContentObject[breakpoint] || ''}`}, "@layer base;\n")
+  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ return cumm += `\n${cssContentObject[breakpoint] || ''}`}, "@layer base;\n")
 }
 
 function build() {
@@ -51,6 +51,7 @@ function build() {
     deepMerge(globalCssContentObject, runCompilation(filePath), true);
   });    
   fs.writeFileSync(outputCSSFile, getOutputCssString(globalCssContentObject));
+  console.log('----------------------------------------------')
   return globalCssContentObject;
 }
 
@@ -75,7 +76,8 @@ function watch() {
     }
     const cssContentObject = runCompilation(filePath, currentFileCssContentObject);
     deepMerge(currentFileCssContentObject, cssContentObject, true)
-    // log(`${cssContent} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
+    const cssContent = Object.values(cssContentObject || {}).toString()
+    log(`cxcss: ${cssContent || '∅'} >>> ${outputCSSFile}`, cssContent ? 'green' : 'info')
     const globalCssContentObjectClone = JSON.parse(JSON.stringify(globalCssContentObject))
     fs.writeFileSync(outputCSSFile, getOutputCssString(deepMerge(globalCssContentObjectClone, currentFileCssContentObject, true)))
     // fs.appendFileSync(outputCSSFile, cssContent);

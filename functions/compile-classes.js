@@ -3,6 +3,8 @@ const config = require("./config-reader");
 const { compilationCache } = require('../store');
 const { getClassDefinitionFromCache, translateClassName } = require('./class-transpilers');
 const { pseudoSelectors } = require('../store/pseudo-selectors');
+const isValidCSS = require('../utils/is-valid-css');
+const log = require('../utils/log');
 
 function escapeClassName(classname) {
   const unallowedRegex = /[^a-zA-Z0-9-_]/g;
@@ -18,6 +20,7 @@ function compileClasses(classNames, returnCached = false) {
   classNames?.forEach(className => {
     let targetStore = compiledDefaultClasses;
     if (compilationCache[className]) {
+      // log(`cxcss: ${className} <<< cache`)
       if (returnCached) {
         compiledDefaultClasses[className] = compilationCache[className];
       }
@@ -26,13 +29,16 @@ function compileClasses(classNames, returnCached = false) {
 
     const gPos = className.indexOf('g|');
     if ( gPos == 0) {
-      compiledDefaultClasses[className] = translateClassName(className);
-      
+
+      const translatedClassName = translateClassName(className)
+      if (isValidCSS(translatedClassName)) {
+        compiledDefaultClasses[className] = translatedClassName;
+      }
+
       return 
     }
 
     const classNameArray = className.split(':')
-    
     let breakpointWrapperStart = ''
     let breakpointWrapperEnd = ''
     if (classNameArray.length !== 1) {
@@ -49,20 +55,26 @@ function compileClasses(classNames, returnCached = false) {
 
 
     if (gPos !== -1) {
-      targetStore[className] = `${breakpointWrapperStart}${translateClassName(className)}${breakpointWrapperEnd}`;
+      const translatedClassName = `${breakpointWrapperStart}${translateClassName(className)}${breakpointWrapperEnd}`;
+      if (isValidCSS(translatedClassName)) {
+        targetStore[className] = translatedClassName;
+      }
       return 
     }
 
-    const sanitizedClassName = classNameArray[classNameArray.length - 1];
+    const sanitizedClassName = classNameArray[classNameArray.length - 1].replaceAll(/\!$/g, '');
+    const isImportant = className.endsWith("!")
     const classDefinition = getClassDefinitionFromCache(sanitizedClassName);
+
     if (classDefinition) {
       const classNameModified = `.${escapeClassName(className)}${classNameArray.reduce((cumm, curr, i) => {
         if (i === classNameArray.length - 1) return cumm + '';
         return cumm + (pseudoSelectors[curr] || '')
       }, '')}`
 
-      const ruleDefinition = classNameArray.length == 1 ? classDefinition : classDefinition.replace(`.${sanitizedClassName}`, classNameModified)
-      targetStore[className] = `${breakpointWrapperStart}${ruleDefinition}${breakpointWrapperEnd}`;
+      const ruleDefinition = classDefinition.replace(`.${sanitizedClassName}`, classNameModified)
+      const cssString = `${breakpointWrapperStart}${ruleDefinition}${breakpointWrapperEnd}`
+      targetStore[className] = isImportant ? cssString.replaceAll(';', ' !important;') : cssString;
     }
   });
   return compiledClasses;
@@ -71,3 +83,11 @@ function compileClasses(classNames, returnCached = false) {
 module.exports = {
     compileClasses
 }
+
+/**
+ * TODO:
+ * layer  - @layer:bg-red
+ * !important - bg-red! DONE
+ * validate translation DONE
+ * improve logs DONE
+ */

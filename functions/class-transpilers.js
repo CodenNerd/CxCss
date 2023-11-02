@@ -31,7 +31,6 @@ function getClassDefinitionFromCache(className) {
 }
 
 function generateClassDefinitionFromPattern (className) {
-  console.log('Attempting pattern generation...', {className});
   if (previouslyComputed[className]) {
     return previouslyComputed[className];
   }
@@ -55,7 +54,7 @@ function generateClassDefinitionFromPattern (className) {
 }
 
 function translateClassName(className) {
-  console.log('Translating...');
+  console.log(`cxcss: Translating ${className}...`);
   const cssClassName = className.replace(/^.*?(g\|)/, '').replaceAll('!', '!important').replaceAll('|_|', ' ').replaceAll('|', "{") + "}";
   return `[class~='${className}']${cssClassName[0] == ':' ? '' : '{'}${cssClassName}`;
 }

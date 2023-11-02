@@ -31,7 +31,6 @@ function extractRules(inputString) {
     }
 
     const extractedContent = inputString.slice(lastOpenBraceIndex + 1, firstCloseBraceIndex).trim();
-    console.log({extractedContent, lastOpenBraceIndex, firstCloseBraceIndex})
     return extractedContent?.replace(/[;]$/, '') + '; ';
 }
 

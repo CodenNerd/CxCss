@@ -4,10 +4,10 @@ function deepMerge(target, source, concatenateStrings = false) {
       if (source.hasOwnProperty(key)) {
         if (source[key] instanceof Object && target[key] instanceof Object) {
           // Recursively merge nested objects
-          console.log('target', target[key], source[key])
+          // console.log('target', target[key], source[key])
           deepMerge(target[key], source[key]);
         } else {
-            console.log({key}, {[key]: source[key] });
+            // console.log({key}, {[key]: source[key] });
           if (concatenateStrings && typeof source[key] == 'string' && target[key]) {
             target[key] += source[key];
           } else {
