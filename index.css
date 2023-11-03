@@ -9,9 +9,12 @@
 .r-0 { right: 0px; } 
 .bg-green { background-color: green; } 
 .border-green { border-color: green; } 
-.border-red { border-color: red; } 
+.\@one\:border-red { border-color: red; } 
+.\@two\:border-grey { border-color: grey; } 
 .bg-info\! { background-color: #88bef5 !important; } 
-.bg-greys { background-color: greys; } 
+.\@one\:block {    display: block;  } 
+.\@two\:hidden {    display: none;  } 
+.bg-greysjh { background-color: greysjh; } 
 .fixed\! {    position: fixed !important;  } 
 .fixed {    position: fixed;  } 
 .hover\:absolute\!:hover {    position: absolute !important;  } 
@@ -19,7 +22,6 @@
 .b-8 { bottom: 8px; } 
 .b-955 { bottom: 955px; } 
 .b-099 { bottom: 099px; } 
-.mt-099 { margin-top: 099px; } 
 .pt-10 { padding-top: 10px; } 
 @layer base {    .border {       border: 1px solid;     }  } 
 .a-items-start { align-items: flex-start; } 
@@ -58,11 +60,10 @@
 .text-right {    text-align: right;  } 
 .b-5 { bottom: 5px; } 
 .b-6 { bottom: 6px; } 
-.bg-greysj { background-color: greysj; } 
-.bg-greysjh { background-color: greysjh; } 
 
 
 @media only screen and (min-width: 768px) { .md\:b-9000 { bottom: 9000px; } } 
+@media only screen and (min-width: 992px) {  @media only screen and (min-width: 768px) { .lg\:md\:\@two\:mt-099 { margin-top: 099px; } }  } 
 @media only screen and (min-width: 768px) { .md\:h-0 { height: 0px; } } 
 @media only screen and (min-width: 768px) { .md\:b-504 { bottom: 504px; } } 
 

@@ -1,7 +1,7 @@
 function deepMerge(target, source, concatenateStrings = false) {
     // Iterate over all properties in the source object
     for (const key in source) {
-      if (source.hasOwnProperty(key)) {
+      if (source.hasOwnProperty(key) && !Array.isArray(source)) {
         if (source[key] instanceof Object && target[key] instanceof Object) {
           // Recursively merge nested objects
           // console.log('target', target[key], source[key])

@@ -36,8 +36,12 @@ function runCompilation(filePath, previousCompilationObject = {}, ignoreCache = 
   return cssObject;
 }
 
+function getCascadeLayerDeclaration() {
+  return `@layer ${config.layers.join(', ')};\n`
+}
+
 function getOutputCssString(cssContentObject) {
-  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ return cumm += `\n${cssContentObject[breakpoint] || ''}`}, "@layer base;\n")
+  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ return cumm += `\n${cssContentObject[breakpoint] || ''}`}, getCascadeLayerDeclaration())
 }
 
 function build() {

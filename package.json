@@ -1,7 +1,7 @@
 {
   "name": "cxcss",
-  "version": "0.0.39",
-  "description": "A classname-based css framework that gives you all the power that native css gives you right from your mark-up",
+  "version": "0.0.40",
+  "description": "A classname-based css framework that gives you all the power of native css right from your mark-up",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

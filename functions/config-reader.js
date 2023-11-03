@@ -5,6 +5,7 @@ const configFile = 'cx.config.json';
 
 let config = {
     watchDirectory: './',
+    layers: [ "base" ],
     colors: {
         info: '#88bef5',
         warning: '#feb062',
@@ -24,6 +25,7 @@ let config = {
 try {
     const configData = fs.readFileSync(configFile, 'utf8');
     config = Object.assign({}, config)
+    config.layers = [...config.layers, ...(JSON.parse(configData).layers || [])]
     deepMerge(config, JSON.parse(configData));
 } catch(error) {
     log('Warning: Error parsing cx.config.json', 'warning');

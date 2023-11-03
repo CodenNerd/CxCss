@@ -39,23 +39,27 @@ function compileClasses(classNames, returnCached = false) {
     }
 
     const classNameArray = className.split(':')
-    let breakpointWrapperStart = ''
-    let breakpointWrapperEnd = ''
+    let atRuleWrapperStart = []
+    let atRuleWrapperEnd = []
     if (classNameArray.length !== 1) {
-      if (config?.breakpoints?.[classNameArray[0]] !== undefined) {
+      classNameArray.forEach((c) => {
+        if (config?.breakpoints?.[c] !== undefined) {
+            atRuleWrapperStart.push(`@media only screen and (min-width: ${config?.breakpoints?.[c]}) { `)
+            atRuleWrapperEnd.push(' }')
+            compiledClasses[c] = compiledClasses[c] || {};
+            targetStore = compiledClasses[c]
+        }
+        if (c.startsWith('@') && config?.layers?.find((layer) => layer == c.replace('@', ''))) {
+          atRuleWrapperStart.push(`@layer ${c.replace('@', '')} { `)
+          atRuleWrapperEnd.push(' }')
+        }
+    })
+    }
 
-        breakpointWrapperStart += `@media only screen and (min-width: ${config?.breakpoints?.[classNameArray[0]]}) { `
-        breakpointWrapperEnd += ' }'
-      }
-    }
-    if (breakpointWrapperStart) {
-      compiledClasses[classNameArray[0]] = compiledClasses[classNameArray[0]] ? compiledClasses[classNameArray[0]] : {};
-      targetStore = compiledClasses[classNameArray[0]]
-    }
 
 
     if (gPos !== -1) {
-      const translatedClassName = `${breakpointWrapperStart}${translateClassName(className)}${breakpointWrapperEnd}`;
+      const translatedClassName = `${atRuleWrapperStart.join(' ')}${translateClassName(className)}${atRuleWrapperEnd.join(' ')}`;
       if (isValidCSS(translatedClassName)) {
         targetStore[className] = translatedClassName;
       }
@@ -73,7 +77,7 @@ function compileClasses(classNames, returnCached = false) {
       }, '')}`
 
       const ruleDefinition = classDefinition.replace(`.${sanitizedClassName}`, classNameModified)
-      const cssString = `${breakpointWrapperStart}${ruleDefinition}${breakpointWrapperEnd}`
+      const cssString = `${atRuleWrapperStart.join(' ')}${ruleDefinition}${atRuleWrapperEnd.join(' ')}`
       targetStore[className] = isImportant ? cssString.replaceAll(';', ' !important;') : cssString;
     }
   });
