@@ -47,9 +47,11 @@
 .bg-red { background-color: red; } 
 .accent-\blue { accent-color: blue; } 
 
+@layer base {
 .app-width { position: fixed; margin-top: 0px; margin-bottom: 0px; margin-bottom: 909px;  } 
 @media only screen and (min-width: 768px) { .app-width { top: 998px;  } }
-@media only screen and (min-width: 992px) { .app-width { margin-top: 890px;  } }
+@media only screen and (min-width: 992px) { .app-width { margin-top: 890px;  } } 
+}
  
 .bg-indigo { background-color: indigo; } 
 .flex-row {    flex-direction: row;  } 

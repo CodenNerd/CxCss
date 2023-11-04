@@ -90,7 +90,7 @@ module.exports = {
 
 /**
  * TODO:
- * layer  - @layer:bg-red
+ * layer  - @layer:bg-red DONE
  * !important - bg-red! DONE
  * validate translation DONE
  * improve logs DONE

@@ -32,7 +32,7 @@ function interpretAlias(line) {
         // console.log({definition});
         return {
             alias,
-            definition: `\n${finalDefinition?.trim()}\n`,
+            definition: `\n@layer ${config.layers[0]} {\n${finalDefinition?.trim()} \n}\n`,
         };
     } catch (error) {
         return {
@@ -54,7 +54,7 @@ function compileClassNameAliases() {
         const { alias, definition } = interpretAlias(line);
         result[alias] = definition;
     }
-
+    console.log({result})
     safelyWriteFileSync('./.cxcss/aliases.cache.json', JSON.stringify(result, null, 2))
     return result;
 }
