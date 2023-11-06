@@ -1,4 +1,4 @@
-@layer base;
+@layer base, one, two;
 
 .h-10 { height: 10px; } 
 .w-10 { width: 10px; } 
@@ -9,11 +9,11 @@
 .r-0 { right: 0px; } 
 .bg-green { background-color: green; } 
 .border-green { border-color: green; } 
-.\@one\:border-red { border-color: red; } 
-.\@two\:border-grey { border-color: grey; } 
+@layer one { .\@one\:border-red { border-color: red; } } 
+@layer two { .\@two\:border-grey { border-color: grey; } } 
 .bg-info\! { background-color: #88bef5 !important; } 
-.\@one\:block {    display: block;  } 
-.\@two\:hidden {    display: none;  } 
+@layer one { .\@one\:block {    display: block;  } } 
+@layer two { .\@two\:hidden {    display: none;  } } 
 .bg-greysjh { background-color: greysjh; } 
 .fixed\! {    position: fixed !important;  } 
 .fixed {    position: fixed;  } 
@@ -65,7 +65,7 @@
 
 
 @media only screen and (min-width: 768px) { .md\:b-9000 { bottom: 9000px; } } 
-@media only screen and (min-width: 992px) {  @media only screen and (min-width: 768px) { .lg\:md\:\@two\:mt-099 { margin-top: 099px; } }  } 
+@media only screen and (min-width: 992px) {  @media only screen and (min-width: 768px) {  @layer two { .lg\:md\:\@two\:mt-099 { margin-top: 099px; } }  }  } 
 @media only screen and (min-width: 768px) { .md\:h-0 { height: 0px; } } 
 @media only screen and (min-width: 768px) { .md\:b-504 { bottom: 504px; } } 
 

@@ -54,7 +54,6 @@ function compileClassNameAliases() {
         const { alias, definition } = interpretAlias(line);
         result[alias] = definition;
     }
-    console.log({result})
     safelyWriteFileSync('./.cxcss/aliases.cache.json', JSON.stringify(result, null, 2))
     return result;
 }
