@@ -27,7 +27,6 @@ try {
     config = Object.assign({}, config)
     config.layers = [...config.layers, ...(JSON.parse(configData).layers || [])]
     deepMerge(config, JSON.parse(configData));
-    console.log(config)
 } catch(error) {
     log('Warning: Error parsing cx.config.json', 'warning');
 }
