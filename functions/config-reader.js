@@ -5,7 +5,7 @@ const configFile = 'cx.config.json';
 
 let config = {
     watchDirectory: './',
-    layers: [ "base", 'one', 'two' ],
+    layers: [ "base" ],
     colors: {
         info: '#88bef5',
         warning: '#feb062',

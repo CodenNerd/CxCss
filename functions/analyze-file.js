@@ -195,7 +195,7 @@ function extractClassNamesFromDynamicReactSyntax(
 }
 
 function cleanUpClassName(className) {
-    const startRegex = /^[a-zA-Z]+/;
+    const startRegex = /^[a-zA-Z\@]+/;
     const endRegex = /[\w\d;!]+$/;
     let cleanedClassName = className.trim();
 
@@ -215,7 +215,6 @@ function cleanUpClassName(className) {
             break;
         }
     }
-
     return cleanedClassName;
 }
 

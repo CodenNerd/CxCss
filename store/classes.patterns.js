@@ -81,7 +81,7 @@ const classPatterns = {
   [`^border-l-${colorPattern}$`]: ".border-l-$1 { border-left-color: $1; }",
   [`^border-r-${colorPattern}$`]: ".border-r-$1 { border-right-color: $1; }",
 
-  [`^accent-${colorPattern}$`]: ".accent-\\$1 { accent-color: $1; }",
+  [`^accent-${colorPattern}$`]: ".accent-$1 { accent-color: $1; }",
   // '((?:blur|brightness|contrast|drop-shadow|grayscale|hue-rotate|invert|opacity|sepia|saturate)-[^|]+)': '.$1 { backdrop-filter:  }'
 
   '^blur-(\\d+%?)$': '.blur-$1 { backdrop-filter: blur($1); }',

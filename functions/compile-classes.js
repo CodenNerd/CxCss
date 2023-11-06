@@ -66,9 +66,9 @@ function compileClasses(classNames, returnCached = false) {
       return 
     }
 
-    const sanitizedClassName = classNameArray[classNameArray.length - 1].replaceAll(/\!$/g, '');
+    const sanitizedCoreClassName = classNameArray[classNameArray.length - 1].replaceAll(/\!$/g, '');
     const isImportant = className.endsWith("!")
-    const classDefinition = getClassDefinitionFromCache(sanitizedClassName);
+    const classDefinition = getClassDefinitionFromCache(sanitizedCoreClassName);
 
     if (classDefinition) {
       const classNameModified = `.${escapeClassName(className)}${classNameArray.reduce((cumm, curr, i) => {
@@ -76,7 +76,7 @@ function compileClasses(classNames, returnCached = false) {
         return cumm + (pseudoSelectors[curr] || '')
       }, '')}`
 
-      const ruleDefinition = classDefinition.replace(`.${sanitizedClassName}`, classNameModified)
+      const ruleDefinition = classDefinition.replace(`.${sanitizedCoreClassName}`, classNameModified)
       const cssString = `${atRuleWrapperStart.join(' ')}${ruleDefinition}${atRuleWrapperEnd.join(' ')}`
       targetStore[className] = isImportant ? cssString.replaceAll(';', ' !important;') : cssString;
     }
