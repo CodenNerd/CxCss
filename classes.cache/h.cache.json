@@ -1208,5 +1208,6 @@
   "h-auto": ".h-auto { height: auto; }",
   "hyphens-none": ".hyphens-none { hyphens: none; }",
   "hyphens-manual": ".hyphens-manual { hyphens: manual; }",
-  "hyphens-auto": ".hyphens-auto { hyphens: auto; }"
+  "hyphens-auto": ".hyphens-auto { hyphens: auto; }",
+  "h-screen": ".h-screen {    height: 100vh;  }"
 }
