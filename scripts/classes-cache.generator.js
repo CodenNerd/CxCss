@@ -293,6 +293,9 @@ classes = {
   'h-full': `.h-full {
     height: 100%;
   }`,
+  'h-screen': `.h-screen {
+    height: 100vh;
+  }`,
 
   'border': `@layer base {
     .border { 

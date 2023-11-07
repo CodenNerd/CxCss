@@ -12,7 +12,7 @@ function getBreakpointWraps() {
 
 function interpretAlias(line) {
     try {
-        const [alias, ...rest] = line.split(':').map(part => part.trim());
+        const [alias, ...rest] = line.split(': ').map(part => part.trim());
         const classnames = rest.join(':');
         const definitionsByBreakpoints = compileClasses(classnames.split(/\s+/), true)
 
