@@ -1,4 +1,4 @@
-@layer base, one, two;
+@layer base;
 
 .h-10 { height: 10px; } 
 .w-10 { width: 10px; } 
@@ -9,12 +9,12 @@
 .r-0 { right: 0px; } 
 .bg-green { background-color: green; } 
 .border-green { border-color: green; } 
-@layer one { .\@one\:border-red { border-color: red; } } 
-@layer two { .\@two\:border-grey { border-color: grey; } } 
+.\@one\:border-red { border-color: red; } 
+.\@two\:border-grey { border-color: grey; } 
 .bg-info\! { background-color: #88bef5 !important; } 
-@layer one { .\@one\:block {    display: block;  } } 
-@layer two { .\@two\:hidden {    display: none;  } } 
-@layer two { .\@two\:flex {    display: flex;  } } 
+.\@one\:block {    display: block;  } 
+.\@two\:hidden {    display: none;  } 
+.\@two\:flex {    display: flex;  } 
 .bg-greysjh { background-color: greysjh; } 
 .fixed\! {    position: fixed !important;  } 
 .fixed {    position: fixed;  } 
@@ -23,9 +23,11 @@
 .b-8 { bottom: 8px; } 
 .b-955 { bottom: 955px; } 
 .b-099\! { bottom: 099px !important; } 
+.bg-darkgreen { background-color: darkgreen; } 
+.bg-\#ff00ff { background-color: #ff00ff; } 
 .pt-10 { padding-top: 10px; } 
-@layer two { @layer base {    .\@two\:border\! {       border: 1px solid !important;     }  } } 
-@layer one { .\@one\:a-items-start { align-items: flex-start; } } 
+@layer base {    .\@two\:border\! {       border: 1px solid !important;     }  } 
+.\@one\:a-items-start { align-items: flex-start; } 
 .a-items-center { align-items: center; } 
 .h-1 { height: 1px; } 
 .flex {    display: flex;  } 
@@ -33,6 +35,7 @@
 .placeholder\:hover\:color-\#fff::placeholder:hover { color: #fff; } 
 .b-900 { bottom: 900px; } 
 .b-90 { bottom: 90px; } 
+.h-0\! { height: 0px !important; } 
 .h-70 { height: 70px; } 
 .h-90 { height: 90px; } 
 .h-80 { height: 80px; } 
@@ -45,8 +48,8 @@
 .b-6093 { bottom: 6093px; } 
 .b-011111 { bottom: 011111px; } 
 .b-099990 { bottom: 099990px; } 
-@layer one { .\@one\:bg-red { background-color: red; } } 
-@layer two { .\@two\:accent-red\! { accent-color: red !important; } } 
+.\@one\:bg-red { background-color: red; } 
+.\@two\:accent-\#fff\! { accent-color: #fff !important; } 
 
 @layer base {
 .app-width { position: fixed; margin-top: 0px; margin-bottom: 0px; margin-bottom: 909px;  } 
@@ -64,12 +67,10 @@
 .text-right {    text-align: right;  } 
 .b-5 { bottom: 5px; } 
 .b-6 { bottom: 6px; } 
-@layer two { .\@two\:accent-\#fff\! { accent-color: #fff !important; } } 
-.h-0\! { height: 0px !important; } 
 
 
 @media only screen and (min-width: 768px) { .md\:b-9000 { bottom: 9000px; } } 
-@media only screen and (min-width: 992px) {  @media only screen and (min-width: 768px) {  @layer two { .lg\:md\:\@two\:mt-099\! { margin-top: 099px !important; } }  }  } 
+@media only screen and (min-width: 992px) {  @media only screen and (min-width: 768px) { .lg\:md\:\@two\:mt-099\! { margin-top: 099px !important; } }  } 
 @media only screen and (min-width: 768px) { .md\:h-0 { height: 0px; } } 
 @media only screen and (min-width: 768px) { .md\:b-504 { bottom: 504px; } } 
 

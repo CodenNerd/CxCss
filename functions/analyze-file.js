@@ -4,14 +4,13 @@ const { targetAttributes } = require("../store");
 function analyzeFile(filePath) {
     const fileContent = fs.readFileSync(filePath, "utf8");
     const fileExtension = filePath.split(".").pop();
-
     if (fileExtension === "jsx" || fileExtension === "tsx") {
         return extractClassNamesFromReactSyntax(fileContent);
-    } else if (fileExtension === "html") {
+    } else if (fileExtension === "html" || fileExtension === "vue") {
         return extractClassNamesFromHTML(fileContent);
-    }
+    } 
 
-    return [];
+    return extractClassNamesFromHTML(fileContent);
 }
 
 function extractClassNamesFromReactSyntax(fileContent) {
