@@ -58,5 +58,8 @@
   "column-rule-inset": ".column-rule-inset { column-rule-style: inset; }",
   "column-rule-outset": ".column-rule-outset { column-rule-style: outset; }",
   "column-span-none": ".column-span-none { column-span: none; }",
-  "column-span-all": ".column-span-all { column-span: all; }"
+  "column-span-all": ".column-span-all { column-span: all; }",
+  "caret-inherit": "caret-inherit { caret-color: inherit; }",
+  "caret-current": "caret-current { caret-color: current; }",
+  "caret-transparent": "caret-inherit { caret-color: transparent; }"
 }
