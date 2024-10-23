@@ -1,5 +1,7 @@
 
 
+### Object Fit Classes
+
 #### `.object-fit`
 
 Sets the `object-fit` property to `cover`, scaling the content to fill the container while preserving its aspect ratio. The entire container will be filled, and some parts of the content may be cropped.
@@ -11,7 +13,6 @@ Example usage:
 <img src="image.jpg" class="object-fit" alt="Image">
 ```
 
-### Object Fit Classes
 
 #### `.object-fit-fill`
 

@@ -57,6 +57,17 @@ Example usage:
 <div class="grid">This element is displayed as a grid container.</div>
 ```
 
+#### `.inline-grid`
+
+Sets the display property to `inline-grid`, making the element an inline-level grid container. It enables grid layout for its child elements while allowing the element to flow inline with surrounding content.
+
+CSS equivalent: `display: inline-grid;`
+
+Example usage:
+```html
+<div class="inline-grid">This element is displayed as an inline grid container.</div>
+```
+
 #### `.flex`
 
 Sets the display property to `flex`, making the element a flex container. It enables flexible box layout for its child elements, allowing them to be easily aligned and rearranged.

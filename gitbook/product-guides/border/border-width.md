@@ -9,7 +9,7 @@ CSS equivalent: `border-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-2">
+<div class="border border-2">
   <!-- Content with border width of 2px -->
 </div>
 ```
@@ -23,7 +23,7 @@ CSS equivalent: `border-top-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-t-4">
+<div class="border border-t-4">
   <!-- Content with top border width of 4px -->
 </div>
 ```
@@ -37,7 +37,7 @@ CSS equivalent: `border-bottom-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-b-4">
+<div class="border border-b-4">
   <!-- Content with bottom border width of 4px -->
 </div>
 ```
@@ -51,7 +51,7 @@ CSS equivalent: `border-left-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-l-4">
+<div class="border border-l-4">
   <!-- Content with left border width of 4px -->
 </div>
 ```
@@ -65,7 +65,7 @@ CSS equivalent: `border-right-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-r-4">
+<div class="border border-r-4">
   <!-- Content with right border width of 4px -->
 </div>
 ```
@@ -79,7 +79,7 @@ CSS equivalent: `border-left-width: {value}px; border-right-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-x-2">
+<div class="border border-x-2">
   <!-- Content with left and right border width of 2px -->
 </div>
 ```
@@ -93,7 +93,7 @@ CSS equivalent: `border-top-width: {value}px; border-bottom-width: {value}px;`
 
 Example usage:
 ```html
-<div class="border-y-2">
+<div class="border border-y-2">
   <!-- Content with top and bottom border width of 2px -->
 </div>
 ```

@@ -25,18 +25,3 @@ Example usage:
 ```
 
 The isolation property determines how an element's content is rendered in relation to the rest of the document. Use these classes to control the isolation behavior of elements within your layout.
-
-### Line Height Classes
-
-#### `.line-height-normal`
-
-Sets the line-height property to `normal`, allowing the browser to determine the appropriate line height based on the font and content.
-
-CSS equivalent: `line-height: normal;`
-
-Example usage:
-```html
-<div class="line-height-normal">This element has normal line height.</div>
-```
-
-The line-height property controls the spacing between lines of text within an element. Use these classes to apply specific line-height values or reset to the default behavior.

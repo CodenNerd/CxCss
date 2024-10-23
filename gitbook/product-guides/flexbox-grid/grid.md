@@ -1,5 +1,4 @@
 
-
 ### Grid Columns Auto Classes
 
 #### `.grid-{number}-cols-auto`

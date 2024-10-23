@@ -9,7 +9,7 @@ CSS equivalent: `border-color: {color};`
 
 Example usage:
 ```html
-<div class="border-red">
+<div class="border border-red">
   <!-- Content with red border color -->
 </div>
 ```
@@ -23,7 +23,7 @@ CSS equivalent: `border-top-color: {color};`
 
 Example usage:
 ```html
-<div class="border-t-blue">
+<div class="border border-t-blue">
   <!-- Content with blue top border color -->
 </div>
 ```
@@ -37,7 +37,7 @@ CSS equivalent: `border-bottom-color: {color};`
 
 Example usage:
 ```html
-<div class="border-b-green">
+<div class="border border-b-green">
   <!-- Content with green bottom border color -->
 </div>
 ```
@@ -51,7 +51,7 @@ CSS equivalent: `border-left-color: {color};`
 
 Example usage:
 ```html
-<div class="border-l-purple">
+<div class="border border-l-purple">
   <!-- Content with purple left border color -->
 </div>
 ```
@@ -65,7 +65,7 @@ CSS equivalent: `border-right-color: {color};`
 
 Example usage:
 ```html
-<div class="border-r-orange">
+<div class="border border-r-orange">
   <!-- Content with orange right border color -->
 </div>
 ```
@@ -79,7 +79,7 @@ CSS equivalent: `border-left-color: {color}; border-right-color: {color};`
 
 Example usage:
 ```html
-<div class="border-x-gray">
+<div class="border border-x-gray">
   <!-- Content with gray horizontal border color -->
 </div>
 ```
@@ -93,7 +93,7 @@ CSS equivalent: `border-top-color: {color}; border-bottom-color: {color};`
 
 Example usage:
 ```html
-<div class="border-y-pink">
+<div class="border border-y-pink">
   <!-- Content with pink vertical border color -->
 </div>
 ```

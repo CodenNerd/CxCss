@@ -1225,6 +1225,7 @@
   "text-orientation-sideways-right": ".text-orientation-sideways-right { text-orientation: sideways-right; }",
   "text-clip": ".text-clip { text-overflow: clip; }",
   "text-ellipsis": ".text-ellipsis { text-overflow: ellipsis; }",
+  "text-fade": ".text-fade { text-overflow: fade; }",
   "table-layout-auto": ".table-layout-auto { table-layout: auto; }",
   "table-layout-fixed": ".table-layout-fixed { table-layout: fixed; }",
   "text-justify": ".text-justify { text-align: justify; }",

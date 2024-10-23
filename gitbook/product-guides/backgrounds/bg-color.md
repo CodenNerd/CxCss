@@ -30,20 +30,6 @@ Example usage:
 
 In the example above, the background color of the element will be set to the danger color.
 
-`.text-danger`
-Sets the text color to the danger color value.
-
-CSS equivalent: `color: dangerColor;`
-
-Example usage:
-```html
-<div class="text-danger">
-  <!-- Content with a danger text color -->
-</div>
-```
-
-In the example above, the text color of the element will be set to the danger color.
-
 `.bg-warning`
 Sets the background color to the warning color value.
 
@@ -93,7 +79,7 @@ CSS equivalent: `background-color: colorValue;`
 
 Example usage:
 ```html
-<div class="bg-custom-color">
+<div class="bg-customColor">
   <!-- Content with a custom background color -->
 </div>
 ```
