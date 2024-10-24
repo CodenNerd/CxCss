@@ -16,10 +16,10 @@ Example usage:
 
 ---
 
-`.outline-offset-{offset}`
+`.outline-offset-{number}`
 Sets the outline-offset property to a specific value in pixels.
 
-CSS equivalent: `outline-offset: {offset}px;`
+CSS equivalent: `outline-offset: {number}px;`
 
 Example usage:
 ```html
