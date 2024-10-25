@@ -12,6 +12,8 @@ Example usage:
 <div class="place-normal">This element follows the normal placement behavior determined by the flex container.</div>
 ```
 
+---
+
 #### `.place-start`
 
 Sets the place-content property to start, aligning the content to the start of both the main and cross axes within the flex container.
@@ -22,6 +24,8 @@ Example usage:
 ```html
 <div class="place-start">This element is aligned to the start of both the main and cross axes within the flex container.</div>
 ```
+
+---
 
 #### `.place-end`
 
@@ -34,6 +38,8 @@ Example usage:
 <div class="place-end">This element is aligned to the end of both the main and cross axes within the flex container.</div>
 ```
 
+---
+
 #### `.place-flex-start`
 
 Sets the place-content property to flex-start, aligning the content to the start of the main axis and centering it along the cross axis within the flex container.
@@ -44,6 +50,8 @@ Example usage:
 ```html
 <div class="place-flex-start">This element is aligned to the start of the main axis and centered along the cross axis within the flex container.</div>
 ```
+
+---
 
 #### `.place-flex-end`
 
@@ -56,6 +64,8 @@ Example usage:
 <div class="place-flex-end">This element is aligned to the end of the main axis and centered along the cross axis within the flex container.</div>
 ```
 
+---
+
 #### `.place-center`
 
 Sets the place-content property to center, centering the content both horizontally and vertically within the flex container.
@@ -66,6 +76,8 @@ Example usage:
 ```html
 <div class="place-center">This element is centered both horizontally and vertically within the flex container.</div>
 ```
+
+---
 
 #### `.place-space-between`
 
@@ -78,6 +90,8 @@ Example usage:
 <div class="place-space-between">This element distributes its content evenly along the main axis with space between items.</div>
 ```
 
+---
+
 #### `.place-space-around`
 
 Sets the place-content property to space-around, distributing the content evenly along the main axis with equal space before the first item and after the last item.
@@ -88,6 +102,8 @@ Example usage:
 ```html
 <div class="place-space-around">This element distributes its content evenly along the main axis with space around items.</div>
 ```
+
+---
 
 #### `.place-space-evenly`
 
@@ -100,6 +116,8 @@ Example usage:
 <div class="place-space-evenly">This element distributes its content evenly along the main axis with space evenly between items.</div>
 ```
 
+---
+
 #### `.place-stretch`
 
 Sets the place-content property to stretch, stretching the content to fill the available space along the main axis.
@@ -110,6 +128,8 @@ Example usage:
 ```html
 <div class="place-stretch">This element stretches its content to fill the available space along the main axis.</div>
 ```
+
+---
 
 #### `.place-safe-center`
 
@@ -122,6 +142,8 @@ Example usage:
 <div class="place-safe-center">This element is centered both horizontally and vertically within the flex container, staying within the safe area.</div>
 ```
 
+---
+
 #### `.place-unsafe-center`
 
 Sets the place-content property to unsafe center, centering the content both horizontally and vertically within the flex container, even if it goes beyond the safe area.
@@ -131,6 +153,8 @@ CSS equivalent: `place-content: unsafe center;`
 
 
 ### Place Items Classes
+
+---
 
 #### `.place-items-normal`
 
@@ -143,6 +167,8 @@ Example usage:
 <div class="place-items-normal">The items within this flex container follow the normal placement behavior determined by the container.</div>
 ```
 
+---
+
 #### `.place-items-start`
 
 Sets the place-items property to start, aligning the items to the start of both the main and cross axes within the flex container.
@@ -153,6 +179,8 @@ Example usage:
 ```html
 <div class="place-items-start">The items within this flex container are aligned to the start of both the main and cross axes.</div>
 ```
+
+---
 
 #### `.place-items-end`
 
@@ -165,6 +193,8 @@ Example usage:
 <div class="place-items-end">The items within this flex container are aligned to the end of both the main and cross axes.</div>
 ```
 
+---
+
 #### `.place-items-flex-start`
 
 Sets the place-items property to flex-start, aligning the items to the start of the main axis and centering them along the cross axis within the flex container.
@@ -175,6 +205,8 @@ Example usage:
 ```html
 <div class="place-items-flex-start">The items within this flex container are aligned to the start of the main axis and centered along the cross axis.</div>
 ```
+
+---
 
 #### `.place-items-flex-end`
 
@@ -187,6 +219,8 @@ Example usage:
 <div class="place-items-flex-end">The items within this flex container are aligned to the end of the main axis and centered along the cross axis.</div>
 ```
 
+---
+
 #### `.place-items-center`
 
 Sets the place-items property to center, centering the items both horizontally and vertically within the flex container.
@@ -197,6 +231,8 @@ Example usage:
 ```html
 <div class="place-items-center">The items within this flex container are centered both horizontally and vertically.</div>
 ```
+
+---
 
 #### `.place-items-baseline`
 
@@ -209,6 +245,8 @@ Example usage:
 <div class="place-items-baseline">The items within this flex container are aligned based on their baselines.</div>
 ```
 
+---
+
 #### `.place-items-stretch`
 
 Sets the place-items property to stretch, stretching the items to fill the available space along the main axis.
@@ -220,6 +258,8 @@ Example usage:
 <div class="place-items-stretch">The items within this flex container are stretched to fill the available space along the main axis.</div>
 ```
 
+---
+
 #### `.place-items-safe-center`
 
 Sets the place-items property to safe center, centering the items both horizontally and vertically within the flex container while ensuring they stay within the safe area.
@@ -230,6 +270,8 @@ Example usage:
 ```html
 <div class="place-items-safe-center">The items within this flex container are centered both horizontally and vertically, staying within the safe area.</div>
 ```
+
+---
 
 #### `.place-items-unsafe-center`
 
@@ -253,6 +295,8 @@ Example usage:
 
 ### Place Self Classes
 
+---
+
 #### `.place-self-auto`
 
 Sets the place-self property to auto, allowing the flex item to inherit the alignment behavior specified by the flex container.
@@ -263,6 +307,8 @@ Example usage:
 ```html
 <div class="place-self-auto">The alignment behavior of this flex item is inherited from the flex container.</div>
 ```
+
+---
 
 #### `.place-self-normal`
 
@@ -275,6 +321,8 @@ Example usage:
 <div class="place-self-normal">This flex item follows the normal placement behavior determined by the flex container.</div>
 ```
 
+---
+
 #### `.place-self-start`
 
 Sets the place-self property to start, aligning the flex item to the start of both the main and cross axes within the flex container.
@@ -285,6 +333,8 @@ Example usage:
 ```html
 <div class="place-self-start">This flex item is aligned to the start of both the main and cross axes within the flex container.</div>
 ```
+
+---
 
 #### `.place-self-end`
 
@@ -297,6 +347,8 @@ Example usage:
 <div class="place-self-end">This flex item is aligned to the end of both the main and cross axes within the flex container.</div>
 ```
 
+---
+
 #### `.place-self-flex-start`
 
 Sets the place-self property to flex-start, aligning the flex item to the start of the main axis and centering it along the cross axis within the flex container.
@@ -307,6 +359,8 @@ Example usage:
 ```html
 <div class="place-self-flex-start">This flex item is aligned to the start of the main axis and centered along the cross axis within the flex container.</div>
 ```
+
+---
 
 #### `.place-self-flex-end`
 
@@ -319,6 +373,8 @@ Example usage:
 <div class="place-self-flex-end">This flex item is aligned to the end of the main axis and centered along the cross axis within the flex container.</div>
 ```
 
+---
+
 #### `.place-self-center`
 
 Sets the place-self property to center, centering the flex item both horizontally and vertically within the flex container.
@@ -329,6 +385,8 @@ Example usage:
 ```html
 <div class="place-self-center">This flex item is centered both horizontally and vertically within the flex container.</div>
 ```
+
+---
 
 #### `.place-self-baseline`
 
@@ -341,6 +399,8 @@ Example usage:
 <div class="place-self-baseline">This flex item is aligned based on its baseline within the flex container.</div>
 ```
 
+---
+
 #### `.place-self-stretch`
 
 Sets the place-self property to stretch, stretching the flex item to fill the available space along the main axis.
@@ -351,6 +411,8 @@ Example usage:
 ```html
 <div class="place-self-stretch">This flex item is stretched to fill the available space along the main axis.</div>
 ```
+
+---
 
 #### `.place-self-safe-center`
 
@@ -363,6 +425,8 @@ Example usage:
 <div class="place-self-safe-center">This flex item is centered both horizontally and vertically, staying within the safe area.</div>
 ```
 
+---
+
 #### `.place-self-unsafe-center`
 
 Sets the place-self property to unsafe center, centering the flex item both horizontally and vertically within the flex container, even if it goes beyond the safe area.
@@ -373,5 +437,7 @@ Example usage:
 ```html
 <div class="place-self-unsafe-center">This flex item is centered both horizontally and vertically, even if it goes beyond the safe area.</div>
 ```
+
+---
 
 These classes can be applied to flex items within a flex container to control their individual alignment behavior within the container.

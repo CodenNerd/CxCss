@@ -12,6 +12,8 @@ Example usage:
 <div class="line-height-normal">This element has normal line height.</div>
 ```
 
+---
+
 #### `.line-height-{number}`
 
 Sets the line height of the text content.

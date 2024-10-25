@@ -1,8 +1,9 @@
-Border Color Utility Classes
+### Border Color Utility Classes
 
 The following utility classes control the border color of elements:
 
-`.border-{color}`
+#### `.border-{color}`
+
 Sets the border-color property to the specified color value for all sides of the element.
 
 CSS equivalent: `border-color: {color};`
@@ -16,7 +17,8 @@ Example usage:
 
 ---
 
-`.border-t-{color}`
+#### `.border-t-{color}`
+
 Sets the border-top-color property to the specified color value, controlling the top border color of the element.
 
 CSS equivalent: `border-top-color: {color};`
@@ -30,7 +32,8 @@ Example usage:
 
 ---
 
-`.border-b-{color}`
+#### `.border-b-{color}`
+
 Sets the border-bottom-color property to the specified color value, controlling the bottom border color of the element.
 
 CSS equivalent: `border-bottom-color: {color};`
@@ -44,7 +47,8 @@ Example usage:
 
 ---
 
-`.border-l-{color}`
+#### `.border-l-{color}`
+
 Sets the border-left-color property to the specified color value, controlling the left border color of the element.
 
 CSS equivalent: `border-left-color: {color};`
@@ -58,7 +62,8 @@ Example usage:
 
 ---
 
-`.border-r-{color}`
+#### `.border-r-{color}`
+
 Sets the border-right-color property to the specified color value, controlling the right border color of the element.
 
 CSS equivalent: `border-right-color: {color};`
@@ -72,7 +77,8 @@ Example usage:
 
 ---
 
-`.border-x-{color}`
+#### `.border-x-{color}`
+
 Sets the border-left-color and border-right-color properties to the specified color value, controlling the horizontal border color of the element.
 
 CSS equivalent: `border-left-color: {color}; border-right-color: {color};`
@@ -86,7 +92,8 @@ Example usage:
 
 ---
 
-`.border-y-{color}`
+#### `.border-y-{color}`
+
 Sets the border-top-color and border-bottom-color properties to the specified color value, controlling the vertical border color of the element.
 
 CSS equivalent: `border-top-color: {color}; border-bottom-color: {color};`
@@ -97,5 +104,7 @@ Example usage:
   <!-- Content with pink vertical border color -->
 </div>
 ```
+
+---
 
 These utility classes allow you to easily control the border color of elements, providing flexibility in styling the borders according to your design requirements.

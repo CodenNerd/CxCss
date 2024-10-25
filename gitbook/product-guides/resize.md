@@ -12,6 +12,8 @@ Example usage:
 <textarea class="resize-none">This element cannot be resized.</textarea>
 ```
 
+---
+
 #### `.resize-both`
 
 Allows the element to be resized both horizontally and vertically.
@@ -22,6 +24,8 @@ Example usage:
 ```html
 <textarea class="resize-both">This element can be resized in both directions.</textarea>
 ```
+
+---
 
 #### `.resize-horizontal`
 
@@ -34,6 +38,8 @@ Example usage:
 <textarea class="resize-horizontal">This element can only be resized horizontally.</textarea>
 ```
 
+---
+
 #### `.resize-vertical`
 
 Allows the element to be resized vertically only.
@@ -44,6 +50,8 @@ Example usage:
 ```html
 <textarea class="resize-vertical">This element can only be resized vertically.</textarea>
 ```
+
+---
 
 #### `.resize-block`
 
@@ -56,6 +64,8 @@ Example usage:
 <div class="resize-block">This block element can be resized.</div>
 ```
 
+---
+
 #### `.resize-inline`
 
 Allows inline-level elements to be resized.
@@ -66,6 +76,8 @@ Example usage:
 ```html
 <span class="resize-inline">This inline element can be resized.</span>
 ```
+
+---
 
 #### `.resize-initial`
 
@@ -78,6 +90,8 @@ Example usage:
 <textarea class="resize-initial">This element uses the initial resize behavior.</textarea>
 ```
 
+---
+
 #### `.resize-inherit`
 
 Inherits the resize property from its parent element.
@@ -88,6 +102,8 @@ Example usage:
 ```html
 <textarea class="resize-inherit">This element inherits its resize behavior.</textarea>
 ```
+
+---
 
 #### `.resize-unset`
 

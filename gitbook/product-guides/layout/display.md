@@ -13,6 +13,8 @@ Example usage:
 <div class="block">This element is displayed as a block.</div>
 ```
 
+---
+
 #### `.inline-block`
 
 Sets the display property to `inline-block`, making the element an inline-level block container. It takes up only as much width as necessary and allows other elements to be placed next to it.
@@ -23,6 +25,8 @@ Example usage:
 ```html
 <div class="inline-block">This element is displayed as an inline block.</div>
 ```
+
+---
 
 #### `.inline`
 
@@ -35,6 +39,8 @@ Example usage:
 <span class="inline">This element is displayed inline.</span>
 ```
 
+---
+
 #### `.hidden`
 
 Sets the display property to `none`, hiding the element from the page layout. The element will not be rendered and will not take up any space.
@@ -45,6 +51,8 @@ Example usage:
 ```html
 <div class="hidden">This element is hidden.</div>
 ```
+
+---
 
 #### `.grid`
 
@@ -57,6 +65,8 @@ Example usage:
 <div class="grid">This element is displayed as a grid container.</div>
 ```
 
+---
+
 #### `.inline-grid`
 
 Sets the display property to `inline-grid`, making the element an inline-level grid container. It enables grid layout for its child elements while allowing the element to flow inline with surrounding content.
@@ -67,6 +77,8 @@ Example usage:
 ```html
 <div class="inline-grid">This element is displayed as an inline grid container.</div>
 ```
+
+---
 
 #### `.flex`
 
@@ -79,6 +91,8 @@ Example usage:
 <div class="flex">This element is displayed as a flex container.</div>
 ```
 
+---
+
 #### `.inline-flex`
 
 Sets the display property to `inline-flex`, making the element an inline-level flex container. It enables flexible box layout for its child elements while allowing other elements to be placed next to it.
@@ -89,6 +103,8 @@ Example usage:
 ```html
 <div class="inline-flex">This element is displayed as an inline flex container.</div>
 ```
+
+---
 
 #### `.table`
 
@@ -101,6 +117,8 @@ Example usage:
 <div class="table">This element is displayed as a table.</div>
 ```
 
+---
+
 #### `.inline-table`
 
 Sets the display property to `inline-table`, making the element as an inline-level table. It allows the element to flow within the content while still behaving like a table.
@@ -111,6 +129,8 @@ Example usage:
 ```html
 <div class="inline-table">This element is displayed as an inline table.</div>
 ```
+
+---
 
 #### `.table-caption`
 
@@ -124,6 +144,8 @@ Example usage:
   <div class="table-caption">Table Caption</div>
 </div>
 ```
+
+---
 
 #### `.table-column`
 
@@ -139,6 +161,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.table-row`
 
 Sets the display property to `table-row`, making the element behave as a row within a table.
@@ -152,6 +176,8 @@ Example usage:
   <div class="table-row">Row 2</div>
 </div>
 ```
+
+---
 
 #### `.table-cell`
 
@@ -170,6 +196,8 @@ Example usage:
 
 ```
 
+---
+
 #### `.table-column-group`
 
 Sets the display property to `table-column-group`, making the element behave as a container for column elements.
@@ -184,6 +212,8 @@ Example usage:
   </div>
 </div>
 ```
+
+---
 
 #### `.table-row-group`
 
@@ -200,6 +230,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.table-header-group`
 
 Sets the display property to `table-header-group`, creating a group of header rows within a table.
@@ -214,6 +246,8 @@ Example usage:
   </div>
 </div>
 ```
+
+---
 
 #### `.table-footer-group`
 
@@ -230,6 +264,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.list-item`
 
 Sets the display property to `list-item`, making the element behave as a list item.
@@ -243,5 +279,7 @@ Example usage:
   <li class="list-item">List Item 2</li>
 </ul>
 ```
+
+---
 
 These classes allow you to control the display behavior of elements, defining how they interact with other elements in the layout. Use them to achieve different layout structures and alignment effects within your design.

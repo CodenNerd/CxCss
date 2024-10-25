@@ -4,7 +4,8 @@
 
 #### `.text-{color}`
 
-`.text-success`
+***`.text-success`***
+
 Sets the text color to the success color value.
 
 CSS equivalent: `color: successColor;`
@@ -16,9 +17,12 @@ Example usage:
 </div>
 ```
 
+---
+
 In the example above, the text color of the element will be set to the success color.
 
-`.text-danger`
+***`.text-danger`***
+
 Sets the text color to the danger color value.
 
 CSS equivalent: `color: dangerColor;`
@@ -30,9 +34,12 @@ Example usage:
 </div>
 ```
 
+---
+
 In the example above, the text color of the element will be set to the danger color.
 
-`.text-warning`
+***`.text-warning`***
+
 Sets the text color to the warning color value.
 
 CSS equivalent: `color: warningColor;`
@@ -44,9 +51,12 @@ Example usage:
 </div>
 ```
 
+---
+
 In the example above, the text color of the element will be set to the warning color.
 
-`.text-info`
+***`.text-info`***
+
 Sets the text color to the info color value.
 
 CSS equivalent: `color: infoColor;`
@@ -57,6 +67,8 @@ Example usage:
   <!-- Content with a info text color -->
 </div>
 ```
+
+---
 
 In the example above, the text color of the element will be set to the info color.
 

@@ -1,8 +1,9 @@
 
+### Scroll Behavior Classes
 
-**Class Name:** `.overscroll-auto`
+#### ***`.overscroll-auto`***
 
-**Description:** Applies the `overscroll-behavior: auto` property to allow the browser's default overscroll behavior.
+Applies the `overscroll-behavior: auto` property to allow the browser's default overscroll behavior.
 
 **CSS Equivalent:** `overscroll-behavior: auto;`
 
@@ -15,9 +16,9 @@
 
 ---
 
-**Class Name:** `.overscroll-contain`
+#### ***`.overscroll-contain`***
 
-**Description:** Applies the `overscroll-behavior: contain` property to prevent the scrolling behavior from propagating to parent elements.
+Applies the `overscroll-behavior: contain` property to prevent the scrolling behavior from propagating to parent elements.
 
 **CSS Equivalent:** `overscroll-behavior: contain;`
 
@@ -30,9 +31,9 @@
 
 ---
 
-**Class Name:** `.overscroll-none`
+#### ***`.overscroll-none`***
 
-**Description:** Applies the `overscroll-behavior: none` property to disable all overscroll behavior.
+Applies the `overscroll-behavior: none` property to disable all overscroll behavior.
 
 **CSS Equivalent:** `overscroll-behavior: none;`
 

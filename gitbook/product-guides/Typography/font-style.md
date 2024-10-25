@@ -11,6 +11,8 @@ Example usage:
 <span class="font-italic">This text is italic.</span>
 ```
 
+---
+
 #### `.font-normal`
 
 Sets the font style to normal.
@@ -21,6 +23,8 @@ Example usage:
 ```html
 <span class="font-normal">This text is normal.</span>
 ```
+
+---
 
 #### `.font-oblique`
 

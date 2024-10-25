@@ -11,6 +11,8 @@ Example usage:
 <span class="weight-bold">This text has a bold font weight.</span>
 ```
 
+---
+
 #### `.bold`
 
 Sets the font weight to `bold`.
@@ -21,6 +23,8 @@ Example usage:
 ```html
 <span class="bold">This text has a bold font weight.</span>
 ```
+
+---
 
 #### `.bolder`
 
@@ -33,6 +37,8 @@ Example usage:
 <span class="bolder">This text has a bolder font weight.</span>
 ```
 
+---
+
 #### `.light`
 
 Sets the font weight to `light`.
@@ -43,6 +49,8 @@ Example usage:
 ```html
 <span class="light">This text has a light font weight.</span>
 ```
+
+---
 
 #### `.lighter`
 

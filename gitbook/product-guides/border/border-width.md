@@ -1,8 +1,9 @@
-Border Width Classes
+### Border Width Classes
 
 The following utility classes control the border width of elements:
 
-`.border-{value}`
+#### `.border-{value}`
+
 Sets the border-width property to the specified value for all sides of the element.
 
 CSS equivalent: `border-width: {value}px;`
@@ -16,7 +17,8 @@ Example usage:
 
 ---
 
-`.border-t-{value}`
+#### `.border-t-{value}`
+
 Sets the border-top-width property to the specified value, controlling the top border width of the element.
 
 CSS equivalent: `border-top-width: {value}px;`
@@ -30,7 +32,8 @@ Example usage:
 
 ---
 
-`.border-b-{value}`
+#### `.border-b-{value}`
+
 Sets the border-bottom-width property to the specified value, controlling the bottom border width of the element.
 
 CSS equivalent: `border-bottom-width: {value}px;`
@@ -44,7 +47,8 @@ Example usage:
 
 ---
 
-`.border-l-{value}`
+#### `.border-l-{value}`
+
 Sets the border-left-width property to the specified value, controlling the left border width of the element.
 
 CSS equivalent: `border-left-width: {value}px;`
@@ -58,7 +62,8 @@ Example usage:
 
 ---
 
-`.border-r-{value}`
+#### `.border-r-{value}`
+
 Sets the border-right-width property to the specified value, controlling the right border width of the element.
 
 CSS equivalent: `border-right-width: {value}px;`
@@ -72,7 +77,8 @@ Example usage:
 
 ---
 
-`.border-x-{value}`
+#### `.border-x-{value}`
+
 Sets the border-left-width and border-right-width properties to the specified value, controlling the horizontal border width of the element.
 
 CSS equivalent: `border-left-width: {value}px; border-right-width: {value}px;`
@@ -86,7 +92,8 @@ Example usage:
 
 ---
 
-`.border-y-{value}`
+#### `.border-y-{value}`
+
 Sets the border-top-width and border-bottom-width properties to the specified value, controlling the vertical border width of the element.
 
 CSS equivalent: `border-top-width: {value}px; border-bottom-width: {value}px;`
@@ -97,5 +104,7 @@ Example usage:
   <!-- Content with top and bottom border width of 2px -->
 </div>
 ```
+
+---
 
 These utility classes allow you to easily control the border width of elements, providing flexibility in styling the borders according to your design requirements.

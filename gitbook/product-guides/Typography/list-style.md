@@ -16,6 +16,8 @@ Example usage:
 </ul>
 ```
 
+---
+
 #### `.list-disc`
 
 Sets the list marker to a disc, which is the default for unordered lists.
@@ -28,6 +30,8 @@ Example usage:
   <li><!--List with disc marker--></li>
 </ul>
 ```
+
+---
 
 #### `.list-circle`
 
@@ -42,6 +46,8 @@ Example usage:
 </ul>
 ```
 
+---
+
 #### `.list-square`
 
 Sets the list marker to a square.
@@ -54,6 +60,8 @@ Example usage:
   <li><!--List with square marker--></li>
 </ul>
 ```
+
+---
 
 #### `.list-decimal`
 
@@ -68,6 +76,8 @@ Example usage:
 </ol>
 ```
 
+---
+
 #### `.list-decimal-leading-zero`
 
 Sets the list marker to numbers with a leading zero (01, 02, 03, etc.).
@@ -80,6 +90,8 @@ Example usage:
   <li><!--List with decimal-leading-zero marker--></li>
 </ol>
 ```
+
+---
 
 #### `.list-lower-roman`
 
@@ -94,6 +106,8 @@ Example usage:
 </ol>
 ```
 
+---
+
 #### `.list-upper-roman`
 
 Sets the list marker to uppercase Roman numerals (I, II, III, etc.).
@@ -106,6 +120,8 @@ Example usage:
   <li><!--List with upper-roman marker--></li>
 </ol>
 ```
+
+---
 
 #### `.list-lower-alpha`
 
@@ -120,6 +136,8 @@ Example usage:
 </ol>
 ```
 
+---
+
 #### `.list-upper-alpha`
 
 Sets the list marker to uppercase alphabetical characters (A, B, C, etc.).
@@ -132,6 +150,8 @@ Example usage:
   <li><!--List with upper-alpha marker--></li>
 </ol>
 ```
+
+---
 
 #### `.list-lower-greek`
 
@@ -146,6 +166,8 @@ Example usage:
 </ol>
 ```
 
+---
+
 #### `.list-upper-greek`
 
 Sets the list marker to uppercase Greek characters (Α, Β, Γ, etc.).
@@ -158,6 +180,8 @@ Example usage:
   <li><!--List with upper-greek marker--></li>
 </ol>
 ```
+
+---
 
 #### `.list-lower-latin`
 
@@ -172,6 +196,8 @@ Example usage:
 </ol>
 ```
 
+---
+
 #### `.list-upper-latin`
 
 Sets the list marker to uppercase Latin characters (A, B, C, etc.).
@@ -184,6 +210,8 @@ Example usage:
   <li><!--List with upper-latin marker--></li>
 </ol>
 ```
+
+---
 
 #### `.list-disclosure-closed`
 
@@ -198,6 +226,8 @@ Example usage:
 </ul>
 ```
 
+---
+
 #### `.list-disclosure-open`
 
 Sets the list marker to an open disclosure triangle.
@@ -210,6 +240,8 @@ Example usage:
   <li><!--List with disclosure-open marker--></li>
 </ul>
 ```
+
+---
 
 ### List Style Position Classes
 
@@ -227,6 +259,8 @@ Example usage:
   <li><!--List with list-inside position--></li>
 </ul>
 ```
+
+---
 
 #### `.list-outside`
 

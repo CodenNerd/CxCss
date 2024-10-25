@@ -11,6 +11,8 @@ Example usage:
 <span class="text-lowercase">This text is transformed to lowercase.</span>
 ```
 
+---
+
 #### `.lowercase`
 
 Transforms the text to lowercase.
@@ -21,6 +23,8 @@ Example usage:
 ```html
 <span class="lowercase">This text is transformed to lowercase.</span>
 ```
+
+---
 
 #### `.text-uppercase`
 
@@ -33,6 +37,8 @@ Example usage:
 <span class="text-uppercase">This text is transformed to uppercase.</span>
 ```
 
+---
+
 #### `.uppercase`
 
 Transforms the text to uppercase.
@@ -43,6 +49,8 @@ Example usage:
 ```html
 <span class="uppercase">This text is transformed to uppercase.</span>
 ```
+
+---
 
 #### `.text-capitalize`
 
@@ -55,6 +63,8 @@ Example usage:
 <span class="text-capitalize">This text is transformed to capitalize.</span>
 ```
 
+---
+
 #### `.capitalize`
 
 Transforms the text to capitalize the first letter of each word.
@@ -66,6 +76,8 @@ Example usage:
 <span class="capitalize">This text is transformed to capitalize.</span>
 ```
 
+---
+
 #### `.text-none`
 
 Removes text transformation.
@@ -76,6 +88,8 @@ Example usage:
 ```html
 <span class="text-none">This text has no transformation.</span>
 ```
+
+---
 
 
 #### `.sentence-case`

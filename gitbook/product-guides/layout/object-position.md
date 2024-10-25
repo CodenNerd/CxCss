@@ -12,6 +12,8 @@ Example usage:
 <img src="image.jpg" class="object-top-left" alt="Image">
 ```
 
+---
+
 #### `.object-top-center`
 
 Sets the `object-position` property to `top center`, positioning the content at the top center of its container horizontally and at the top vertically.
@@ -22,6 +24,8 @@ Example usage:
 ```html
 <img src="image.jpg" class="object-top-center" alt="Image">
 ```
+
+---
 
 #### `.object-top-right`
 
@@ -34,6 +38,8 @@ Example usage:
 <img src="image.jpg" class="object-top-right" alt="Image">
 ```
 
+---
+
 #### `.object-center-left`
 
 Sets the `object-position` property to `center left`, positioning the content at the center left of its container horizontally and at the center vertically.
@@ -44,6 +50,8 @@ Example usage:
 ```html
 <img src="image.jpg" class="object-center-left" alt="Image">
 ```
+
+---
 
 #### `.object-center-center`
 
@@ -56,6 +64,8 @@ Example usage:
 <img src="image.jpg" class="object-center-center" alt="Image">
 ```
 
+---
+
 #### `.object-center-right`
 
 Sets the `object-position` property to `center right`, positioning the content at the center right of its container horizontally and at the center vertically.
@@ -66,6 +76,8 @@ Example usage:
 ```html
 <img src="image.jpg" class="object-center-right" alt="Image">
 ```
+
+---
 
 #### `.object-bottom-left`
 
@@ -78,6 +90,8 @@ Example usage:
 <img src="image.jpg" class="object-bottom-left" alt="Image">
 ```
 
+---
+
 #### `.object-bottom-center`
 
 Sets the `object-position` property to `bottom center`, positioning the content at the bottom center of its container horizontally and at the bottom vertically.
@@ -89,6 +103,8 @@ Example usage:
 <img src="image.jpg" class="object-bottom-center" alt="Image">
 ```
 
+---
+
 #### `.object-bottom-right`
 
 Sets the `object-position` property to `bottom right`, positioning the content at the bottom right corner of its container.
@@ -99,6 +115,8 @@ Example usage:
 ```html
 <img src="image.jpg" class="object-bottom-right" alt="Image">
 ```
+
+---
 
 
 ### Dynamic Object Position Classes
@@ -122,5 +140,7 @@ Examples of pattern-based utility classes:
 <img src="image.jpg" class="object-position-50p-20" alt="Image">
 <img src="image.jpg" class="object-position-30p-70p" alt="Image">
 ```
+
+---
 
 These utility classes allow you to precisely control the position of the content within its container using the `object-position` property. The percentage value indicated by "p" enables you to set the vertical position proportionally relative to the container's height.

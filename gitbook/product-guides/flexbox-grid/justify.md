@@ -12,6 +12,8 @@ Example usage:
 <div class="space-between">This container has items evenly spaced with space between them.</div>
 ```
 
+---
+
 #### `.j-content-between`
 
 Alias class for `.space-between`. Sets the justify-content property to space-between.
@@ -22,6 +24,8 @@ Example usage:
 ```html
 <div class="j-content-between">This container has items evenly spaced with space between them.</div>
 ```
+
+---
 
 #### `.j-content-center`
 
@@ -34,6 +38,8 @@ Example usage:
 <div class="j-content-center">This container has items aligned at the center.</div>
 ```
 
+---
+
 #### `.j-content-initial`
 
 Sets the justify-content property to initial, restoring the default justify content behavior.
@@ -44,6 +50,8 @@ Example usage:
 ```html
 <div class="j-content-initial">This container has the initial justify content behavior.</div>
 ```
+
+---
 
 #### `.j-content-inherit`
 
@@ -56,6 +64,8 @@ Example usage:
 <div class="j-content-inherit">This container inherits the justify content behavior from its parent.</div>
 ```
 
+---
+
 #### `.j-content-start`
 
 Sets the justify-content property to flex-start, aligning items along the main axis at the start of the container.
@@ -67,6 +77,8 @@ Example usage:
 <div class="j-content-start">This container has items aligned at the start.</div>
 ```
 
+---
+
 #### `.j-content-end`
 
 Sets the justify-content property to flex-end, aligning items along the main axis at the end of the container.
@@ -77,6 +89,8 @@ Example usage:
 ```html
 <div class="j-content-end">This container has items aligned at the end.</div>
 ```
+
+---
 
 #### `.content-end`
 
@@ -93,6 +107,8 @@ Example usage:
 <div class="content-end">This container has its content aligned at the end along both the main and cross axes.</div>
 ```
 
+---
+
 #### `.j-content-around`
 
 Sets the justify-content property to space-around, distributing items evenly along the main axis with equal space around them.
@@ -103,6 +119,8 @@ Example usage:
 ```html
 <div class="j-content-around">This container has items evenly spaced with equal space around them.</div>
 ```
+
+---
 
 #### `.j-content-evenly`
 
@@ -117,6 +135,8 @@ Example usage:
 
 ### Justify Items Classes
 
+---
+
 #### `.j-items-start`
 
 Sets the justify-items property to flex-start, aligning items along the inline axis at the start of the container.
@@ -127,6 +147,8 @@ Example usage:
 ```html
 <div class="j-items-start">This container has items aligned at the start along the inline axis.</div>
 ```
+
+---
 
 #### `.j-items-end`
 
@@ -139,6 +161,8 @@ Example usage:
 <div class="j-items-end">This container has items aligned at the end along the inline axis.</div>
 ```
 
+---
+
 #### `.j-items-center`
 
 Sets the justify-items property to center, aligning items along the inline axis at the center of the container.
@@ -149,6 +173,8 @@ Example usage:
 ```html
 <div class="j-items-center">This container has items aligned at the center along the inline axis.</div>
 ```
+
+---
 
 #### `.j-items-baseline`
 
@@ -161,6 +187,8 @@ Example usage:
 <div class="j-items-baseline">This container has items aligned based on their baseline along the inline axis.</div>
 ```
 
+---
+
 #### `.j-items-stretch`
 
 Sets the justify-items property to stretch, stretching items along the inline axis to fill the container.
@@ -172,6 +200,8 @@ Example usage:
 <div class="j-items-stretch">This container has items stretched to fill the container along the inline axis.</div>
 ```
 
+---
+
 #### `.j-items-initial`
 
 Sets the justify-items property to initial, restoring the default justify items behavior.
@@ -182,6 +212,8 @@ Example usage:
 ```html
 <div class="j-items-initial">This container has the initial justify items behavior.</div>
 ```
+
+---
 
 #### `.j-items-inherit`
 
@@ -196,6 +228,8 @@ Example usage:
 
 ### Justify Self Classes
 
+---
+
 #### `.j-self-auto`
 
 Sets the justify-self property to auto, allowing the item to inherit its parent's justify content value.
@@ -206,6 +240,8 @@ Example usage:
 ```html
 <div class="j-self-auto">This item inherits its parent's justify content value.</div>
 ```
+
+---
 
 #### `.j-self-start`
 
@@ -220,6 +256,8 @@ Example usage:
 <div class="j-self-start">This item is aligned at the start along the main axis.</div>
 ```
 
+---
+
 #### `.j-self-end`
 
 Sets the justify-self property to flex-end, aligning the item at the end of the container along the main axis.
@@ -230,6 +268,8 @@ Example usage:
 ```html
 <div class="j-self-end">This item is aligned at the end along the main axis.</div>
 ```
+
+---
 
 #### `.j-self-center`
 
@@ -242,6 +282,8 @@ Example usage:
 <div class="j-self-center">This item is aligned at the center along the main axis.</div>
 ```
 
+---
+
 #### `.j-self-baseline`
 
 Sets the justify-self property to baseline, aligning the item based on its baseline along the main axis.
@@ -252,6 +294,8 @@ Example usage:
 ```html
 <div class="j-self-baseline">This item is aligned based on its baseline along the main axis.</div>
 ```
+
+---
 
 #### `.j-self-stretch`
 
@@ -264,6 +308,8 @@ Example usage:
 <div class="j-self-stretch">This item is stretched to fill the container along the main axis.</div>
 ```
 
+---
+
 #### `.j-self-initial`
 
 Sets the justify-self property to initial, restoring the default justify self behavior.
@@ -274,6 +320,8 @@ Example usage:
 ```html
 <div class="j-self-initial">This item has the initial justify self behavior.</div>
 ```
+
+---
 
 #### `.j-self-inherit`
 

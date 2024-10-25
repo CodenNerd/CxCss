@@ -1,11 +1,12 @@
-Blend Mode Classes
+### Blend Mode Classes
 
 The following utility classes control the blend mode of elements:
 
-.mix-normal
+#### `.mix-normal`
+
 Sets the blend mode of the element to normal.
 
-CSS equivalent: mix-blend-mode: normal;
+CSS equivalent: `mix-blend-mode: normal;`
 
 Example usage:
 
@@ -15,10 +16,13 @@ Example usage:
 </div>
 ```
 
-.mix-multiply
+---
+
+#### `.mix-multiply`
+
 Sets the blend mode of the element to multiply.
 
-CSS equivalent: mix-blend-mode: multiply;
+CSS equivalent: `mix-blend-mode: multiply;`
 
 Example usage:
 
@@ -28,10 +32,13 @@ Example usage:
 </div>
 ```
 
-.mix-screen
+---
+
+#### `.mix-screen`
+
 Sets the blend mode of the element to screen.
 
-CSS equivalent: mix-blend-mode: screen;
+CSS equivalent: `mix-blend-mode: screen;`
 
 Example usage:
 
@@ -41,10 +48,13 @@ Example usage:
 </div>
 ```
 
-.mix-overlay
+---
+
+#### `.mix-overlay`
+
 Sets the blend mode of the element to overlay.
 
-CSS equivalent: mix-blend-mode: overlay;
+CSS equivalent: `mix-blend-mode: overlay;`
 
 Example usage:
 
@@ -54,10 +64,13 @@ Example usage:
 </div>
 ```
 
-.mix-darken
+---
+
+#### `.mix-darken`
+
 Sets the blend mode of the element to darken.
 
-CSS equivalent: mix-blend-mode: darken;
+CSS equivalent: `mix-blend-mode: darken;`
 
 Example usage:
 
@@ -67,10 +80,13 @@ Example usage:
 </div>
 ```
 
-.mix-lighten
+---
+
+#### `.mix-lighten`
+
 Sets the blend mode of the element to lighten.
 
-CSS equivalent: mix-blend-mode: lighten;
+CSS equivalent: `mix-blend-mode: lighten;`
 
 Example usage:
 
@@ -80,10 +96,13 @@ Example usage:
 </div>
 ```
 
-.mix-color-dodge
+---
+
+#### `.mix-color-dodge`
+
 Sets the blend mode of the element to color-dodge.
 
-CSS equivalent: mix-blend-mode: color-dodge;
+CSS equivalent: `mix-blend-mode: color-dodge;`
 
 Example usage:
 
@@ -93,10 +112,13 @@ Example usage:
 </div>
 ```
 
-.mix-color-burn
+---
+
+#### `.mix-color-burn`
+
 Sets the blend mode of the element to color-burn.
 
-CSS equivalent: mix-blend-mode: color-burn;
+CSS equivalent: `mix-blend-mode: color-burn;`
 
 Example usage:
 
@@ -106,10 +128,13 @@ Example usage:
 </div>
 ```
 
-.mix-hard-light
+---
+
+#### `.mix-hard-light`
+
 Sets the blend mode of the element to hard-light.
 
-CSS equivalent: mix-blend-mode: hard-light;
+CSS equivalent: `mix-blend-mode: hard-light;`
 
 Example usage:
 
@@ -119,10 +144,13 @@ Example usage:
 </div>
 ```
 
-.mix-soft-light
+---
+
+#### `.mix-soft-light`
+
 Sets the blend mode of the element to soft-light.
 
-CSS equivalent: mix-blend-mode: soft-light;
+CSS equivalent: `mix-blend-mode: soft-light;`
 
 Example usage:
 
@@ -132,10 +160,13 @@ Example usage:
 </div>
 ```
 
-.mix-difference
+---
+
+#### `.mix-difference`
+
 Sets the blend mode of the element to difference.
 
-CSS equivalent: mix-blend-mode: difference;
+CSS equivalent: `mix-blend-mode: difference;`
 
 Example usage:
 
@@ -145,10 +176,13 @@ Example usage:
 </div>
 ```
 
-.mix-exclusion
+---
+
+#### `.mix-exclusion`
+
 Sets the blend mode of the element to exclusion.
 
-CSS equivalent: mix-blend-mode: exclusion;
+CSS equivalent: `mix-blend-mode: exclusion;`
 
 Example usage:
 
@@ -158,10 +192,13 @@ Example usage:
 </div>
 ```
 
-.mix-hue
+---
+
+#### `.mix-hue`
+
 Sets the blend mode of the element to hue.
 
-CSS equivalent: mix-blend-mode: hue;
+CSS equivalent: `mix-blend-mode: hue;`
 
 Example usage:
 
@@ -171,10 +208,13 @@ Example usage:
 </div>
 ```
 
-.mix-saturation
+---
+
+#### `.mix-saturation`
+
 Sets the blend mode of the element to saturation.
 
-CSS equivalent: mix-blend-mode: saturation;
+CSS equivalent: `mix-blend-mode: saturation;`
 
 Example usage:
 
@@ -184,10 +224,13 @@ Example usage:
 </div>
 ```
 
-.mix-color
+---
+
+#### `.mix-color`
+
 Sets the blend mode of the element to color.
 
-CSS equivalent: mix-blend-mode: color;
+CSS equivalent: `mix-blend-mode: color;`
 
 Example usage:
 
@@ -197,10 +240,13 @@ Example usage:
 </div>
 ```
 
-.mix-luminosity
+---
+
+#### `.mix-luminosity`
+
 Sets the blend mode of the element to luminosity.
 
-CSS equivalent: mix-blend-mode: luminosity;
+CSS equivalent: `mix-blend-mode: luminosity;`
 
 Example usage:
 
@@ -209,5 +255,7 @@ Example usage:
   <!-- Content with luminosity blend mode -->
 </div>
 ```
+
+---
 
 Feel free to apply these classes to elements to achieve different blend modes as needed.

@@ -13,6 +13,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-ellipsis`
 
 Adds an ellipsis (...) to the end of the overflowing text.
@@ -25,6 +27,8 @@ Example usage:
   <p>This text overflows and is truncated with an ellipsis.</p>
 </div>
 ```
+
+---
 
 #### `.text-fade`
 
