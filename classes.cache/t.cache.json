@@ -1249,5 +1249,10 @@
   "text-last-initial": ".text-last-initial { text-align-last: initial; }",
   "text-last-inherit": ".text-last-inherit { text-align-last: inherit; }",
   "text-last-unset": ".text-last-unset { text-align-last: unset; }",
-  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }"
+  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }",
+  "text-wrap-wrap": ".text-wrap-wrap { text-wrap: wrap; }",
+  "text-wrap-nowrap": ".text-wrap-nowrap { text-wrap: nowrap; }",
+  "text-wrap-balance": ".text-wrap-balance { text-wrap: balance; }",
+  "text-wrap-pretty": ".text-wrap-pretty { text-wrap: pretty; }",
+  "text-wrap-stable": ".text-wrap-stable { text-wrap: stable; }"
 }

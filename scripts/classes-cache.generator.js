@@ -637,6 +637,12 @@ classes = {
   'word-wrap-normal': '.word-wrap-normal { word-wrap: normal; }',
   'word-wrap-break-word': '.word-wrap-break-word { word-wrap: break-word; }',
 
+  "text-wrap-wrap": ".text-wrap-wrap { text-wrap: wrap; }",
+  "text-wrap-nowrap": ".text-wrap-nowrap { text-wrap: nowrap; }",
+  "text-wrap-balance": ".text-wrap-balance { text-wrap: balance; }",
+  "text-wrap-pretty": ".text-wrap-pretty { text-wrap: pretty; }",
+  "text-wrap-stable": ".text-wrap-stable { text-wrap: stable; }",
+
   'box-slice': '.box-slice { box-decoration-break: slice; }',
   'box-clone': '.box-clone { box-decoration-break: clone; }',
   'box-size-content': '.box-size-content { box-sizing: content-box; }',
