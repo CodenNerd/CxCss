@@ -13,6 +13,8 @@ Example usage:
 <div class="float-right">This element floats to the right.</div>
 ```
 
+---
+
 #### `.float-left`
 
 Sets the float property to `left`, causing the element to float to the left of its containing block. Other content will flow around it on the right side.
@@ -23,5 +25,7 @@ Example usage:
 ```html
 <div class="float-left">This element floats to the left.</div>
 ```
+
+---
 
 The float property allows elements to be positioned horizontally within their containing block, allowing other content to flow around them. Use these classes to achieve different text wrapping and layout effects in your design.

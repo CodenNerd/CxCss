@@ -1,5 +1,4 @@
 
-
 ### Grid Columns Auto Classes
 
 #### `.grid-{number}-cols-auto`
@@ -14,6 +13,8 @@ Example usage:
 ```
 
 ### Grid Columns 1fr Classes
+
+---
 
 #### `.grid-{number}-cols-1fr`
 
@@ -30,6 +31,8 @@ These classes allow you to easily define the number of columns in a grid contain
 
 
 ### Grid Column Span Classes
+
+---
 
 #### `.grid-col-span-{number}`
 
@@ -48,6 +51,8 @@ Here's the documentation for the grid utility classes related to grid auto flow:
 
 ### Grid Auto Flow Classes
 
+---
+
 #### `.grid-flow-row`
 
 Sets the grid auto flow to row.
@@ -58,6 +63,8 @@ Example usage:
 ```html
 <div class="grid-flow-row">This element follows a row-based auto flow in a grid container.</div>
 ```
+
+---
 
 #### `.grid-flow-cols`
 
@@ -70,6 +77,8 @@ Example usage:
 <div class="grid-flow-cols">This element follows a column-based auto flow in a grid container.</div>
 ```
 
+---
+
 #### `.grid-flow-row-dense`
 
 Sets the grid auto flow to row with dense packing.
@@ -80,6 +89,8 @@ Example usage:
 ```html
 <div class="grid-flow-row-dense">This element follows a row-based auto flow with dense packing in a grid container.</div>
 ```
+
+---
 
 #### `.grid-flow-cols-dense`
 
@@ -97,6 +108,8 @@ These classes allow you to control the automatic placement of grid items within 
 Certainly! Here's the documentation for the grid utility class related to grid auto columns:
 
 ### Grid Auto Columns Classes
+
+---
 
 #### `.grid-auto-columns-{number}`
 
@@ -116,6 +129,8 @@ Certainly! Here's the documentation for the grid utility classes related to grid
 
 ### Grid Auto Columns Classes
 
+---
+
 #### `.grid-auto-columns-{number}`
 
 Sets the size of grid auto columns in a grid container.
@@ -128,6 +143,8 @@ Example usage:
 ```
 
 ### Grid Auto Rows Classes
+
+---
 
 #### `.grid-auto-rows-{number}`
 
@@ -142,6 +159,8 @@ Example usage:
 
 ### Grid Column Gap Class
 
+---
+
 #### `.grid-cols-gap-{number}`
 
 Sets the gap between grid columns in a grid container.
@@ -155,6 +174,8 @@ Example usage:
 
 ### Grid Gap Classes
 
+---
+
 #### `.grid-gap-{number}`
 
 Sets the gap between grid rows and columns in a grid container.
@@ -167,6 +188,8 @@ Example usage:
 ```
 
 ### Grid Row Gap Class
+
+---
 
 #### `.grid-row-gap-{number}`
 
@@ -184,6 +207,8 @@ These classes allow you to control the sizing and gaps within a grid container. 
 
 ### Column Gap Class
 
+---
+
 #### `.column-gap-{number}`
 
 Sets the gap between columns in a multi-column layout.
@@ -198,5 +223,7 @@ Example usage:
 The `.column-gap-{number}` class allows you to control the gap between columns in a multi-column layout. It sets the `column-gap` CSS property, which determines the space between columns.
 
 You can specify the desired gap size by replacing `{number}` with the desired pixel value. For example, using `.column-gap-20` sets a column gap of 20 pixels.
+
+---
 
 Feel free to ask if you have any further questions!

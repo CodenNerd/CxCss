@@ -13,6 +13,8 @@ Example usage:
 <div class="clear-none">This element clears no floats.</div>
 ```
 
+---
+
 #### `.clear-left`
 
 Sets the clear property to `left`, forcing the element to be positioned below any preceding left-floated elements.
@@ -23,6 +25,8 @@ Example usage:
 ```html
 <div class="clear-left">This element clears left floats.</div>
 ```
+
+---
 
 #### `.clear-right`
 
@@ -35,6 +39,8 @@ Example usage:
 <div class="clear-right">This element clears right floats.</div>
 ```
 
+---
+
 #### `.clear-both`
 
 Sets the clear property to `both`, forcing the element to be positioned below any preceding left or right-floated elements.
@@ -45,6 +51,8 @@ Example usage:
 ```html
 <div class="clear-both">This element clears both left and right floats.</div>
 ```
+
+---
 
 #### `.clear-inline-start`
 
@@ -57,6 +65,8 @@ Example usage:
 <div class="clear-inline-start">This element clears inline-start floats.</div>
 ```
 
+---
+
 #### `.clear-inline-end`
 
 Sets the clear property to `inline-end`, forcing the element to be positioned below any preceding left or right-floated elements within an inline formatting context.
@@ -67,5 +77,7 @@ Example usage:
 ```html
 <div class="clear-inline-end">This element clears inline-end floats.</div>
 ```
+
+---
 
 The clear property controls the behavior of an element concerning floated elements. Use these classes to control the positioning of elements in relation to floats within your layout.

@@ -185,12 +185,23 @@ classes = {
   'grid': `.grid {
     display: grid;
   }`,
+  "inline-grid": ".inline-grid { display: inline-grid;  }",
   'flex': `.flex {
     display: flex;
   }`,
   'inline-flex': `.inline-flex {
     display: inline-flex;
   }`,
+  "table": ".table {    display: table;  }",
+  "inline-table": ".inline-table {    display: inline-table;  }",
+  "table-caption": ".table-caption {    display: table-caption;  }",
+  "table-column": ".table-column {    display: table-column;  }",
+  "table-row": ".table-row {    display: table-row;  }",
+  "table-cell": ".table-cell {    display: table-cell;  }",
+  "table-column-group": ".table-column-group {    display: table-column-group;  }",
+  "table-row-group": ".table-row-group {    display: table-row-group;  }",
+  "table-header-group": ".table-header-group {    display: table-header-group;  }",
+  "table-footer-group": ".table-footer-group {    display: table-footer-group;  }",
   'flex-col': `.flex-col {
     flex-direction: column;
   }`,
@@ -531,6 +542,7 @@ classes = {
   'list-lower-alpha': '.list-lower-alpha { list-style-type: lower-alpha; }',
   'list-upper-alpha': '.list-upper-alpha { list-style-type: upper-alpha; }',
   'list-lower-greek': '.list-lower-greek { list-style-type: lower-greek; }',
+  "list-upper-greek": ".list-upper-greek { list-style-type: upper-greek; }",
   'list-lower-latin': '.list-lower-latin { list-style-type: lower-latin; }',
   'list-upper-latin': '.list-upper-latin { list-style-type: upper-latin; }',
   'list-disclosure-closed': '.list-disclosure-closed { list-style-type: disclosure-closed; }',
@@ -598,6 +610,7 @@ classes = {
 
   'text-clip': '.text-clip { text-overflow: clip; }',
   'text-ellipsis': '.text-ellipsis { text-overflow: ellipsis; }',
+  "text-fade": ".text-fade { text-overflow: fade; }",
 
   'white-space-normal': '.white-space-normal { white-space: normal; }',
   'white-space-nowrap': '.white-space-nowrap { white-space: nowrap; }',
@@ -623,6 +636,12 @@ classes = {
   'word-break-break-all': '.word-break-break-all { word-break: break-all; }',
   'word-wrap-normal': '.word-wrap-normal { word-wrap: normal; }',
   'word-wrap-break-word': '.word-wrap-break-word { word-wrap: break-word; }',
+
+  "text-wrap-wrap": ".text-wrap-wrap { text-wrap: wrap; }",
+  "text-wrap-nowrap": ".text-wrap-nowrap { text-wrap: nowrap; }",
+  "text-wrap-balance": ".text-wrap-balance { text-wrap: balance; }",
+  "text-wrap-pretty": ".text-wrap-pretty { text-wrap: pretty; }",
+  "text-wrap-stable": ".text-wrap-stable { text-wrap: stable; }",
 
   'box-slice': '.box-slice { box-decoration-break: slice; }',
   'box-clone': '.box-clone { box-decoration-break: clone; }',
@@ -865,9 +884,14 @@ classes = {
   'bg-pos-bottom-left': '.bg-pos-bottom-left { background-position: bottom left; }',
   'bg-pos-bottom-center': '.bg-pos-bottom-center { background-position: bottom center; }',
   'bg-pos-bottom-right': '.bg-pos-bottom-right { background-position: bottom right; }',
-  'bg-image-none': '.bg-image-none { background-image: none; }'
+  'bg-image-none': '.bg-image-none { background-image: none; }',
 
-
+  "bg-repeat": ".bg-repeat { background-repeat: repeat; }",
+  "bg-repeat-x": ".bg-repeat-x { background-repeat: repeat-x; }",
+  "bg-repeat-y": ".bg-repeat-y { background-repeat: repeat-y; }",
+  "bg-no-repeat": ".bg-no-repeat { background-repeat: no-repeat; }",
+  "bg-space": ".bg-space { background-repeat: space; }",
+  "bg-round": ".bg-round { background-repeat: round; }"
 
 };
 

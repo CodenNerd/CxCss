@@ -1,8 +1,9 @@
-Visibility Classes
+### Visibility Classes
 
 The following utility classes control the visibility of elements:
 
-`.visibility-visible`
+#### `.visibility-visible`
+
 Sets the visibility property to visible, making the element visible.
 
 CSS equivalent: `visibility: visible;`
@@ -16,7 +17,8 @@ Example usage:
 
 ---
 
-`.visibility-hidden`
+#### `.visibility-hidden`
+
 Sets the visibility property to hidden, hiding the element while still occupying its space.
 
 CSS equivalent: `visibility: hidden;`
@@ -30,7 +32,8 @@ Example usage:
 
 ---
 
-`.visibility-collapse`
+#### `.visibility-collapse`
+
 Sets the visibility property to collapse, hiding the element and collapsing the space it occupies.
 
 CSS equivalent: `visibility: collapse;`
@@ -41,5 +44,7 @@ Example usage:
   <!-- Collapsed content -->
 </div>
 ```
+
+---
 
 These utility classes provide a convenient way to control the visibility of elements, allowing you to show or hide content as needed.

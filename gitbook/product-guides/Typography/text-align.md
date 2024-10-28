@@ -11,6 +11,8 @@ Example usage:
 <div class="text-right">This text is aligned to the right.</div>
 ```
 
+---
+
 #### `.text-center`
 
 Aligns the text to the center.
@@ -22,6 +24,8 @@ Example usage:
 <div class="text-center">This text is aligned to the center.</div>
 ```
 
+---
+
 #### `.text-left`
 
 Aligns the text to the left.
@@ -32,6 +36,8 @@ Example usage:
 ```html
 <div class="text-left">This text is aligned to the left.</div>
 ```
+
+---
 
 ### Text Justification Classes
 
@@ -49,6 +55,8 @@ Example
   <p>This text is justified with the auto justification mode.</p>
 </div>
 ```
+
+---
 
 #### `.text-justify-inter-word`
 
@@ -69,6 +77,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-justify-inter-ideograph`
 
 Sets the text justification to inter-ideograph.
@@ -87,6 +97,8 @@ Example usage:
   <p>This text is justified with the inter-ideograph justification mode.</p>
 </div>
 ```
+
+---
 
 #### `.text-justify-inter-cluster`
 
@@ -107,6 +119,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-justify-distribute`
 
 Sets the text justification to distribute.
@@ -126,6 +140,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-justify-kashida`
 
 Sets the text justification to kashida.
@@ -144,6 +160,8 @@ Example usage:
   <p>This text is justified with the kashida justification mode.</p>
 </div>
 ```
+
+---
 
 #### `.text-justify-tibetan`
 

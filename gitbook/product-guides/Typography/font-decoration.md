@@ -11,6 +11,8 @@ Example usage:
 <span class="no-decoration">This text has no decoration.</span>
 ```
 
+---
+
 #### `.underline`
 
 Adds an underline to the text.
@@ -21,6 +23,8 @@ Example usage:
 ```html
 <span class="underline">This text is underlined.</span>
 ```
+
+---
 
 #### `.overline`
 
@@ -33,6 +37,8 @@ Example usage:
 <span class="overline">This text has an overline.</span>
 ```
 
+---
+
 #### `.line-through`
 
 Adds a line-through to the text.
@@ -43,6 +49,8 @@ Example usage:
 ```html
 <span class="line-through">This text has a line-through.</span>
 ```
+
+---
 
 ### Text Decoration Style Classes
 
@@ -57,6 +65,8 @@ Example usage:
 <span class="decoration-solid">This text has a solid text decoration style.</span>
 ```
 
+---
+
 #### `.decoration-double`
 
 Sets the text decoration style to double.
@@ -67,6 +77,8 @@ Example usage:
 ```html
 <span class="decoration-double">This text has a double text decoration style.</span>
 ```
+
+---
 
 #### `.decoration-dotted`
 
@@ -79,6 +91,8 @@ Example usage:
 <span class="decoration-dotted">This text has a dotted text decoration style.</span>
 ```
 
+---
+
 #### `.decoration-dashed`
 
 Sets the text decoration style to dashed.
@@ -89,6 +103,8 @@ Example usage:
 ```html
 <span class="decoration-dashed">This text has a dashed text decoration style.</span>
 ```
+
+---
 
 #### `.decoration-wavy`
 

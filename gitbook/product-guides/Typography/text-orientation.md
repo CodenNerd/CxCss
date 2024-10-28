@@ -13,6 +13,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-orientation-upright`
 
 Sets the text orientation to upright.
@@ -26,6 +28,8 @@ Example usage:
 </div>
 ```
 
+---
+
 #### `.text-orientation-sideways`
 
 Sets the text orientation to sideways.
@@ -38,6 +42,8 @@ Example usage:
   <p>This text has a sideways text orientation.</p>
 </div>
 ```
+
+---
 
 #### `.text-orientation-sideways-right`
 
@@ -53,5 +59,3 @@ Example usage:
   <p>This text has a sideways-right text orientation.</p>
 </div>
 ```
-
-

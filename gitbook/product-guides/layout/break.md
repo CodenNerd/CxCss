@@ -12,6 +12,8 @@ Example usage:
 <div class="break-after-auto">This element has automatic break behavior after it.</div>
 ```
 
+---
+
 #### `.break-after-avoid`
 
 Sets the break behavior after an element to `avoid`, indicating that the element should not be the start of a break.
@@ -22,6 +24,8 @@ Example usage:
 ```html
 <div class="break-after-avoid">This element should avoid being the start of a break.</div>
 ```
+
+---
 
 #### `.break-after-always`
 
@@ -34,6 +38,8 @@ Example usage:
 <div class="break-after-always">This element always starts a new break.</div>
 ```
 
+---
+
 #### `.break-after-all`
 
 Sets the break behavior after an element to `all`, indicating that all content should be forced to break after the element.
@@ -45,6 +51,8 @@ Example usage:
 <div class="break-after-all">All content should break after this element.</div>
 ```
 
+---
+
 #### `.break-after-page`
 
 Sets the break behavior after an element to `avoid-page`, indicating that the element should avoid breaking on a page boundary.
@@ -55,6 +63,8 @@ Example usage:
 ```html
 <div class="break-after-page">This element should avoid breaking at a page boundary.</div>
 ```
+
+---
 
 #### `.break-after-column`
 
@@ -73,6 +83,8 @@ These classes allow you to control the break behavior after an element, specifyi
 
 ### Break Before Classes
 
+---
+
 #### `.break-before-auto`
 
 Sets the break behavior before an element to `auto`, allowing the browser to determine the break behavior.
@@ -83,6 +95,8 @@ Example usage:
 ```html
 <div class="break-before-auto">This element has automatic break behavior before it.</div>
 ```
+
+---
 
 #### `.break-before-avoid`
 
@@ -95,6 +109,8 @@ Example usage:
 <div class="break-before-avoid">This element should avoid being the end of a break.</div>
 ```
 
+---
+
 #### `.break-before-always`
 
 Sets the break behavior before an element to `always`, forcing a break before the element.
@@ -105,6 +121,8 @@ Example usage:
 ```html
 <div class="break-before-always">This element always ends a break.</div>
 ```
+
+---
 
 #### `.break-before-all`
 
@@ -117,6 +135,8 @@ Example usage:
 <div class="break-before-all">All content should break before this element.</div>
 ```
 
+---
+
 #### `.break-before-page`
 
 Sets the break behavior before an element to `avoid-page`, indicating that the element should avoid breaking on a page boundary.
@@ -127,6 +147,8 @@ Example usage:
 ```html
 <div class="break-before-page">This element should avoid breaking at a page boundary.</div>
 ```
+
+---
 
 #### `.break-before-column`
 
@@ -146,6 +168,8 @@ These classes allow you to control the break behavior before an element, specify
 
 ### Break Inside Classes
 
+---
+
 #### `.break-inside-auto`
 
 Sets the break behavior inside an element to `auto`, allowing the browser to determine the break behavior.
@@ -156,6 +180,8 @@ Example usage:
 ```html
 <div class="break-inside-auto">This element has automatic break behavior inside it.</div>
 ```
+
+---
 
 #### `.break-inside-avoid`
 
@@ -168,6 +194,8 @@ Example usage:
 <div class="break-inside-avoid">This element should avoid being broken inside.</div>
 ```
 
+---
+
 #### `.break-inside-avoid-page`
 
 Sets the break behavior inside an element to `avoid-page`, indicating that the element should avoid being broken at a page boundary.
@@ -178,6 +206,8 @@ Example usage:
 ```html
 <div class="break-inside-avoid-page">This element should avoid being broken at a page boundary.</div>
 ```
+
+---
 
 #### `.break-inside-avoid-column`
 
@@ -196,6 +226,8 @@ These classes allow you to control the break behavior inside an element, specify
 
 ### Page Break After Classes
 
+---
+
 #### `.page-break-after-auto`
 
 Sets the page break behavior after an element to `auto`, allowing the browser to determine the page break behavior.
@@ -206,6 +238,8 @@ Example usage:
 ```html
 <div class="page-break-after-auto">This element has automatic page break behavior after it.</div>
 ```
+
+---
 
 #### `.page-break-after-always`
 
@@ -218,6 +252,8 @@ Example usage:
 <div class="page-break-after-always">A page break should always occur after this element.</div>
 ```
 
+---
+
 #### `.page-break-after-avoid`
 
 Sets the page break behavior after an element to `avoid`, indicating that a page break should be avoided after the element.
@@ -229,6 +265,8 @@ Example usage:
 <div class="page-break-after-avoid">A page break should be avoided after this element.</div>
 ```
 
+---
+
 #### `.page-break-after-left`
 
 Sets the page break behavior after an element to `left`, indicating that a page break should occur after the element and that the next page should be a left-hand page.
@@ -239,6 +277,8 @@ Example usage:
 ```html
 <div class="page-break-after-left">A page break should occur after this element, and the next page should be a left-hand page.</div>
 ```
+
+---
 
 #### `.page-break-after-right`
 
@@ -253,6 +293,8 @@ Example usage:
 
 ### Page Break Before Classes
 
+---
+
 #### `.page-break-before-auto`
 
 Sets the page break behavior before an element to `auto`, allowing the browser to determine the page break behavior.
@@ -263,6 +305,8 @@ Example usage:
 ```html
 <div class="page-break-before-auto">This element has automatic page break behavior before it.</div>
 ```
+
+---
 
 #### `.page-break-before-always`
 
@@ -275,6 +319,8 @@ Example usage:
 <div class="page-break-before-always">A page break should always occur before this element.</div>
 ```
 
+---
+
 #### `.page-break-before-avoid`
 
 Sets the page break behavior before an element to `avoid`, indicating that a page break should be avoided before the element.
@@ -285,6 +331,8 @@ Example usage:
 ```html
 <div class="page-break-before-avoid">A page break should be avoided before this element.</div>
 ```
+
+---
 
 #### `.page-break-before-left`
 
@@ -297,6 +345,8 @@ Example usage:
 <div class="page-break-before-left">A page break should occur before this element, and the previous page should be a left-hand page.</div>
 ```
 
+---
+
 #### `.page-break-before-right`
 
 Sets the page break behavior before an element to `right`, indicating that a page break should occur before the element and that the previous page should be a right-hand page.
@@ -307,5 +357,7 @@ Example usage:
 ```html
 <div class="page-break-before-right">A page break should occur before this element, and the previous page should be a right-hand page.</div>
 ```
+
+---
 
 These classes allow you to control the page break behavior before or after an element, specifying when and how page breaks should occur in print or multi-page contexts. Use them to control the layout and pagination of content.

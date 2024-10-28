@@ -1,8 +1,9 @@
-Border Style Classes
+### Border Style Classes
 
 The following classes control the border style of elements:
 
-`.border-dashed`
+#### `.border-dashed`
+
 Sets the border-style property to dashed, creating a dashed line border.
 
 CSS equivalent: `border-style: dashed;`
@@ -16,7 +17,8 @@ Example usage:
 
 ---
 
-`.border-dotted`
+#### `.border-dotted`
+
 Sets the border-style property to dotted, creating a dotted line border.
 
 CSS equivalent: `border-style: dotted;`
@@ -30,7 +32,8 @@ Example usage:
 
 ---
 
-`.border-double`
+#### `.border-double`
+
 Sets the border-style property to double, creating a double line border.
 
 CSS equivalent: `border-style: double;`
@@ -44,7 +47,8 @@ Example usage:
 
 ---
 
-`.border-none`
+#### `.border-none`
+
 Sets the border-style property to none, removing the border.
 
 CSS equivalent: `border-style: none;`
@@ -58,7 +62,8 @@ Example usage:
 
 ---
 
-`.border-solid`
+#### `.border-solid`
+
 Sets the border-style property to solid, creating a solid line border.
 
 CSS equivalent: `border-style: solid;`
@@ -72,7 +77,8 @@ Example usage:
 
 ---
 
-`.border-inset`
+#### `.border-inset`
+
 Sets the border-style property to inset, creating an inset border.
 
 CSS equivalent: `border-style: inset;`
@@ -86,7 +92,8 @@ Example usage:
 
 ---
 
-`.border-outset`
+#### `.border-outset`
+
 Sets the border-style property to outset, creating an outset border.
 
 CSS equivalent: `border-style: outset;`
@@ -100,7 +107,8 @@ Example usage:
 
 ---
 
-`.border-hidden`
+#### `.border-hidden`
+
 Sets the border-style property to hidden, hiding the border.
 
 CSS equivalent: `border-style: hidden;`
@@ -114,7 +122,8 @@ Example usage:
 
 ---
 
-`.border-ridge`
+#### `.border-ridge`
+
 Sets the border-style property to ridge, creating a ridge border.
 
 CSS equivalent: `border-style: ridge;`
@@ -128,7 +137,8 @@ Example usage:
 
 ---
 
-`.border-groove`
+#### `.border-groove`
+
 Sets the border-style property to groove, creating a groove border.
 
 CSS equivalent: `border-style: groove;`
@@ -139,5 +149,7 @@ Example usage:
   <!-- Content with groove border style -->
 </div>
 ```
+
+---
 
 These utility classes allow you to easily control the border style of elements, providing various options to achieve the desired visual effect for your borders.

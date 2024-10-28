@@ -1225,6 +1225,16 @@
   "text-orientation-sideways-right": ".text-orientation-sideways-right { text-orientation: sideways-right; }",
   "text-clip": ".text-clip { text-overflow: clip; }",
   "text-ellipsis": ".text-ellipsis { text-overflow: ellipsis; }",
+  "text-fade": ".text-fade { text-overflow: fade; }",
+  "table": ".table {    display: table;  }",
+  "table-caption": ".table-caption {    display: table-caption;  }",
+  "table-column": ".table-column {    display: table-column;  }",
+  "table-row": ".table-row {    display: table-row;  }",
+  "table-cell": ".table-cell {    display: table-cell;  }",
+  "table-column-group": ".table-column-group {    display: table-column-group;  }",
+  "table-row-group": ".table-row-group {    display: table-row-group;  }",
+  "table-header-group": ".table-header-group {    display: table-header-group;  }",
+  "table-footer-group": ".table-footer-group {    display: table-footer-group;  }",
   "table-layout-auto": ".table-layout-auto { table-layout: auto; }",
   "table-layout-fixed": ".table-layout-fixed { table-layout: fixed; }",
   "text-justify": ".text-justify { text-align: justify; }",
@@ -1239,5 +1249,10 @@
   "text-last-initial": ".text-last-initial { text-align-last: initial; }",
   "text-last-inherit": ".text-last-inherit { text-align-last: inherit; }",
   "text-last-unset": ".text-last-unset { text-align-last: unset; }",
-  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }"
+  "text-thickness-auto": ".text-thickness-auto { text-decoration-thickness: auto; }",
+  "text-wrap-wrap": ".text-wrap-wrap { text-wrap: wrap; }",
+  "text-wrap-nowrap": ".text-wrap-nowrap { text-wrap: nowrap; }",
+  "text-wrap-balance": ".text-wrap-balance { text-wrap: balance; }",
+  "text-wrap-pretty": ".text-wrap-pretty { text-wrap: pretty; }",
+  "text-wrap-stable": ".text-wrap-stable { text-wrap: stable; }"
 }
