@@ -14,6 +14,8 @@ Example usage:
 <div class="mt-10">This element has a top margin of 10 pixels.</div>
 ```
 
+---
+
 #### **`.mb-{number}`**
 
 Applies a margin-bottom to the element.
@@ -25,6 +27,8 @@ Example usage:
 ```html
 <div class="mb-20">This element has a bottom margin of 20 pixels.</div>
 ```
+
+---
 
 #### **`.ml-{number}`**
 
@@ -38,6 +42,8 @@ Example usage:
 <div class="ml-15">This element has a left margin of 15 pixels.</div>
 ```
 
+---
+
 #### **`.mr-{number}`**
 
 Applies a margin-right to the element.
@@ -49,6 +55,8 @@ Example usage:
 ```html
 <div class="mr-30">This element has a right margin of 30 pixels.</div>
 ```
+
+---
 
 #### **`.mx-{number}`**
 
@@ -62,6 +70,8 @@ Example usage:
 <div class="mx-10">This element has a left and right margin of 10 pixels.</div>
 ```
 
+---
+
 #### **`.my-{number}`**
 
 Applies a margin to both the top and bottom sides of the element.
@@ -74,6 +84,8 @@ Example usage:
 <div class="my-5">This element has a top and bottom margin of 5 pixels.</div>
 ```
 
+---
+
 #### **`.m-{number}`**
 
 Applies a margin to all sides of the element.
@@ -85,6 +97,8 @@ Example usage:
 ```html
 <div class="m-20">This element has a margin of 20 pixels on all sides.</div>
 ```
+
+---
 
 #### Padding Classes
 
@@ -100,6 +114,8 @@ Example usage:
 <div class="p-10">This element has a padding of 10 pixels on all sides.</div>
 ```
 
+---
+
 #### **`.pt-{number}`**
 
 Applies padding to the top side of the element.
@@ -111,6 +127,8 @@ Example usage:
 ```html
 <div class="pt-5">This element has a top padding of 5 pixels.</div>
 ```
+
+---
 
 #### **`.pb-{number}`**
 
@@ -124,6 +142,8 @@ Example usage:
 <div class="pb-8">This element has a bottom padding of 8 pixels.</div>
 ```
 
+---
+
 #### **`.pl-{number}`**
 
 Applies padding to the left side of the element.
@@ -136,6 +156,8 @@ Example usage:
 <div class="pl-12">This element has a left padding of 12 pixels.</div>
 ```
 
+---
+
 #### **`.pr-{number}`**
 
 Applies padding to the right side of the element.
@@ -147,6 +169,8 @@ Example usage:
 ```html
 <div class="pr-15">This element has a right padding of 15 pixels.</div>
 ```
+
+---
 
 #### **`.px-{number}`**
 
@@ -162,6 +186,8 @@ Example usage:
 <div class="px-20">This element has a left and right padding of 20 pixels.</div>
 ```
 
+---
+
 #### **`.py-{number}`**
 
 Applies padding to both the top and bottom sides of the element.
@@ -173,4 +199,3 @@ Example usage:
 ```html
 <div class="py-25">This element has a top and bottom padding of 25 pixels.</div>
 ```
-

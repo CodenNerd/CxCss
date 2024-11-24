@@ -13,6 +13,8 @@ Example usage:
 <div class="box-slice">This element has the box decoration sliced at its edges.</div>
 ```
 
+---
+
 #### `.box-clone`
 
 Sets the box decoration break behavior to `clone`, indicating that the box decoration should be cloned for each line of the element.
@@ -23,5 +25,7 @@ Example usage:
 ```html
 <div class="box-clone">This element has the box decoration cloned for each line.</div>
 ```
+
+---
 
 These classes allow you to control the behavior of box decorations (such as borders, backgrounds, and outlines) when they encounter line breaks within an element. Use them to achieve desired visual effects and consistency in the rendering of box decorations.

@@ -1,5 +1,3 @@
-Certainly! Here's the documentation for the flex utility classes:
-
 ### Flex Basis Classes
 
 #### `.flex-basis-{number}`
@@ -15,6 +13,8 @@ Example usage:
 
 ### Flex Grow Classes
 
+---
+
 #### `.flex-grow-{number}`
 
 Sets the flex grow factor of the element.
@@ -27,6 +27,8 @@ Example usage:
 ```
 
 ### Flex Shrink Classes
+
+---
 
 #### `.flex-shrink-{number}`
 
@@ -43,6 +45,8 @@ Certainly! Here's the documentation for the flex utility classes related to flex
 
 ### Flex Direction Classes
 
+---
+
 #### `.flex-row`
 
 Sets the flex direction to row.
@@ -53,6 +57,8 @@ Example usage:
 ```html
 <div class="flex-row">This element has a flex direction of row.</div>
 ```
+
+---
 
 #### `.flex-col`
 
@@ -72,6 +78,8 @@ Certainly! Here's the documentation for the flex utility classes related to flex
 
 ### Flex Wrap Classes
 
+---
+
 #### `.flex-nowrap`
 
 Prevents flex items from wrapping to the next line.
@@ -82,6 +90,8 @@ Example usage:
 ```html
 <div class="flex-nowrap">This element prevents flex items from wrapping.</div>
 ```
+
+---
 
 #### `.flex-wrap`
 
@@ -94,6 +104,8 @@ Example usage:
 <div class="flex-wrap">This element allows flex items to wrap.</div>
 ```
 
+---
+
 #### `.flex-reverse`
 
 Wraps flex items to the next line in reverse order.
@@ -104,6 +116,8 @@ Example usage:
 ```html
 <div class="flex-reverse">This element wraps flex items to the next line in reverse order.</div>
 ```
+
+---
 
 These classes provide control over how flex items are displayed and wrapped within a flex container. The `.flex-nowrap` class prevents wrapping, while the `.flex-wrap` class allows wrapping, and the `.flex-reverse` class wraps items in reverse order.
 

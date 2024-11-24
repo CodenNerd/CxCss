@@ -1,10 +1,9 @@
-****Placement****
-
-Position Utility Classes
+### Placement Utility Classes
 
 The following utility classes provide options for positioning elements using top, left, right, bottom and inset properties:
 
-`.t-{value}`
+#### `.t-{value}`
+
 Sets the top property to a specific pixel value.
 
 CSS equivalent: `top: {value}px;`
@@ -18,7 +17,8 @@ Example usage:
 
 ---
 
-`.t-{value}p`
+#### `.t-{value}p`
+
 Sets the top property to a specific percentage value.
 
 CSS equivalent: `top: {value}%;`
@@ -32,7 +32,8 @@ Example usage:
 
 ---
 
-`.l-{value}`
+#### `.l-{value}`
+
 Sets the left property to a specific pixel value.
 
 CSS equivalent: `left: {value}px;`
@@ -46,7 +47,8 @@ Example usage:
 
 ---
 
-`.l-{value}p`
+#### `.l-{value}p`
+
 Sets the left property to a specific percentage value.
 
 CSS equivalent: `left: {value}%;`
@@ -60,7 +62,8 @@ Example usage:
 
 ---
 
-`.r-{value}`
+#### `.r-{value}`
+
 Sets the right property to a specific pixel value.
 
 CSS equivalent: `right: {value}px;`
@@ -74,7 +77,8 @@ Example usage:
 
 ---
 
-`.r-{value}p`
+#### `.r-{value}p`
+
 Sets the right property to a specific percentage value.
 
 CSS equivalent: `right: {value}%;`
@@ -88,7 +92,8 @@ Example usage:
 
 ---
 
-`.b-{value}`
+#### `.b-{value}`
+
 Sets the bottom property to a specific pixel value.
 
 CSS equivalent: `bottom: {value}px;`
@@ -102,7 +107,8 @@ Example usage:
 
 ---
 
-`.b-{value}p`
+#### `.b-{value}p`
+
 Sets the bottom property to a specific percentage value.
 
 CSS equivalent: `bottom: {value}%;`
@@ -114,11 +120,13 @@ Example usage:
 </div>
 ```
 
+---
+
 These utility classes allow you to easily position elements by specifying the top, left, right, and bottom values, either in pixels or as a percentage.
 
 
+#### `.inset-{value}`
 
-`.inset-{value}`
 Sets the inset property to a specific pixel value for all sides of the element.
 
 CSS equivalent: `inset: {value}px;`
@@ -132,7 +140,8 @@ Example usage:
 
 ---
 
-`.inset-block-{value}`
+#### `.inset-block-{value}`
+
 Sets the inset-block property to a specific pixel value for the block direction (vertical) of the element.
 
 CSS equivalent: `inset-block: {value}px;`
@@ -146,7 +155,8 @@ Example usage:
 
 ---
 
-`.inset-block-{value1}-{value2}`
+#### `.inset-block-{value1}-{value2}`
+
 Sets the inset-block property to specific pixel values for the block direction (vertical) of the element for both the block-start and block-end sides.
 
 CSS equivalent: `inset-block: {value1}px {value2}px;`
@@ -160,7 +170,8 @@ Example usage:
 
 ---
 
-`.inset-block-end-{value}`
+#### `.inset-block-end-{value}`
+
 Sets the inset-block-end property to a specific pixel value for the block-end side of the element.
 
 CSS equivalent: `inset-block-end: {value}px;`
@@ -174,7 +185,8 @@ Example usage:
 
 ---
 
-`.inset-block-start-{value}`
+#### `.inset-block-start-{value}`
+
 Sets the inset-block-start property to a specific pixel value for the block-start side of the element.
 
 CSS equivalent: `inset-block-start: {value}px;`
@@ -188,7 +200,8 @@ Example usage:
 
 ---
 
-`.inset-inline-{value}`
+#### `.inset-inline-{value}`
+
 Sets the inset-inline property to a specific pixel value for the inline direction (horizontal) of the element.
 
 CSS equivalent: `inset-inline: {value}px;`
@@ -202,7 +215,8 @@ Example usage:
 
 ---
 
-`.inset-inline-{value1}-{value2}`
+#### `.inset-inline-{value1}-{value2}`
+
 Sets the inset-inline property to specific pixel values for the inline direction (horizontal) of the element for both the inline-start and inline-end sides.
 
 CSS equivalent: `inset-inline: {value1}px {value2}px;`
@@ -216,7 +230,8 @@ Example usage:
 
 ---
 
-`.inset-inline-end-{value}`
+#### `.inset-inline-end-{value}`
+
 Sets the inset-inline-end property to a specific pixel value for the inline-end side of the element.
 
 CSS equivalent: `inset-inline-end: {value}px;`
@@ -230,7 +245,8 @@ Example usage:
 
 ---
 
-`.inset-inline-start-{value}`
+#### `.inset-inline-start-{value}`
+
 Sets the inset-inline-start property to a specific pixel value for the inline-start side of the element.
 
 CSS equivalent: `inset-inline-start: {value}px;`
@@ -241,5 +257,7 @@ Example usage:
   <!-- Content with inset-inline-start of 25 pixels on the inline-start side -->
 </div>
 ```
+
+---
 
 These utility classes allow you to control the inset positioning of elements in various directions, providing flexibility in managing their layout and spacing.

@@ -1,8 +1,9 @@
-Background Color Classes
+### Background Color Classes
 
 The following classes control the background color of elements:
 
-`.bg-success`
+#### `.bg-success`
+
 Sets the background color to the success color value.
 
 CSS equivalent: `background-color: successColor;`
@@ -16,7 +17,10 @@ Example usage:
 
 In the example above, the background color of the element will be set to the success color.
 
-`.bg-danger`
+---
+
+#### `.bg-danger`
+
 Sets the background color to the danger color value.
 
 CSS equivalent: `background-color: dangerColor;`
@@ -30,21 +34,10 @@ Example usage:
 
 In the example above, the background color of the element will be set to the danger color.
 
-`.text-danger`
-Sets the text color to the danger color value.
+---
 
-CSS equivalent: `color: dangerColor;`
+#### `.bg-warning`
 
-Example usage:
-```html
-<div class="text-danger">
-  <!-- Content with a danger text color -->
-</div>
-```
-
-In the example above, the text color of the element will be set to the danger color.
-
-`.bg-warning`
 Sets the background color to the warning color value.
 
 CSS equivalent: `background-color: warningColor;`
@@ -58,7 +51,10 @@ Example usage:
 
 In the example above, the background color of the element will be set to the warning color.
 
-`.bg-info`
+---
+
+#### `.bg-info`
+
 Sets the background color to the info color value.
 
 CSS equivalent: `background-color: infoColor;`
@@ -72,7 +68,10 @@ Example usage:
 
 In the example above, the background color of the element will be set to the info color.
 
-`.bg-none`
+---
+
+#### `.bg-none`
+
 Resets the background color to its initial value.
 
 CSS equivalent: `background-color: initial;`
@@ -86,18 +85,23 @@ Example usage:
 
 In the example above, the background color of the element will be reset to its initial value.
 
-`.bg-${color}`
+---
+
+#### `.bg-${color}`
+
 Sets the background color to a custom color value.
 
 CSS equivalent: `background-color: colorValue;`
 
 Example usage:
 ```html
-<div class="bg-custom-color">
-  <!-- Content with a custom background color -->
+<div class="bg-green">
+  <!-- Content with a green background -->
 </div>
 ```
 
-In the example above, the background color of the element will be set to the custom color value.
+In the example above, the background color of the element will be set to green. You can also use color codes like `#008000` or `rgb(0,128,0)` to set custom colors.
+
+---
 
 These utility classes provide a convenient way to apply predefined background colors or define your own custom background colors to elements in your web page.

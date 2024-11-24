@@ -1,8 +1,9 @@
-Z-Index Classes
+### Z-Index Classes
 
 The following classes control the z-index of elements:
 
-`.z-index-{value}`, `.z-{value}`
+#### `.z-index-{value}`, `.z-{value}`
+
 Sets the z-index property to the specified positive value, adjusting the stacking order of the element.
 
 CSS equivalent: `z-index: {value};`
@@ -22,7 +23,8 @@ or
 
 ---
 
-`.z-index--{value}`, `.z--{value}`
+#### `.z-index--{value}`, `.z--{value}`
+
 Sets the z-index property to the specified negative value, adjusting the stacking order of the element.
 
 CSS equivalent: `z-index: -{value};`
@@ -39,5 +41,7 @@ or
   <!-- Content with z-index -1 -->
 </div>
 ```
+
+---
 
 These utility classes allow you to easily control the stacking order of elements by specifying their z-index values. Positive values bring elements forward in the stacking order, while negative values send elements backward.

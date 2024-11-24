@@ -1,8 +1,9 @@
-Border Radius Utility Classes
+### Border Radius Utility Classes
 
 The following utility classes control the border-radius of elements:
 
-`.radius-{value}`
+#### `.radius-{value}`
+
 Sets the border-radius property to the specified value, rounding all corners of the element.
 
 CSS equivalent: `border-radius: {value};`
@@ -16,7 +17,8 @@ Example usage:
 
 ---
 
-`.radius-t-r-{value}`
+#### `.radius-t-r-{value}`
+
 Sets the border-top-right-radius property to the specified value, rounding the top-right corner of the element.
 
 CSS equivalent: `border-top-right-radius: {value};`
@@ -30,7 +32,8 @@ Example usage:
 
 ---
 
-`.radius-t-l-{value}`
+#### `.radius-t-l-{value}`
+
 Sets the border-top-left-radius property to the specified value, rounding the top-left corner of the element.
 
 CSS equivalent: `border-top-left-radius: {value};`
@@ -44,7 +47,8 @@ Example usage:
 
 ---
 
-`.radius-b-r-{value}`
+#### `.radius-b-r-{value}`
+
 Sets the border-bottom-right-radius property to the specified value, rounding the bottom-right corner of the element.
 
 CSS equivalent: `border-bottom-right-radius: {value};`
@@ -58,7 +62,8 @@ Example usage:
 
 ---
 
-`.radius-b-l-{value}`
+#### `.radius-b-l-{value}`
+
 Sets the border-bottom-left-radius property to the specified value, rounding the bottom-left corner of the element.
 
 CSS equivalent: `border-bottom-left-radius: {value};`
@@ -72,7 +77,8 @@ Example usage:
 
 ---
 
-`.round`
+#### `.round`
+
 Sets the border-radius property to 50%, creating a circular shape for the element.
 
 CSS equivalent: `border-radius: 50%;`
@@ -83,5 +89,7 @@ Example usage:
   <!-- Content with a circular shape -->
 </div>
 ```
+
+---
 
 These utility classes allow you to easily control the border-radius of elements, creating rounded corners or circular shapes based on your desired values.
