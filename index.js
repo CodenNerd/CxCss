@@ -41,7 +41,7 @@ function getCascadeLayerDeclaration() {
 }
 
 function getOutputCssString(cssContentObject) {
-  return ['default', ...Object.keys(config.breakpoints)].reduce((cumm, breakpoint) =>{ return cumm += `\n${cssContentObject[breakpoint] || ''}`}, getCascadeLayerDeclaration())
+  return ['default', ...Object.keys(config.breakpoints)].sort((a, b) => parseInt(config.breakpoints[a]) - parseInt(config.breakpoints[b])).reduce((cumm, breakpoint) =>{ return cumm += `\n${cssContentObject[breakpoint] || ''}`}, getCascadeLayerDeclaration())
 }
 
 function build() {
