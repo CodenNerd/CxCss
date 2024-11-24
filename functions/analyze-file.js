@@ -156,7 +156,7 @@ function extractClassNamesFromDynamicReactSyntax(
                                 } else {
                                     if (wordTerminators.includes(char)) {
                                         const className = cleanUpClassName(currentWord);
-                                        className && targetAttributes.add(`${currentWord}=`);
+                                        className && targetAttributes.push(`${currentWord}=`);
                                         currentWord = "";
                                     } else {
                                         currentWord += char;
@@ -177,7 +177,7 @@ function extractClassNamesFromDynamicReactSyntax(
 
         // console.log(currentWord);
 
-        if (targetAttributes.has(currentWord)) {
+        if (targetAttributes.includes(currentWord)) {
             //  console.log('Here:', targetAttributes.has(currentWord), {currentWord}, {targetAttributes} )
             inClassName = true;
             isClassNameStart = true;
