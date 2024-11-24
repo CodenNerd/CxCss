@@ -2,7 +2,7 @@
   "inline-block": ".inline-block {    display: inline-block;  }",
   "inline": ".inline {    display: inline;  }",
   "inline-flex": ".inline-flex {    display: inline-flex;  }",
-  "inline-grid": ".inline-grid {    display: inline-grid;  }",
+  "inline-grid": ".inline-grid { display: inline-grid;  }",
   "inline-table": ".inline-table {    display: inline-table;  }",
   "items-center": ".items-center {    align-items: center;  }",
   "img-rendering-auto": ".img-rendering-auto { image-rendering: auto; }",
